@@ -13,5 +13,5 @@ social_links:
 
 
 # Build settings
-#remote_theme: jekyll/minima
-theme: jekyll-theme-leap-day  
+remote_theme: jekyll/minima
+#theme: jekyll-theme-leap-day  
