@@ -18,4 +18,5 @@ social_links:
 #theme: minima
 #remote_theme: alshedivat/al-folio
 #  skin: dark
-remote_theme: jekyll/minimal
+minima:
+  skin: dark
