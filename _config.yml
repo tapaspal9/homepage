@@ -1,3 +1,4 @@
+# Site settings
 title: Tapas Pal
 author:
   name: Tapas Pal
@@ -12,5 +13,5 @@ social_links:
 
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima
   
