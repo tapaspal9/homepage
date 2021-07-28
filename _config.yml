@@ -13,8 +13,9 @@ social_links:
 
 
 # Build settings
-remote_theme: jekyll/minima
+#remote_theme: jekyll/minima
 #theme: jekyll-theme-leap-day  
 #theme: minima
 #remote_theme: alshedivat/al-folio
-  skin: dark
+#  skin: dark
+theme: minimal-mistakes-jekyll
