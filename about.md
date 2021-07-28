@@ -5,7 +5,7 @@ title: Publications
 
 ### Links
 
-**[Google Scholar Page](https://scholar.google.co.in/citations?user=7N8SUDMAAAAJ&hl=en), **[DBLP Page](https://dblp.org/pid/222/6843.html)
+**[Google Scholar Page](https://scholar.google.co.in/citations?user=7N8SUDMAAAAJ&hl=en)**, **[DBLP Page](https://dblp.org/pid/222/6843.html)**
 
 
 ### Accepted Papers
