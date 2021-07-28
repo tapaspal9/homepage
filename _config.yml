@@ -13,5 +13,5 @@ social_links:
 
 
 # Build settings
-remote_theme: jekyll/minima
-  
+#remote_theme: jekyll/minima
+theme: midnight  
