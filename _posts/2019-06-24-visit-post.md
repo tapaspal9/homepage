@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visit to University of Auckland
+title: University of Auckland
 tags: visit
 categories: news
 ---
