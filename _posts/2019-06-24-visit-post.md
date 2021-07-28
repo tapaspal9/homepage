@@ -13,14 +13,11 @@ I had a great time at University of Auckland during 24th June to 1st July hosted
 **From Functional Encryption to Indistinguishable Obfuscation**\
 Outline of the Talk:
 * Introduction to IO
-* Applications of IO (witness encryption etc...)
-* Example of a special function obfuscation from graded encoding ([GGH+13])
+* Applications of IO
 * Introduction to FE
 * Types of FE
-* Outline of some papers related to FE and IO ([AJ15, BV15, LPST16, BNPW16])
 * Relations between RE and IO
 * From SKFE and PKE to IO
-* From pSKFE and SXIO to IO
 * Conclusion and works going on...
 
 Here is the _[slides](https://drive.google.com/file/d/1V1iPobwKTt_0PVGfagk7jaajEwb3r7vu/view?usp=sharing)_.
