@@ -9,7 +9,6 @@ title: Publications
 
 
 ### Accepted Papers
-{: .gitlab-purple}
 
 * first paper
 * second paper
