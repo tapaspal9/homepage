@@ -10,11 +10,11 @@ description: "Personal Website"
 social_links:
    linkedin: tapas-pal-7b5a88b7
    facebook: tapas.pal.144
-#skin: dark
+skin: dark
 
 # Build settings
-#remote_theme: jekyll/minima
-theme: jekyll/leap-day  
+remote_theme: jekyll/minima
+#theme: jekyll/leap-day  
 #theme: minima
 #remote_theme: alshedivat/al-folio
 #  skin: dark
