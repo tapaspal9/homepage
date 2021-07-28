@@ -11,11 +11,11 @@ I am a PhD student at the department of [Mathematics](http://www.iitkgp.ac.in/de
  
  
  
-### My Social Links
+### Social Links
 
 **[Linkedin](https://www.linkedin.com/in/tapas-pal-7b5a88b7/)**, **[Facebook](https://www.facebook.com/tapas.pal.144/)**
 
 
-### My visits
+### Visits
 
 
