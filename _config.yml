@@ -1,9 +1,9 @@
 # Site settings
-title: Tapas Pal Personal Webpage
+title: Tapas Pal
 author:
   name: Tapas Pal
   email: tapas.real@gmail.com
-description: "Great site about Jekyll on GH-Pages."
+description: "Personal Website."
 
 # Build settings
 remote_theme: jekyll/minima
