@@ -1,5 +1,5 @@
 ---
-layout: black
+layout: dark
 title: IIT Madras
 tags: visit
 categories: news
