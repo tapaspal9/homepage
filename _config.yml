@@ -12,7 +12,7 @@ social_links:
    facebook: tapas.pal.144
 
 minima:
-  skin: dark
+  skin: dirt
 
 # Build settings
 remote_theme: jekyll/minima
