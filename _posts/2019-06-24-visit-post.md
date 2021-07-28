@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: dark
 title: University of Auckland
 tags: visit
 categories: news
