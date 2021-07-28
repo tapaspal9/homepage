@@ -17,3 +17,6 @@ remote_theme: jekyll/minima
 #theme: jekyll-theme-leap-day  
 #theme: minima
 #remote_theme: alshedivat/al-folio
+
+minima:
+  skin: linen
