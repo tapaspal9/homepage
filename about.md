@@ -1,5 +1,6 @@
 ---
 layout: page
+geometry: margin=3cm
 title: Publications
 ---
 
