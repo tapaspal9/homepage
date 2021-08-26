@@ -12,7 +12,7 @@ title: Publications
 ### Accepted Papers
 
 * **Compact Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
-  with _[Pratish Datta](https://www.linkedin.com/in/pratish-datta/)_\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
   ASIACRYPT 2021 | ePrint-available soon
 * **Attribute-Based Access Control for Inner Product Functional Encryption from LWE**\
   with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
