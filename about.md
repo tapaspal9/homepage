@@ -12,7 +12,7 @@ title: Research
 ### Accepted Papers
 
 * **Fully Secure Unbounded Zero Inner Product Encryption with Short Ciphertexts and Keys**\
-  with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
+  with _Subhranil Dutta_ and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   ProvSec 2021 | ePrint-available soon
 * **Compact Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
