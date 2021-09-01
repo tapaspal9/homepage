@@ -35,7 +35,7 @@ title: Research
 * **Semi-Adaptively Secure Offline Witness Encryption from Puncturable Witness PRF**\
   with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   ProvSec 2020 | [ePrint](https://eprint.iacr.org/2020/479)  
-* **Offline Witness Encryption from Witness PRF and Randomized En- coding in CRS Model**\
+* **Offline Witness Encryption from Witness PRF and Randomized Encoding in CRS Model**\
   with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   ACISP 2019 | [ePrint](https://eprint.iacr.org/2018/587)  
 
