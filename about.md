@@ -1,7 +1,7 @@
 ---
 layout: page
 geometry: "left=3cm,right=3cm"
-title: Publications
+title: Research
 ---
 
 ### Links
@@ -11,6 +11,9 @@ title: Publications
 
 ### Accepted Papers
 
+* **Fully Secure Unbounded Zero Inner Product Encryption with Short Ciphertexts and Keys**\
+  with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
+  ProvSec 2021 | ePrint-available soon
 * **Compact Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
   ASIACRYPT 2021 | ePrint-available soon
