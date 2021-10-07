@@ -16,7 +16,7 @@ title: Research
   ProvSec 2021 | ePrint-available soon
 * **Compact Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
-  ASIACRYPT 2021 | ePrint-available soon
+  ASIACRYPT 2021 | [ePrint](https://eprint.iacr.org/2021/1305)
 * **Attribute-Based Access Control for Inner Product Functional Encryption from LWE**\
   with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   LATINCRYPT 2021 | [ePrint](https://eprint.iacr.org/2021/178)
