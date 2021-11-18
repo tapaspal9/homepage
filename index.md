@@ -8,7 +8,7 @@ layout: home
 Hi! I am Tapas. I did my PhD from the department of [Mathematics](http://www.iitkgp.ac.in/department/MA) of [Indian Institute of Technology Kharagpur](http://www.iitkgp.ac.in) under the supervison of [Prof. Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/). My doctoral thesis presents provably secure advanced cryptographic primitives such as witness encryption, fully homomorphic encryption and functional   encryption. I worked in [IIT KGP MATH-CRYPTO](https://www.kgpmathcrypto.com) group during my PhD.
 
 {: style="text-align: justify" }
-I was a research intern at the [Cryptography and Information Security (CIS) Laboratories](https://ntt-research.com/cis/) at [NTT Research](https://ntt-research.com). During this internship I worked under the supervison [Dr. Pratish Datta](https://ntt-research.com/cis-people/) in the area of functional encryption.
+I was a research intern at the [Cryptography and Information Security (CIS) Laboratories](https://ntt-research.com/cis/) at [NTT Research](https://ntt-research.com). During this internship I worked under the supervison of [Dr. Pratish Datta](https://ntt-research.com/cis-people/) in the area of functional encryption. Currently, I am a visiting scientist at the [R. C. Bose Centre for Cryptology and Security](https://www.isical.ac.in/~rcbose/) of [Indian Statistical Institute Kolkata](https://www.isical.ac.in) hosted by [Prof. Mridul Nandi](https://www.isical.ac.in/~mridul/).  
  
  
  
