@@ -9,8 +9,13 @@ title: Research
 **[Google Scholar Page](https://scholar.google.co.in/citations?user=7N8SUDMAAAAJ&hl=en)**, **[DBLP Page](https://dblp.org/pid/222/6843.html)**
 
 
-### Accepted Papers
 
+
+### Research Papers
+
+* **Decentralized Multi-Authority Attribute-Based Inner-Product Functional Encryption from Decisional-BDH**\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://mmaitra.bitbucket.io)_\
+  Communicated
 * **Fully Secure Unbounded Zero Inner Product Encryption with Short Ciphertexts and Keys**\
   with _Subhranil Dutta_ and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   ProvSec 2021 | ePrint-available soon
