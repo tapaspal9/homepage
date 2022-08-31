@@ -14,7 +14,7 @@ title: Research
 ### Research Papers
 
 * **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
-  with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_ 
+  with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_ \
   Asiacrypt 2022 | ePrint-available soon
 * **Decentralized Multi-Authority Attribute-Based Inner-Product Functional Encryption from Decisional-BDH**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://mmaitra.bitbucket.io)_\
