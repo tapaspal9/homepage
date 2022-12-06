@@ -18,7 +18,7 @@ title: Research
   [ePrint](https://eprint.iacr.org/2022/1196)
 * **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
   with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_ \
-  Asiacrypt 2022 | ePrint-available soon
+  Asiacrypt 2022 | [ePrint](https://eprint.iacr.org/2022/1594)
 * **Decentralized Multi-Authority Attribute-Based Inner-Product Functional Encryption from Decisional-BDH**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://mmaitra.bitbucket.io)_\
   Communicated
