@@ -11,13 +11,13 @@ social_links:
    linkedin: tapas-pal-7b5a88b7
    facebook: tapas.pal.144
 
-#minima:
-#  skin: dark
+minima:
+  skin: dark
 
 # Build settings
-remote_theme: jekyll-theme-slate
+remote_theme: jekyll/minima
 #theme: jekyll/leap-day  
-#theme: slate
+#theme: minima
 #remote_theme: jekyll-theme-slate
 #  skin: dark
 
