@@ -15,9 +15,9 @@ social_links:
 #  skin: dark
 
 # Build settings
-remote_theme: jekyll/minima
+remote_theme: jekyll-theme-slate
 #theme: jekyll/leap-day  
-#theme: minima
+#theme: slate
 #remote_theme: jekyll-theme-slate
 #  skin: dark
 
