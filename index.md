@@ -8,7 +8,7 @@ document.documentElement.setAttribute('data-theme', 'dark');
 
 ---
 layout: home
----
+
 
  ![alt text myimg](https://user-images.githubusercontent.com/27273692/210169852-c4816d24-7266-4cc1-848a-d91f414d62c1.jpg){: height="210px" width="200px" style="float:left; padding-right:20px" }
 
@@ -29,7 +29,7 @@ I was a research intern at the [Cryptography and Information Security (CIS) Labo
 ### Visits
 
 
-
+---
 const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
 
 if (theme === "dark") {
