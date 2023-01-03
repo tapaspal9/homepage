@@ -4,12 +4,9 @@ geometry: "left=3cm,right=3cm"
 title: Research
 ---
 
-
 ### Links
 
 **[Google Scholar Page](https://scholar.google.co.in/citations?user=7N8SUDMAAAAJ&hl=en)**, **[DBLP Page](https://dblp.org/pid/222/6843.html)**
-
-
 
 
 ### Research Papers
@@ -50,7 +47,6 @@ title: Research
 * **Offline Witness Encryption from Witness PRF and Randomized Encoding in CRS Model**\
   with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   ACISP 2019 | [ePrint](https://eprint.iacr.org/2018/587)  
-
 
 
 
