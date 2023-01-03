@@ -3,6 +3,8 @@ layout: page
 title: Teaching
 ---
 
+<button id="theme-toggle" onclick="modeSwitcher()"></button>
+
 ### Teaching Assistant
 
 * 2020 Sep-Dec **Introduction to Abstract and Linear Algebra**, [NPTEL](https://nptel.ac.in), IIT Kharagpur.\
