@@ -4,6 +4,8 @@ geometry: "left=3cm,right=3cm"
 title: Research
 ---
 
+<button id="theme-toggle" onclick="modeSwitcher()"></button>
+
 ### Links
 
 **[Google Scholar Page](https://scholar.google.co.in/citations?user=7N8SUDMAAAAJ&hl=en)**, **[DBLP Page](https://dblp.org/pid/222/6843.html)**
