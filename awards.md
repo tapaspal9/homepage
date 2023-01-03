@@ -1,3 +1,5 @@
+<button id="theme-toggle" onclick="modeSwitcher()"></button>
+
 ---
 layout: page
 title: Awards
