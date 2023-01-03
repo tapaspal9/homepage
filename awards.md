@@ -1,5 +1,10 @@
 <button id="theme-toggle" onclick="modeSwitcher()"></button>
 
+const theme = localStorage.getItem('theme');
+if (theme === "dark") {
+document.documentElement.setAttribute('data-theme', 'dark');
+}
+
 ---
 layout: page
 title: Awards
@@ -28,3 +33,33 @@ title: Awards
   
 * I was awarded _Dr. Alexander Duff Memorial Prize_ for Mathematics in the year 2013 by 
   the [Scottish Church College](https://www.scottishchurch.ac.in) of Kolkata. 
+
+
+const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+
+if (theme === "dark") {
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else if (theme === "light") {
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+} else if  (userPrefers === "dark") {
+	document.documentElement.setAttribute('data-theme', 'dark');
+	window.localStorage.setItem('theme', 'dark');
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else {
+	document.documentElement.setAttribute('data-theme', 'light');
+	window.localStorage.setItem('theme', 'light');
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+}
+
+function modeSwitcher() {
+	let currentMode = document.documentElement.getAttribute('data-theme');
+	if (currentMode === "dark") {
+		document.documentElement.setAttribute('data-theme', 'light');
+		window.localStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+	} else {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		window.localStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	}
+}
