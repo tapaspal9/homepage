@@ -1,14 +1,16 @@
 
 <button id="theme-toggle" onclick="modeSwitcher()"></button>
 
+---
+layout: home
+---
+
+---
 const theme = localStorage.getItem('theme');
 if (theme === "dark") {
 document.documentElement.setAttribute('data-theme', 'dark');
 }
-
 ---
-layout: home
-
 
  ![alt text myimg](https://user-images.githubusercontent.com/27273692/210169852-c4816d24-7266-4cc1-848a-d91f414d62c1.jpg){: height="210px" width="200px" style="float:left; padding-right:20px" }
 
@@ -58,3 +60,4 @@ function modeSwitcher() {
 		document.getElementById("theme-toggle").innerHTML = "Light Mode";
 	}
 }
+---
