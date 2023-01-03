@@ -5,13 +5,6 @@
 layout: home
 ---
 
----
-const theme = localStorage.getItem('theme');
-if (theme === "dark") {
-document.documentElement.setAttribute('data-theme', 'dark');
-}
----
-
  ![alt text myimg](https://user-images.githubusercontent.com/27273692/210169852-c4816d24-7266-4cc1-848a-d91f414d62c1.jpg){: height="210px" width="200px" style="float:left; padding-right:20px" }
 
 {: style="text-align: justify" }
@@ -30,34 +23,3 @@ I was a research intern at the [Cryptography and Information Security (CIS) Labo
 
 ### Visits
 
-
----
-const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
-
-if (theme === "dark") {
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else if (theme === "light") {
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-} else if  (userPrefers === "dark") {
-	document.documentElement.setAttribute('data-theme', 'dark');
-	window.localStorage.setItem('theme', 'dark');
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-} else {
-	document.documentElement.setAttribute('data-theme', 'light');
-	window.localStorage.setItem('theme', 'light');
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-}
-
-function modeSwitcher() {
-	let currentMode = document.documentElement.getAttribute('data-theme');
-	if (currentMode === "dark") {
-		document.documentElement.setAttribute('data-theme', 'light');
-		window.localStorage.setItem('theme', 'light');
-		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-	} else {
-		document.documentElement.setAttribute('data-theme', 'dark');
-		window.localStorage.setItem('theme', 'dark');
-		document.getElementById("theme-toggle").innerHTML = "Light Mode";
-	}
-}
----
