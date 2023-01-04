@@ -4,10 +4,10 @@ title: Awards
 ---
 
 
-* I am awarded postdoctoral research fellowship by
+* I was awarded postdoctoral research fellowship by
   the Strategic Centre for Research in Privacy-Preserving Technologies & Systems ([SCRIPTS](https://www.ntu.edu.sg/scripts)) at [NTU](https://www.ntu.edu.sg) Singapore.
 
-* I am awarded [ERCIM](https://www.ercim.eu) postdoctoral fellowship by 
+* I was awarded [ERCIM](https://www.ercim.eu) postdoctoral fellowship by 
   the European Research Consortium for Informatics and Mathematics at [NTNU](https://www.ntnu.no) Norway.
   
 * I served as a _Senior Research Fellow_ from 2018 to 2021 at the department of [Mathematics](http://www.iitkgp.ac.in/department/MA) of 
