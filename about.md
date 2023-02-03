@@ -11,6 +11,9 @@ title: Research
 
 ### Research Papers
 
+* **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
+  PKC 2023 | ePrint available soon
 * **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
   with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_\
   [ePrint](https://eprint.iacr.org/2022/1196)
