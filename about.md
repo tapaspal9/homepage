@@ -19,13 +19,13 @@ title: Research
   PKC 2023 | ePrint available soon
 * **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
   with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_\
-  [ePrint](https://eprint.iacr.org/2022/1196)
+  Communicated | [ePrint](https://eprint.iacr.org/2022/1196)
 * **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
   with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_ \
   Asiacrypt 2022 | [ePrint](https://eprint.iacr.org/2022/1594)
 * **Decentralized Multi-Authority Attribute-Based Inner-Product Functional Encryption from Decisional-BDH**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://mmaitra.bitbucket.io)_\
-  Communicated
+  Communicated | ePrint available soon
 * **Fully Secure Unbounded Zero Inner Product Encryption with Short Ciphertexts and Keys**\
   with _Subhranil Dutta_ and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   ProvSec 2021
