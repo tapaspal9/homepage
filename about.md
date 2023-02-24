@@ -11,6 +11,9 @@ title: Research
 
 ### Research Papers
 
+* **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
+  with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_\
+  Communicated | [ePrint](https://eprint.iacr.org/2023/236)
 * **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
   PKC 2023 | ePrint available soon
