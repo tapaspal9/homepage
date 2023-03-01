@@ -4,8 +4,8 @@ title: Awards
 ---
 
 
-* I was awarded postdoctoral research fellowship by
-  the Strategic Centre for Research in Privacy-Preserving Technologies & Systems ([SCRIPTS](https://www.ntu.edu.sg/scripts)) at [NTU](https://www.ntu.edu.sg) Singapore.
+<!-- * I was awarded postdoctoral research fellowship by
+  the Strategic Centre for Research in Privacy-Preserving Technologies & Systems ([SCRIPTS](https://www.ntu.edu.sg/scripts)) at [NTU](https://www.ntu.edu.sg) Singapore. -->
 
 * I was awarded [ERCIM](https://www.ercim.eu) postdoctoral fellowship by 
   the European Research Consortium for Informatics and Mathematics at [NTNU](https://www.ntnu.no) Norway.
