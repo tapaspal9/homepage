@@ -9,7 +9,7 @@ title: Research
 **[Google Scholar Page](https://scholar.google.co.in/citations?user=7N8SUDMAAAAJ&hl=en)**, **[DBLP Page](https://dblp.org/pid/222/6843.html)**
 
 
-### Research Papers
+### Conference/ePrint Papers
 
 * **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
   with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_\
