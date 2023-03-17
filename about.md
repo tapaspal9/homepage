@@ -54,6 +54,15 @@ title: Research
   with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
   ACISP 2019 | [ePrint](https://eprint.iacr.org/2018/587)  
 
+### Journal Publications
+
+* **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
+  with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_\
+  Jouranal of Cryptology 2023 | Accepted
+
+* **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
+  Designs, Codes and Cryptography 2023 | Accepted
 
 
 ### Professional Contribution
