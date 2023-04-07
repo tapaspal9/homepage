@@ -11,6 +11,9 @@ title: Research
 
 ### Conference/ePrint Papers
 
+* **Registration-Based Functional Encryption**\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
+  [ePrint](https://eprint.iacr.org/2023/457)
 * **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
   with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_\
   Communicated | [ePrint](https://eprint.iacr.org/2023/236)
@@ -58,11 +61,11 @@ title: Research
 
 * **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
   with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_\
-  Jouranal of Cryptology 2023 | Accepted
+  Jouranal of Cryptology 2023 (Accepted) | [eprint](https://eprint.iacr.org/2023/483)
 
 * **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
-  Designs, Codes and Cryptography 2023 | Accepted
+  Designs, Codes and Cryptography 2023 (Accepted) | [ePrint](https://eprint.iacr.org/2021/1305)
 
 
 ### Professional Contribution
