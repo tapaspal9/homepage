@@ -19,7 +19,7 @@ title: Research
   Communicated | [ePrint](https://eprint.iacr.org/2023/236)
 * **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
-  PKC 2023 | ePrint available soon
+  PKC 2023 | [ePrint](https://eprint.iacr.org/2023/565)
 * **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
   with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_\
   Communicated | [ePrint](https://eprint.iacr.org/2022/1196)
