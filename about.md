@@ -61,11 +61,11 @@ title: Research
 
 * **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
   with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_\
-  Jouranal of Cryptology 2023 (Accepted) | [eprint](https://eprint.iacr.org/2023/483)
+  Journal of Cryptology 2023 | [Journal version](https://link.springer.com/article/10.1007/s00145-023-09458-2) | [eprint](https://eprint.iacr.org/2023/483)
 
 * **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
-  Designs, Codes and Cryptography 2023 (Accepted) | [ePrint](https://eprint.iacr.org/2021/1305)
+  Designs, Codes and Cryptography 2023 [Journal version](https://link.springer.com/article/10.1007/s10623-023-01219-3) | [ePrint](https://eprint.iacr.org/2021/1305)
 
 
 ### Professional Contribution
@@ -73,5 +73,5 @@ title: Research
 **Reviewer or Subreviewers**
 
 TCS, DCC, INDOCRYPT'2020, INDOCRYPT'2021, ACNS'2022, IEEE-IFS, IET-IS, 
-CRYPTO'2022, AsiaCCS'2022, IEEE-IT, JCEN, TCC'2022, PKC'2023  
+CRYPTO'2022, AsiaCCS'2022, IEEE-IT, JCEN, TCC'2022, PKC'2023, ASIACRYPT'2023  
 
