@@ -71,7 +71,7 @@ title: Research
 ### Patents Filed/Published
 
 * **Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums**\
-  with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)\
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)\
   PCT/US2022/039569 | [US Patent](https://patents.google.com/patent/WO2023014969A1/)
 
 
