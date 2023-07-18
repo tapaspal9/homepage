@@ -68,6 +68,13 @@ title: Research
   Designs, Codes and Cryptography 2023 [Journal version](https://link.springer.com/article/10.1007/s10623-023-01219-3) | [ePrint](https://eprint.iacr.org/2021/1305)
 
 
+### Patents Filed/Published
+
+* **Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums**\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
+  [US Patent](https://patents.google.com/patent/WO2023014969A1/)
+
+
 ### Professional Contribution
 
 **Reviewer or Subreviewers**
