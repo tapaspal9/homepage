@@ -1,60 +1,130 @@
-/* Import Google font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display:900");
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
-body{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+:root {
+  --clr-light: #fdffc4;
+  --clr-dark: #00332a;
+  --clr-primary: #dbffa2;
+  --clr-secondary: #c3fcf2;
+  --clr-accent: #ff7750;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+
+  --ff-title: "Playfair Display", serif;
+  --ff-body: "Assistant", sans-serif;
 }
-label{
+
+.darkmode {
+  --clr-light: #fdffc4;
+  --clr-dark: #00332a;
+  --clr-primary: #202302;
+  --clr-secondary: #00100d;
+  --clr-accent: #ff7750;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--ff-body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: calc(3rem + 7vw);
+  font-family: var(--ff-title);
+  margin: 0 0 0.25em;
+  line-height: 1;
+}
+
+.subtitle {
+  max-width: 600px;
+}
+
+.btn-group {
+  margin: 2em 0;
+  display: relative;
+}
+
+.btn {
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
   position: relative;
-  width: 480px;
-  height: 180px;
-  display: block;
-  background: #d9d9d9;
-  border-radius: 100px;
-  cursor: pointer;
-  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.3), inset 0px -5px 15px rgba(255,255,255,0.3);
+  display: inline-block;
+  line-height: 1;
 }
-label:after{
-  content: '';
-  position: absolute;
-  height: 160px;
-  width: 160px;
-  background: #f2f2f2;
-  border-radius: 100px;
-  top: 10px;
-  left: 10px;
-  transition: 0.5s;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+.btn + .btn {
+  margin-left: 1em;
 }
-input:checked ~ label:after{
-  left: 470px;
-  transform: translateX(-100%);
-  background: linear-gradient(180deg,#777,#3a3a3a);
+
+.btn-secondary {
+  background: var(--foreground);
+  color: var(--background);
+  // border: currentColor solid 2px;
 }
-input:checked ~ label{
-  background: #242424;
+
+.btn-accent {
+  background: var(--clr-accent);
+  color: var(--foreground);
 }
-.background{
+
+.btn::after {
+  content: "";
   position: absolute;
   width: 100%;
-  height: 100vh;
-  background: #fff;
+  height: 100%;
+  border: var(--foreground) 2px solid;
+  left: -4px;
+  top: 4px;
+  border-radius: inherit;
   z-index: -1;
-  transition: 0.5s;
 }
-input:checked + label + .background{
-  background: #242424;
+
+.intro {
+  height: 80vh;
+  padding: 10em 0;
+  display: grid;
+  grid-template-columns: minmax(2em, 1fr) minmax(80vw, 860px) minmax(2em, 1fr);
+  background: linear-gradient(120deg, var(--clr-primary), var(--clr-secondary));
+  align-content: center;
 }
-input{
-  display: none;
+
+.intro > * {
+  grid-column: 2 / 3;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  right: 1em;
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.click-here {
+  // SVG icon from Font Awesome
+  width: 100px;
+  right: 1.5em;
+  position: absolute;
+  top: 3em;
 }
