@@ -11,7 +11,7 @@ title: Research
 
 ### Conference/ePrint Papers
 
-[ePrint](https://eprint.iacr.org/2023/457) &nbsp;&nbsp;&nbsp;&nbsp; **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
+[  ePrint](https://eprint.iacr.org/2023/457) &nbsp;&nbsp;&nbsp;&nbsp; **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
   
 [ePrint](https://eprint.iacr.org/2023/236) &nbsp;&nbsp;&nbsp;&nbsp; **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
