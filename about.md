@@ -15,11 +15,11 @@ title: Research
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
   
 [ePrint](https://eprint.iacr.org/2023/236) &nbsp;&nbsp;&nbsp;&nbsp; **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_\
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_
   
-* **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
-  with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
-  PKC 2023 | [ePrint](https://eprint.iacr.org/2023/565)
+PKC'23 &nbsp;&nbsp;&nbsp;&nbsp; **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
+  [ePrint](https://eprint.iacr.org/2023/565)
 * **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
   with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_\
   Communicated | [ePrint](https://eprint.iacr.org/2022/1196)
