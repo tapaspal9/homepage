@@ -57,29 +57,31 @@ title: Research
   
 - [ProvSec'20](https://eprint.iacr.org/2020/479)\
   **Semi-Adaptively Secure Offline Witness Encryption from Puncturable Witness PRF**\
-  with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
+  with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
 
 - [ACISP'19](https://eprint.iacr.org/2018/587)\
   **Offline Witness Encryption from Witness PRF and Randomized Encoding in CRS Model**\
-  with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
+  with _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
  
 
 ### Journal Publications
 
-* **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
-  with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_\
-  Journal of Cryptology 2023 | [Journal version](https://link.springer.com/article/10.1007/s00145-023-09458-2) | [eprint](https://eprint.iacr.org/2023/483)
+- [JoC'23](https://link.springer.com/article/10.1007/s00145-023-09458-2) | [eprint](https://eprint.iacr.org/2023/483)\
+  **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
+  with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_
+  
 
-* **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
-  with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
-  Designs, Codes and Cryptography 2023 [Journal version](https://link.springer.com/article/10.1007/s10623-023-01219-3) | [ePrint](https://eprint.iacr.org/2021/1305)
+- [DCC'23](https://link.springer.com/article/10.1007/s10623-023-01219-3) | [ePrint](https://eprint.iacr.org/2021/1305)\
+  **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_
+  
 
 
 ### Patents Filed/Published
 
-* **Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums**\
-  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)\
-  PCT/US2022/039569 | [US Patent](https://patents.google.com/patent/WO2023014969A1/)
+- [US Patent](https://patents.google.com/patent/WO2023014969A1/) | PCT/US2022/039569\
+  **Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums**\
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com) 
 
 
 ### Professional Contribution
