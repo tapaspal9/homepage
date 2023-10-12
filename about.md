@@ -14,9 +14,9 @@ title: Research
 [ePrint](https://eprint.iacr.org/2023/457) &nbsp;&nbsp;&nbsp;&nbsp; **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
   
-* **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
-  with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_\
-  Communicated | [ePrint](https://eprint.iacr.org/2023/236)
+[ePrint](https://eprint.iacr.org/2023/236) &nbsp;&nbsp;&nbsp;&nbsp; **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_\
+  
 * **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
   PKC 2023 | [ePrint](https://eprint.iacr.org/2023/565)
