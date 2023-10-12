@@ -12,20 +12,20 @@ title: Research
 ### Conference/ePrint Papers
 
 [ePrint](https://eprint.iacr.org/2023/457) &nbsp;&nbsp;&nbsp;&nbsp; **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
   
 [ePrint](https://eprint.iacr.org/2023/236) &nbsp;&nbsp;&nbsp;&nbsp; **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_
   
 [PKC'23](https://eprint.iacr.org/2023/565) &nbsp;&nbsp; **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_
   
 [ePrint](https://eprint.iacr.org/2022/1196) &nbsp;&nbsp;&nbsp;&nbsp; **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
   
-* **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
-  with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_ \
-  Asiacrypt 2022 | [ePrint](https://eprint.iacr.org/2022/1594)
+[AC'22](https://eprint.iacr.org/2022/1594) &nbsp;&nbsp;&nbsp; **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
+       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_
+  
 * **Decentralized Multi-Authority Attribute-Based Inner-Product Functional Encryption from Decisional-BDH**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://mmaitra.bitbucket.io)_\
   Communicated | ePrint available soon
