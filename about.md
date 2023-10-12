@@ -18,7 +18,7 @@ title: Research
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_
   
 PKC'23 &nbsp;&nbsp; **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
-[ePrint](https://eprint.iacr.org/2023/565)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
+[ePrint](https://eprint.iacr.org/2023/565)&nbsp; &nbsp; &nbsp; &nbsp; with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
   
 * **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
   with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_\
