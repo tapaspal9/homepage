@@ -26,12 +26,9 @@ title: Research
 [AC'22](https://eprint.iacr.org/2022/1594) &nbsp;&nbsp;&nbsp; **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_
   
-* **Decentralized Multi-Authority Attribute-Based Inner-Product Functional Encryption from Decisional-BDH**\
-  with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://mmaitra.bitbucket.io)_\
-  Communicated | ePrint available soon
-* **Fully Secure Unbounded Zero Inner Product Encryption with Short Ciphertexts and Keys**\
-  with _Subhranil Dutta_ and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_\
-  ProvSec 2021
+[ProvSec'21](https://link.springer.com/chapter/10.1007/978-3-030-90402-9_13) &nbsp;&nbsp; **Fully Secure Unbounded Zero Inner Product Encryption with Short Ciphertexts and Keys**\
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with _Subhranil Dutta_ and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
+  
 * **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_\
   ASIACRYPT 2021 | [ePrint](https://eprint.iacr.org/2021/1305) | [Talk](https://www.youtube.com/watch?v=uqgqo-R72eU&t=63s)
