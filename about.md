@@ -16,8 +16,9 @@ title: Research
    <li>Neptune</li>
    <li>Mars</li>
 
- <li [ePrint](https://eprint.iacr.org/2023/457)>  **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
-                                            with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_</li>
+ <li> [ePrint](https://eprint.iacr.org/2023/457)>\  
+      **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
+      with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_  </li>
 </ul>
 
 [ePrint](https://eprint.iacr.org/2023/457) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
