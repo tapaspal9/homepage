@@ -81,7 +81,12 @@ title: Research
 
 - [US Patent](https://patents.google.com/patent/WO2023014969A1/) | PCT/US2022/039569\
   **Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums**\
-  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com) 
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)
+
+- [US, EP Patent](https://patents.google.com/patent/EP4254858A1/) | EP23165683.6A\
+  **Decentralized multi-authority attribute-based inner-product functional encryption**\
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://monosijm.github.io)_ filed by [NTT Research, lnc.](https://ntt-research.com) 
+
 
 
 ### Professional Contribution
