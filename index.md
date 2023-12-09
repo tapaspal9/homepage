@@ -2,7 +2,7 @@
 layout: home
 ---
 
-![alt text myimg](https://github.com/tapaspal9/homepage/assets/27273692/8efe5911-eed3-43e5-ab22-133c571fad50){: height="210px" width="200px" style="float:left; padding-right:20px" }
+![alt text myimg](https://github.com/tapaspal9/homepage/assets/27273692/8efe5911-eed3-43e5-ab22-133c571fad50){: height="240px" width="200px" style="float:left; padding-right:20px" }
 
 {: style="text-align: justify" }
 Hi! I am Tapas. Currently, I am a postdoc at [Social Informatics Laboratories](https://www.rd.ntt/e/organization/researcher/?lab=1015) of [NTT Japan](https://www.rd.ntt/e/index.html), working with [Ryo Nishimaki](https://www.nishimaki.info) on quantum cryptography. I obtained my PhD from the department of [Mathematics](http://www.iitkgp.ac.in/department/MA) of [Indian Institute of Technology Kharagpur](http://www.iitkgp.ac.in) under the supervison of [Prof. Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/). My doctoral thesis presents provably secure advanced cryptographic primitives such as witness encryption, fully homomorphic encryption and functional encryption. 
