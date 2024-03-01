@@ -19,9 +19,8 @@ I am currently working with the amaizing [research group](https://crypto.iti.kit
 
 {: style="text-align: justify" }
 I was a research intern at the [Cryptography and Information Security (CIS) Laboratories](https://ntt-research.com/cis/) at [NTT Research](https://ntt-research.com). During this internship, I worked with [Pratish Datta](https://ntt-research.com/cis-people/) in the area of computing on encrypted data. I was also a visiting scientist at the [R. C. Bose Centre for Cryptology and Security](https://www.isical.ac.in/~rcbose/) of [Indian Statistical Institute Kolkata](https://www.isical.ac.in) hosted by [Prof. Mridul Nandi](https://www.isical.ac.in/~mridul/).  
- 
 
-### KIT homepage
+<font color="green"> hi </font> 
 
 
 ### Social Links
