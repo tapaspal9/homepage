@@ -9,7 +9,9 @@ layout: home
 
 
 {: style="text-align: justify" }
-Hi! I am co-leader of [KASTEL](https://kastel-labs.de)-[Secure Computation and Communication](https://ess.kastel.kit.edu/english/135.php) research group at [Karlsruhe Institute of Technology](https://www.kit.edu/english/). The research group is headed by [Andy Rupp](https://crypto.kastel.kit.edu/english/head_of_group.php).   
+Group Leader of [KASTEL](https://kastel-labs.de)-[C&C](https://ess.kastel.kit.edu/english/135.php) @[KIT](https://www.kit.edu/english/). 
+
+The [research group](https://crypto.iti.kit.edu/staff_rupp.php) is headed by [Andy Rupp](https://crypto.kastel.kit.edu/english/head_of_group.php).   
 
 Previously, I was a postdoc at [Social Informatics Laboratories](https://www.rd.ntt/e/organization/researcher/?lab=1015) of [NTT Japan](https://www.rd.ntt/e/index.html), working with [Ryo Nishimaki](https://www.nishimaki.info) on quantum cryptography. I obtained my PhD from the department of [Mathematics](http://www.iitkgp.ac.in/department/MA) of [Indian Institute of Technology Kharagpur](http://www.iitkgp.ac.in) under the supervison of [Prof. Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/). My doctoral thesis presents provably secure advanced cryptographic primitives such as witness encryption, fully homomorphic encryption and functional encryption. 
 
@@ -17,7 +19,9 @@ Previously, I was a postdoc at [Social Informatics Laboratories](https://www.rd.
 I was a research intern at the [Cryptography and Information Security (CIS) Laboratories](https://ntt-research.com/cis/) at [NTT Research](https://ntt-research.com). During this internship, I worked with [Pratish Datta](https://ntt-research.com/cis-people/) in the area of computing on encrypted data. I was also a visiting scientist at the [R. C. Bose Centre for Cryptology and Security](https://www.isical.ac.in/~rcbose/) of [Indian Statistical Institute Kolkata](https://www.isical.ac.in) hosted by [Prof. Mridul Nandi](https://www.isical.ac.in/~mridul/).  
  
 
- 
+### KIT homepage
+
+
 ### Social Links
 
 **[Linkedin](https://www.linkedin.com/in/tapas-pal-7b5a88b7/)**, **[Facebook](https://www.facebook.com/tapas.pal.144/)**
