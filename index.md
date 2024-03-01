@@ -9,8 +9,8 @@ layout: home
 
 
 {: style="text-align: justify" }
-<font color="white"> Group Leader of [KASTEL](https://kastel-labs.de)-[C&C](https://ess.kastel.kit.edu/english/135.php) @ [KIT](https://www.kit.edu/english/)</font>\
-<font color="white">Room 230 [CS 50.34](https://www.kit.edu/campusplan/index_en.php)</font>\
+<font color="white"> Group Leader of </font>[KASTEL](https://kastel-labs.de)-[C&C](https://ess.kastel.kit.edu/english/135.php) @ [KIT](https://www.kit.edu/english/)\
+<font color="white">Room 230 </font>[CS 50.34](https://www.kit.edu/campusplan/index_en.php)\
 <font color="white">Am Fasanengarten 5</font>\
 <font color="white">76131 Karlsruhe</font>\
 <font color="white">[Homepage at KIT](https://crypto.iti.kit.edu/english/staff_rupp_tapas_pal.php)</font>
