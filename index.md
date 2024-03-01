@@ -9,7 +9,7 @@ layout: home
 
 
 {: style="text-align: justify" }
-${\textsf Group Leader of}$ [{\textsf KASTEL}](https://kastel-labs.de)-[{\textsf C&C}]\(https://ess.kastel.kit.edu/english/135.php) @ [KIT](https://www.kit.edu/english/)\
+<code style="color : white"> Group Leader of</code>  [KASTEL](https://kastel-labs.de)-[C&C]\(https://ess.kastel.kit.edu/english/135.php) @ [KIT](https://www.kit.edu/english/)\
 Room 230 [CS 50.34](https://www.kit.edu/campusplan/index_en.php)\
 Am Fasanengarten 5\
 76131 Karlsruhe\
