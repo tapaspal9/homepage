@@ -13,7 +13,7 @@ Group Leader of [KASTEL](https://kastel-labs.de)-[C&C](https://ess.kastel.kit.ed
 Room 230 [CS 50.34](https://www.kit.edu/campusplan/index_en.php)\
 Am Fasanengarten 5\
 76131 Karlsruhe\
-[Homepage](https://crypto.iti.kit.edu/english/staff_rupp_tapas_pal.php)\
+[Homepage at KIT](https://crypto.iti.kit.edu/english/staff_rupp_tapas_pal.php)
 
 I am currently working with the amaizing [research group](https://crypto.iti.kit.edu/english/research_group_rupp.php) at [KASTEL SRL](https://kastel-labs.de) headed by [Andy Rupp](https://crypto.kastel.kit.edu/english/head_of_group.php). Previously, I was a postdoc at [Social Informatics Laboratories](https://www.rd.ntt/e/organization/researcher/?lab=1015) of [NTT Japan](https://www.rd.ntt/e/index.html), working with [Ryo Nishimaki](https://www.nishimaki.info) on quantum cryptography. I obtained my PhD from the department of [Mathematics](http://www.iitkgp.ac.in/department/MA) of [Indian Institute of Technology Kharagpur](http://www.iitkgp.ac.in) under the supervison of [Prof. Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/). My doctoral thesis presents provably secure advanced cryptographic primitives such as witness encryption, fully homomorphic encryption and functional encryption. 
 
