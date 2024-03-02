@@ -14,7 +14,7 @@ layout: home
 <span style="color : lightblue">Room 230</span> [<span style="color : lightblue">CS 50.34</span>](https://www.kit.edu/campusplan/index_en.php)\
 <span style="color : lightblue">Am Fasanengarten 5</span>\
 <span style="color : lightblue">76131 Karlsruhe</span>\
-[<span style="color : lightblue">Homepage-KIT</span>](https://crypto.iti.kit.edu/english/staff_rupp_tapas_pal.php)
+<span style="color : lightblue">Ph(office). +49 721 608-44311</span>\
 
 
 
@@ -26,9 +26,9 @@ I was a research intern at the [Cryptography and Information Security (CIS) Labo
 
 
 
-### Social Links
+### Links
 
-**[Linkedin](https://www.linkedin.com/in/tapas-pal-7b5a88b7/)**, **[Facebook](https://www.facebook.com/tapas.pal.144/)**
+**[Homepage-KIT](https://crypto.iti.kit.edu/english/staff_rupp_tapas_pal.php)**, **[Linkedin](https://www.linkedin.com/in/tapas-pal-7b5a88b7/)**, **[Facebook](https://www.facebook.com/tapas.pal.144/)**
 
 
 ### Visits
