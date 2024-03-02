@@ -14,7 +14,7 @@ layout: home
 <span style="color : lightblue">Room 230</span> [<span style="color : lightblue">CS 50.34</span>](https://www.kit.edu/campusplan/index_en.php)\
 <span style="color : lightblue">Am Fasanengarten 5</span>\
 <span style="color : lightblue">76131 Karlsruhe</span>\
-<span style="color : lightblue">Ph(office). +49 721 608-44311</span>\
+<span style="color : lightblue">Ph(office). +49 721 608-44311</span>
 
 
 
