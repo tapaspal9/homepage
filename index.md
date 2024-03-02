@@ -10,11 +10,11 @@ layout: home
 
 {: style="text-align: justify" }
 
-<span style="color : lightblue"> Group Leader</span> [<span style="color : lightblue">KASTEL</span>](https://kastel-labs.de)-[C&C](https://ess.kastel.kit.edu/english/135.php) @ [KIT](https://www.kit.edu/english/)\
-<span style="color : lightblue">Room 230 [CS 50.34](https://www.kit.edu/campusplan/index_en.php)</span>\
+<span style="color : lightblue"> Group Leader</span> [<span style="color : lightblue">KASTEL</span>](https://kastel-labs.de)-[<span style="color : lightblue">C&C</span>](https://ess.kastel.kit.edu/english/135.php) @ [<span style="color : lightblue">KIT</span>](https://www.kit.edu/english/)\
+<span style="color : lightblue">Room 230</span> [<span style="color : lightblue">CS 50.34</span>](https://www.kit.edu/campusplan/index_en.php)\
 <span style="color : lightblue">Am Fasanengarten 5</span>\
 <span style="color : lightblue">76131 Karlsruhe</span>\
-[Homepage-KIT](https://crypto.iti.kit.edu/english/staff_rupp_tapas_pal.php)
+[<span style="color : lightblue">Homepage-KIT</span>](https://crypto.iti.kit.edu/english/staff_rupp_tapas_pal.php)
 
 
 
