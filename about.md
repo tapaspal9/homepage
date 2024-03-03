@@ -88,6 +88,12 @@ title: Research
   invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://monosijm.github.io)_ filed by [NTT Research, lnc.](https://ntt-research.com) 
 
 
+### Projects
+
+- [Swiss National Science Foundation](https://www.snf.ch/en) | Grant IZSEZ0_220423
+  **Multi-client Unbounded Attribute-Based Inner Product Functional Encryption**\
+  in collaboration with [Prof. Dr. Katerina Mitrokotsa](https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/2e889d58-6b54-431b-ae0e-3198ed46444a/) of [University of St. Gallen](https://www.unisg.ch/en)
+     
 
 ### Professional Contribution
 
