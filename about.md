@@ -104,5 +104,5 @@ CRYPTO'22, AsiaCCS'22, IEEE-IT, JCEN, TCC'22, PKC'23, ASIACRYPT'23, Eurocrypt'24
 
 **Program Committee**
 
-ACM CCS'24, Indocrypt'24
+ACM CCS'24, Indocrypt'24, ICSP'24
 
