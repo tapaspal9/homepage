@@ -76,7 +76,7 @@ title: Research
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_
 
   
-- [TCS'24](https://www.sciencedirect.com/science/article/abs/pii/S0304397524001178)\
+- [TCS'24](https://authors.elsevier.com/c/1inYK15DaIIU6Q)\
   **Reinforcing Privacy in Cloud Computing via Adaptively Secure Non-Zero Inner Product Encryption and Anonymous Identity-Based Revocation in Unbounded Setting**\
   with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
   
