@@ -74,8 +74,12 @@ title: Research
 - [DCC'23](https://link.springer.com/article/10.1007/s10623-023-01219-3) | [ePrint](https://eprint.iacr.org/2021/1305)\
   **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_
-  
 
+  
+- [TCS'24](https://www.sciencedirect.com/science/article/abs/pii/S0304397524001178)\
+  **Reinforcing Privacy in Cloud Computing via Adaptively Secure Non-Zero Inner Product Encryption and Anonymous Identity-Based Revocation in Unbounded Setting**\
+  with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
+  
 
 ### Patents Filed/Published
 
