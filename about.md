@@ -11,7 +11,7 @@ title: Research
 
 ### Conference/ePrint Papers
 
-- [IEEE EuroS&P'24]\
+- IEEE EuroS&P'24\
   **SACfe: Secure Access Control in Functional Encryption with Unbounded Data**\
   with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_ 
 
