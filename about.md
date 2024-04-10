@@ -13,7 +13,7 @@ title: Research
 
 - IEEE EuroS&P'24\
   **SACfe: Secure Access Control in Functional Encryption with Unbounded Data**\
-  with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_ 
+  with Uddipana Dowerah, Subhranil Dutta, Frank Hartmann, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_ 
 
 - [Eurocrypt'24](https://eprint.iacr.org/2023/236)\
   **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
