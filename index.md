@@ -30,7 +30,8 @@ I was a research intern at the [Cryptography and Information Security (CIS) Labo
 ### Recent News
 
 - Our paper on secure access control in functional encryption accepted to IEEE EuroSP'24 is now available at [ePrint](https://eprint.iacr.org/2024/1031).
-- The full version of our Asiacrypt'22 [paper](https://link.springer.com/chapter/10.1007/978-3-031-22963-3_5) on unbounded attribute-weighted sums is accepted to Designs, Codes and Cryptography.
+- The full version of our Asiacrypt'22 [paper](https://link.springer.com/chapter/10.1007/978-3-031-22963-3_5) on unbounded attribute-weighted sums is accepted to the Designs, Codes and Cryptography journal.
+- Our [paper](https://www.sciencedirect.com/science/article/pii/S0304397524001178) on privacy from inner product encryption in cloud computing has been accepted by the Theoretical Computer Science journal.
 - A [US patent](https://patents.google.com/patent/WO2024098074A2/) on our paper on unbounded attribute-weighted sums is now online.
 - I am serving as a PC member of [Indocrypt'24](https://setsindia.in/indocrypt2024/Programcommittee) and [ICSP'24](https://icsp.co.in/2024/committee.html). 
 - Eurocrypt'24 accepts our [paper](https://eprint.iacr.org/2023/236) on achieving certified everlasting security for functional encryption.
