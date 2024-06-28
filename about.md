@@ -11,7 +11,7 @@ title: Research
 
 ### Conference/ePrint Papers
 
-- IEEE EuroS&P'24\
+- [IEEE EuroS&P'24](https://eprint.iacr.org/2024/1031)\
   **SACfe: Secure Access Control in Functional Encryption with Unbounded Data**\
   with Uddipana Dowerah, Subhranil Dutta, Frank Hartmann, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_ 
 
@@ -69,6 +69,10 @@ title: Research
  
 
 ### Journal Publications
+
+- DCC'23 | [ePrint](https://eprint.iacr.org/2022/1594)\
+  **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
+  with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_
 
 - [JoC'23](https://link.springer.com/article/10.1007/s00145-023-09458-2) | [eprint](https://eprint.iacr.org/2023/483)\
   **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
