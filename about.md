@@ -70,38 +70,39 @@ title: Research
 
 ### Journal Publications
 
-- DCC'23 | [ePrint](https://eprint.iacr.org/2022/1594)\
+- DCC'24 | [ePrint](https://eprint.iacr.org/2022/1594)\
   **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
   with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_
+
+- [TCS'24](https://authors.elsevier.com/c/1inYK15DaIIU6Q)\
+  **Reinforcing Privacy in Cloud Computing via Adaptively Secure Non-Zero Inner Product Encryption and Anonymous Identity-Based Revocation in Unbounded Setting**\
+  with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
 
 - [JoC'23](https://link.springer.com/article/10.1007/s00145-023-09458-2) | [eprint](https://eprint.iacr.org/2023/483)\
   **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
   with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_
-  
 
 - [DCC'23](https://link.springer.com/article/10.1007/s10623-023-01219-3) | [ePrint](https://eprint.iacr.org/2021/1305)\
   **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_
 
   
-- [TCS'24](https://authors.elsevier.com/c/1inYK15DaIIU6Q)\
-  **Reinforcing Privacy in Cloud Computing via Adaptively Secure Non-Zero Inner Product Encryption and Anonymous Identity-Based Revocation in Unbounded Setting**\
-  with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
+
   
 
 ### Patents Filed/Published
 
-- [US Patent](https://patents.google.com/patent/WO2023014969A1/) | PCT/US2022/039569\
-  **Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums**\
+- [US Patent](https://patents.google.com/patent/WO2024098074A2/) | PCT/US2023/078860\
+  **Compact functional encryption for unbounded attribute-weighted sums**\
   invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)
 
 - [US, JP, EP Patent](https://patents.google.com/patent/EP4254858A1/) | EP23165683.6A\
   **Decentralized multi-authority attribute-based inner-product functional encryption**\
   invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://monosijm.github.io)_ filed by [NTT Research, lnc.](https://ntt-research.com)
 
-- [US Patent](https://patents.google.com/patent/WO2024098074A2/) | PCT/US2023/078860\
-  **Compact functional encryption for unbounded attribute-weighted sums**\
-  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)  
+- [US Patent](https://patents.google.com/patent/WO2023014969A1/) | PCT/US2022/039569\
+  **Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums**\
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)
 
 
 ### Project Grant
