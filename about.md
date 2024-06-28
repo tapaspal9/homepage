@@ -97,7 +97,11 @@ title: Research
 
 - [US, JP, EP Patent](https://patents.google.com/patent/EP4254858A1/) | EP23165683.6A\
   **Decentralized multi-authority attribute-based inner-product functional encryption**\
-  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://monosijm.github.io)_ filed by [NTT Research, lnc.](https://ntt-research.com) 
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_ and _[Monosij Maitra](https://monosijm.github.io)_ filed by [NTT Research, lnc.](https://ntt-research.com)
+
+- [US Patent](https://patents.google.com/patent/WO2024098074A2/) | PCT/US2023/078860\
+  **Compact functional encryption for unbounded attribute-weighted sums**\
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)  
 
 
 ### Project Grant
