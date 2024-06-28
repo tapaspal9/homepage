@@ -74,7 +74,7 @@ title: Research
   **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
   with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_
 
-- [TCS'24](https://authors.elsevier.com/c/1inYK15DaIIU6Q)\
+- [TCS'24](https://www.sciencedirect.com/science/article/pii/S0304397524001178)\
   **Reinforcing Privacy in Cloud Computing via Adaptively Secure Non-Zero Inner Product Encryption and Anonymous Identity-Based Revocation in Unbounded Setting**\
   with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
 
