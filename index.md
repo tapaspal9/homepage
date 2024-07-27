@@ -27,7 +27,7 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 ### Recent News
 
 - Our paper on secure access control in functional encryption accepted to IEEE EuroSP'24 is now available at [ePrint](https://eprint.iacr.org/2024/1031).
-- The full version of our Asiacrypt'22 [paper](https://link.springer.com/chapter/10.1007/978-3-031-22963-3_5) on unbounded attribute-weighted sums is accepted to the Designs, Codes and Cryptography journal.
+- The full version of our Asiacrypt'22 [paper](https://link.springer.com/chapter/10.1007/978-3-031-22963-3_5) on unbounded attribute-weighted sums is accepted to the [Designs, Codes and Cryptography](https://link.springer.com/article/10.1007/s10623-024-01432-8) journal.
 - Our [paper](https://www.sciencedirect.com/science/article/pii/S0304397524001178) on privacy from inner product encryption in cloud computing has been accepted by the Theoretical Computer Science journal.
 - A [US patent](https://patents.google.com/patent/WO2024098074A2/) on our paper on unbounded attribute-weighted sums is now online.
 - I am serving as a PC member of [Indocrypt'24](https://setsindia.in/indocrypt2024/Programcommittee) and [ICSP'24](https://icsp.co.in/2024/committee.html). 
