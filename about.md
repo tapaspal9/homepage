@@ -70,7 +70,7 @@ title: Research
 
 ### Journal Publications
 
-- DCC'24 | [ePrint](https://eprint.iacr.org/2022/1594)\
+- [DCC'24](https://link.springer.com/article/10.1007/s10623-024-01432-8) | [ePrint](https://eprint.iacr.org/2022/1594)\
   **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
   with _[Katsuyuki Takashima](https://waseda.pure.elsevier.com/en/persons/katsuyuki-takashima)_ and _[Pratish Datta](https://ntt-research.com/cis-people/)_
 
