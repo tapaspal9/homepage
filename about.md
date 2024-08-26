@@ -11,6 +11,10 @@ title: Research
 
 ### Conference/ePrint Papers
 
+- [Asiacrypt'24](https://eprint.iacr.org/2023/457)\
+  **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
+  with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
+
 - [IEEE EuroS&P'24](https://eprint.iacr.org/2024/1031)\
   **SACfe: Secure Access Control in Functional Encryption with Unbounded Data**\
   with Uddipana Dowerah, Subhranil Dutta, Frank Hartmann, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_ 
@@ -19,10 +23,6 @@ title: Research
   **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
   with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_
 
-- [ePrint](https://eprint.iacr.org/2023/457)\
-  **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
-  with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
-  
 - [PKC'23](https://eprint.iacr.org/2023/565)\
   **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_
