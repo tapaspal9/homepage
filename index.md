@@ -25,7 +25,7 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 
 
 ### Recent News
-- Invited to join the review panel of the Mathematical Reviews of the [American Mathematical Society (AMS)](https://www.ams.org/home/page). 
+- Invited to join the reviewer panel of the Mathematical Reviews of the [American Mathematical Society (AMS)](https://www.ams.org/home/page). 
 - Our [paper](https://eprint.iacr.org/2023/457) on registration-based linear functional encryption with access control is accepted to Asiacrypt'24.
 - Our paper on secure access control in functional encryption accepted to IEEE EuroSP'24 is now available at [ePrint](https://eprint.iacr.org/2024/1031).
 - The full version of our Asiacrypt'22 [paper](https://link.springer.com/chapter/10.1007/978-3-031-22963-3_5) on unbounded attribute-weighted sums is accepted to the [Designs, Codes and Cryptography](https://link.springer.com/article/10.1007/s10623-024-01432-8) journal.
