@@ -25,6 +25,7 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 
 
 ### Recent News
+- A paper on multi-client attribute-based unbounded IPFE is accepted at PKC'25.
 - Invited to join the reviewer panel of the Mathematical Reviews of the [American Mathematical Society (AMS)](https://www.ams.org/home/page). 
 - Our [paper](https://eprint.iacr.org/2023/457) on registration-based linear functional encryption with access control is accepted to Asiacrypt'24.
 - Our paper on secure access control in functional encryption accepted to IEEE EuroSP'24 is now available at [ePrint](https://eprint.iacr.org/2024/1031).
@@ -33,7 +34,6 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 - A [US patent](https://patents.google.com/patent/WO2024098074A2/) on our paper on unbounded attribute-weighted sums is now online.
 - I am serving as a PC member of [Indocrypt'24](https://setsindia.in/indocrypt2024/Programcommittee) and [ICSP'24](https://icsp.co.in/2024/committee.html). 
 - Eurocrypt'24 accepts our [paper](https://eprint.iacr.org/2023/236) on achieving certified everlasting security for functional encryption.
-- I am serving as a PC member of [ACM CCS'24](https://www.sigsac.org/ccs/CCS2024/organization/prog-committee.html).
 
 
 ### Links
