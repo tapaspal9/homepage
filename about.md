@@ -11,6 +11,10 @@ title: Research
 
 ### Conference/ePrint Papers
 
+- [PKC'25](https://eprint.iacr.org/2025/423)\
+  **Multi-Client Attribute-Based Unbounded Inner Product Functional Encryption, and More**\
+  with Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, Jenit Tomy
+
 - [Asiacrypt'24](https://eprint.iacr.org/2023/457)\
   **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_, _[Shota Yamada](https://www.cpsec.aist.go.jp/team/acrt/researcher/yamada/index_en.html)_
