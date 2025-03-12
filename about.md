@@ -11,6 +11,11 @@ title: Research
 
 ### Conference/ePrint Papers
 
+
+- [EPRINT](https://eprint.iacr.org/2025/370)\
+  **Simple Public Key Anamorphic Encryption and Signature using Multi-Message Extensions**\
+  with Shalini Banerjee, _[Andy Rupp](https://homepage.ruhr-uni-bochum.de/andy.rupp/)_ and _[Daniel Slamanig]([https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa](https://danielslamanig.info)_
+
 - [PKC'25](https://eprint.iacr.org/2025/423)\
   **Multi-Client Attribute-Based Unbounded Inner Product Functional Encryption, and More**\
   with Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, Jenit Tomy
