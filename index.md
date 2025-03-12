@@ -25,6 +25,7 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 
 
 ### Recent News
+- A [paper](https://eprint.iacr.org/2025/370) on simple anamorphic encryption is now available to ePrint.
 - A [paper](https://eprint.iacr.org/2025/423) on multi-client attribute-based unbounded IPFE is accepted to PKC'25.
 - Invited to join the reviewer panel of the Mathematical Reviews of the [American Mathematical Society (AMS)](https://www.ams.org/home/page). 
 - Our [paper](https://eprint.iacr.org/2023/457) on registration-based linear functional encryption with access control is accepted to Asiacrypt'24.
@@ -32,7 +33,6 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 - The full version of our Asiacrypt'22 [paper](https://link.springer.com/chapter/10.1007/978-3-031-22963-3_5) on unbounded attribute-weighted sums is accepted to the [Designs, Codes and Cryptography](https://link.springer.com/article/10.1007/s10623-024-01432-8) journal.
 - Our [paper](https://www.sciencedirect.com/science/article/pii/S0304397524001178) on privacy from inner product encryption in cloud computing has been accepted by the Theoretical Computer Science journal.
 - A [US patent](https://patents.google.com/patent/WO2024098074A2/) on our paper on unbounded attribute-weighted sums is now online.
-- Eurocrypt'24 accepts our [paper](https://eprint.iacr.org/2023/236) on achieving certified everlasting security for functional encryption.
 
 
 ### Links
