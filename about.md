@@ -101,6 +101,11 @@ title: Research
 
 ### Patents Filed/Published
 
+
+- [US Patent](https://patents.google.com/patent/WO2024151871A1/) | PCT/US2024/011273\
+  **Decentralized multi-authority attribute-based encryption for large universe and unbounded**\
+  invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)
+
 - [US Patent](https://patents.google.com/patent/WO2024098074A2/) | PCT/US2023/078860\
   **Compact functional encryption for unbounded attribute-weighted sums**\
   invented with _[Pratish Datta](https://ntt-research.com/cis-people/)_, filed by [NTT Research, lnc.](https://ntt-research.com)
