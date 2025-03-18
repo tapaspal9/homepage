@@ -25,7 +25,7 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 
 
 ### Recent News
-- Our traceable functional encryption [paper](https://eprint.iacr.org/2022/1196) is accepted for publishing in the IACR [CiC](https://cic.iacr.org) journal.   
+- Our traceable functional encryption [paper](https://eprint.iacr.org/2022/1196) is accepted for publication at the IACR [CiC](https://cic.iacr.org) journal.   
 - A [paper](https://eprint.iacr.org/2025/370) on simple anamorphic encryption is now available to ePrint.
 - A [paper](https://eprint.iacr.org/2025/423) on multi-client attribute-based unbounded IPFE is accepted to PKC'25.
 - Invited to join the reviewer panel of the Mathematical Reviews of the [American Mathematical Society (AMS)](https://www.ams.org/home/page). 
