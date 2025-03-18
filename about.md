@@ -36,7 +36,7 @@ title: Research
   **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
   with _[Pratish Datta](https://ntt-research.com/cis-people/)_
   
-- [EPRINT](https://eprint.iacr.org/2022/1196)\
+- [EPRINT](https://eprint.iacr.org/2022/1196) (A shorter abstract is accepted by CiC)\
   **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
   with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
   
@@ -78,6 +78,10 @@ title: Research
  
 
 ### Journal Publications
+
+- [IACR CiC'25](https://cic.iacr.org) (To appear)\
+  **Fully Collusion Resistant Traceable Identity-Based Inner Product Functional Encryption**\
+  with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
 
 - [DCC'24](https://link.springer.com/article/10.1007/s10623-024-01432-8) | [ePrint](https://eprint.iacr.org/2022/1594)\
   **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
