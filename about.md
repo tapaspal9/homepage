@@ -79,7 +79,7 @@ title: Research
 
 ### Journal Publications
 
-- [IACR CiC'25](https://cic.iacr.org) (To appear)\
+- [IACR CiC'25](https://cic.iacr.org/p/2/1/28)\
   **Fully Collusion Resistant Traceable Identity-Based Inner Product Functional Encryption**\
   with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
 
