@@ -11,6 +11,9 @@ title: Research
 
 ### Conference/ePrint Papers
 
+- [EPRINT](https://eprint.iacr.org/2025/836)\
+  **Registered Functional Encryption for Attribute-Weighted Sums with Access Control**\
+  with Robert Schädlich_
 
 - [EPRINT](https://eprint.iacr.org/2025/370)\
   **Simple Public Key Anamorphic Encryption and Signature using Multi-Message Extensions**\
