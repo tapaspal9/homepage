@@ -11,6 +11,10 @@ title: Research
 
 ### Conference/ePrint Papers
 
+- [EPRINT](https://eprint.iacr.org/2025/967)\
+  **Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More**\
+  with Robert Schädlich and [Erkan Tairi](https://erkantairi.com)
+
 - [EPRINT](https://eprint.iacr.org/2025/836)\
   **Registered Functional Encryption for Attribute-Weighted Sums with Access Control**\
   with Robert Schädlich
