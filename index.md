@@ -25,7 +25,8 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 
 
 ### Recent News
-- A [paper](https://eprint.iacr.org/2025/836) on registered functional encryption is now available to ePrint.
+- A [paper](https://eprint.iacr.org/2025/967) on registered (pseudorandom) functional encryption for TMs is now available to ePrint.
+- A [paper](https://eprint.iacr.org/2025/836) on registered functional encryption for AWS functionalities is now available to ePrint.
 - Our traceable functional encryption [paper](https://eprint.iacr.org/2022/1196) is accepted for publication at the IACR [CiC](https://cic.iacr.org/p/2/1/28) journal.   
 - A [paper](https://eprint.iacr.org/2025/370) on simple anamorphic encryption is now available to ePrint.
 - A [paper](https://eprint.iacr.org/2025/423) on multi-client attribute-based unbounded IPFE is accepted to PKC'25.
