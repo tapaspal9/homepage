@@ -10,11 +10,11 @@ layout: home
 
 {: style="text-align: justify" }
 
-<span style="color : lightblue"> Group Leader</span> [<span style="color : lightblue">KASTEL</span>](https://kastel-labs.de)-[<span style="color : lightblue">C&C</span>](https://ess.kastel.kit.edu/english/135.php) @ [<span style="color : lightblue">KIT</span>](https://www.kit.edu/english/)\
-<span style="color : lightblue">Room 230</span> [<span style="color : lightblue">CS 50.34</span>](https://www.kit.edu/campusplan/index_en.php)\
-<span style="color : lightblue">Am Fasanengarten 5</span>\
-<span style="color : lightblue">76131 Karlsruhe</span>\
-<span style="color : lightblue">Ph(office). +49 721 608-44311</span>
+<span style="color : blue"> Group Leader</span> [<span style="color : blue">KASTEL</span>](https://kastel-labs.de)-[<span style="color : blue">C&C</span>](https://ess.kastel.kit.edu/english/135.php) @ [<span style="color : blue">KIT</span>](https://www.kit.edu/english/)\
+<span style="color : blue">Room 230</span> [<span style="color : blue">CS 50.34</span>](https://www.kit.edu/campusplan/index_en.php)\
+<span style="color : blue">Am Fasanengarten 5</span>\
+<span style="color : blue">76131 Karlsruhe</span>\
+<span style="color : blue">Ph(office). +49 721 608-44311</span>
 
 
 
