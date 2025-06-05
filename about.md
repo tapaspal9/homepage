@@ -21,11 +21,11 @@ title: Research
 
 - [Preprint](https://eprint.iacr.org/2025/370)\
   **Simple Public Key Anamorphic Encryption and Signature using Multi-Message Extensions**\
-  with Shalini Banerjee, _[Andy Rupp](https://homepage.ruhr-uni-bochum.de/andy.rupp/)_ and _[Daniel Slamanig](https://danielslamanig.info)_
+  with _Shalini Banerjee_, _[Andy Rupp](https://homepage.ruhr-uni-bochum.de/andy.rupp/)_ and _[Daniel Slamanig](https://danielslamanig.info)_
 
 - [PKC'25](https://eprint.iacr.org/2025/423)\
   **Multi-Client Attribute-Based Unbounded Inner Product Functional Encryption, and More**\
-  with Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, Jenit Tomy
+  with _Subhranil Dutta_, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _Jenit Tomy_
 
 - [Asiacrypt'24](https://eprint.iacr.org/2023/457)\
   **Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more**\
@@ -33,11 +33,11 @@ title: Research
 
 - [IEEE EuroS&P'24](https://eprint.iacr.org/2024/1031)\
   **SACfe: Secure Access Control in Functional Encryption with Unbounded Data**\
-  with Uddipana Dowerah, Subhranil Dutta, Frank Hartmann, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_ 
+  with _Uddipana Dowerah_, _Subhranil Dutta_, _Frank Hartmann_, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_ 
 
 - [Eurocrypt'24](https://eprint.iacr.org/2023/236)\
   **Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More**\
-  with Taiga Hiroka, Fuyuki Kitagawa, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_
+  with _Taiga Hiroka_, _Fuyuki Kitagawa_, _[Tomoyuki Morimae](http://www2.yukawa.kyoto-u.ac.jp/~tomoyuki.morimae/index.html)_, _[Ryo Nishimaki](https://www.nishimaki.info)_, _[Takashi Yamakawa](https://sites.google.com/view/takashiyamakawa)_
 
 - [PKC'23](https://eprint.iacr.org/2023/565)\
   **Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded**\
@@ -45,7 +45,7 @@ title: Research
   
 - [ePrint](https://eprint.iacr.org/2022/1196) (A shorter abstract is accepted by CiC)\
   **Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices**\
-  with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
+  with _Subhranil Dutta_, _Amit Kumar Singh_ and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
   
 - [Asiacrypt'22](https://eprint.iacr.org/2022/1594)\
   **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
