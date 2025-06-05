@@ -88,7 +88,7 @@ title: Research
 
 - [IACR CiC'25](https://cic.iacr.org/p/2/1/28)\
   **Fully Collusion Resistant Traceable Identity-Based Inner Product Functional Encryption**\
-  with Subhranil Dutta, Amit Kumar Singh and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
+  with _Subhranil Dutta_, _Amit Kumar Singh_ and _[Sourav Mukhopadhyay](http://www.facweb.iitkgp.ac.in/~sourav/)_
 
 - [DCC'24](https://link.springer.com/article/10.1007/s10623-024-01432-8) | [ePrint](https://eprint.iacr.org/2022/1594)\
   **Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH**\
@@ -96,11 +96,11 @@ title: Research
 
 - [TCS'24](https://www.sciencedirect.com/science/article/pii/S0304397524001178)\
   **Reinforcing Privacy in Cloud Computing via Adaptively Secure Non-Zero Inner Product Encryption and Anonymous Identity-Based Revocation in Unbounded Setting**\
-  with Subhranil Dutta and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
+  with _Subhranil Dutta_ and _[Ratna Dutta](http://www.facweb.iitkgp.ac.in/~ratna/)_
 
 - [JoC'23](https://link.springer.com/article/10.1007/s00145-023-09458-2) | [eprint](https://eprint.iacr.org/2023/483)\
   **Unbounded Predicate Inner Product Functional Encryption from Pairings**\
-  with Uddipana Dowerah, Subhranil Dutta, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_
+  with _Uddipana Dowerah_, _Subhranil Dutta_, _[Aikaterini Mitrokotsa](https://www.alexandria.unisg.ch/persons/Katerina_Mitrokotsa)_, _[Sayantan Mukherjee](https://www.idrbt.ac.in/dr-sayantan-mukherjee/)_
 
 - [DCC'23](https://link.springer.com/article/10.1007/s10623-023-01219-3) | [ePrint](https://eprint.iacr.org/2021/1305)\
   **(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin**\
@@ -134,7 +134,7 @@ title: Research
 
 - [Swiss National Science Foundation](https://www.snf.ch/en) | Grant IZSEZ0_220423\
   **Multi-client Unbounded Attribute-Based Inner Product Functional Encryption**\
-  in collaboration with [Prof. Dr. Katerina Mitrokotsa](https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/2e889d58-6b54-431b-ae0e-3198ed46444a/) of [University of St. Gallen](https://www.unisg.ch/en)
+  in collaboration with _[Prof. Dr. Katerina Mitrokotsa](https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/2e889d58-6b54-431b-ae0e-3198ed46444a/)_ of [University of St. Gallen](https://www.unisg.ch/en) _(Completed)_
      
 
 ### Professional Contribution
