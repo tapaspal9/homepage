@@ -25,6 +25,7 @@ I am currently working with the [Research Group Rupp](https://crypto.iti.kit.edu
 
 
 ### Recent News
+- Invited to join the PC of ACM CCS 2026.
 - I am serving as a PC member of [Indocrypt'25](https://www.indocrypt2025.in).
 - A [paper](https://eprint.iacr.org/2025/967) on registered (pseudorandom) functional encryption for TMs is now available to ePrint.
 - A [paper](https://eprint.iacr.org/2025/836) on registered functional encryption for AWS functionalities is now available to ePrint.
