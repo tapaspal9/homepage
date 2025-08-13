@@ -11,6 +11,10 @@ title: Research
 
 ### Conference/ePrint Papers
 
+- [Asiacrypt'25](https://asiacrypt.iacr.org/2025/)\
+  **A General Framework for Registered Functional Encryption via User-Specific Pre-Constraining**\
+  with _[Robert Schädlich](https://rschaedlich.github.io)_ (ePrint comming soon..)
+
 - [Preprint](https://eprint.iacr.org/2025/967)\
   **Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More**\
   with _[Robert Schädlich](https://rschaedlich.github.io)_ and _[Erkan Tairi](https://erkantairi.com)_
@@ -134,7 +138,7 @@ title: Research
 
 - [Swiss National Science Foundation](https://www.snf.ch/en) | Grant IZSEZ0_220423\
   **Multi-client Unbounded Attribute-Based Inner Product Functional Encryption**\
-  in collaboration with _[Prof. Dr. Katerina Mitrokotsa](https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/2e889d58-6b54-431b-ae0e-3198ed46444a/)_ of [University of St. Gallen](https://www.unisg.ch/en) _(Completed)_
+  in collaboration with _[Prof. Dr. Katerina Mitrokotsa](https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/2e889d58-6b54-431b-ae0e-3198ed46444a/)_ of [University of St. Gallen](https://www.unisg.ch/en) _(Completed with 3 publications: JoC, IEEE-EuroSP, PKC)_ 
      
 
 ### Professional Contribution
