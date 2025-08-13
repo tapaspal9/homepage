@@ -138,7 +138,7 @@ title: Research
 
 - [Swiss National Science Foundation](https://www.snf.ch/en) | Grant IZSEZ0_220423\
   **Multi-client Unbounded Attribute-Based Inner Product Functional Encryption**\
-  in collaboration with _[Prof. Dr. Katerina Mitrokotsa](https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/2e889d58-6b54-431b-ae0e-3198ed46444a/)_ of [University of St. Gallen](https://www.unisg.ch/en) _(Completed with 3 publications: JoC, IEEE-EuroSP, PKC)_ 
+  in collaboration with _[Prof. Dr. Katerina Mitrokotsa](https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/2e889d58-6b54-431b-ae0e-3198ed46444a/)_ of [University of St. Gallen](https://www.unisg.ch/en) _(Completed with 3 publications at JoC, IEEE-EuroSP, PKC)_ 
      
 
 ### Professional Contribution
@@ -150,5 +150,5 @@ CRYPTO'22, AsiaCCS'22, IEEE-IT, JCEN, TCC'22, PKC'23, ASIACRYPT'23, AsiaCCS'24, 
 
 **Program Committee**
 
-ACM CCS'24, Indocrypt'24, ICSP'24
+ACM CCS'{24, 26}, Indocrypt'24, ICSP'24
 
