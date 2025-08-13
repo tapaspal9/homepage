@@ -13,7 +13,7 @@ title: Research
 
 - [Asiacrypt'25](https://asiacrypt.iacr.org/2025/)\
   **A General Framework for Registered Functional Encryption via User-Specific Pre-Constraining**\
-  with _[Robert Schädlich](https://rschaedlich.github.io)_ (ePrint comming soon..)
+  with _[Robert Schädlich](https://rschaedlich.github.io)_ (ePrint coming shortly)
 
 - [Preprint](https://eprint.iacr.org/2025/967)\
   **Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More**\
