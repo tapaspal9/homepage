@@ -24,6 +24,7 @@ I am currently a researcher at the [Research Group Rupp](https://crypto.iti.kit.
 
 
 ### Recent News
+- Invited to join the PC of ACM [WWW'26](https://www2026.thewebconf.org).
 - A paper on a generic framework for building registered FEs is accepted by [Asiacrypt'25](https://asiacrypt.iacr.org/2025/). 
 - Invited to join the PC of ACM CCS 2026.
 - I am serving as a PC member of [Indocrypt'25](https://www.indocrypt2025.in).
