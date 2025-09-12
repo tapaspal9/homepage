@@ -151,5 +151,5 @@ CRYPTO'22, AsiaCCS'22, IEEE-IT, JCEN, TCC'22, PKC'23, ASIACRYPT'23, AsiaCCS'24, 
 
 **Program Committee**
 
-ACM CCS'{24, 26}, ACM WWW'26, Indocrypt'{24,25}, ICSP'{24,25}
+ACM CCS'{24, 26}, ACM WWW'26, Indocrypt'{24, 25}, ICSP'{24, 25}
 
