@@ -11,6 +11,10 @@ title: Research
 
 ### Conference/ePrint Papers
 
+- [PKC'26](https://eprint.iacr.org/2025/836)\
+  **Registered Functional Encryption for Attribute-Weighted Sums with Access Control**\
+  with _[Robert Schädlich](https://rschaedlich.github.io)_
+
 - [Asiacrypt'25](https://eprint.iacr.org/2025/2207)\
   **A General Framework for Registered Functional Encryption via User-Specific Pre-Constraining**\
   with _[Robert Schädlich](https://rschaedlich.github.io)_ 
@@ -18,10 +22,6 @@ title: Research
 - [Preprint](https://eprint.iacr.org/2025/967)\
   **Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More**\
   with _[Robert Schädlich](https://rschaedlich.github.io)_ and _[Erkan Tairi](https://erkantairi.com)_
-
-- [Preprint](https://eprint.iacr.org/2025/836)\
-  **Registered Functional Encryption for Attribute-Weighted Sums with Access Control**\
-  with _[Robert Schädlich](https://rschaedlich.github.io)_
 
 - [Preprint](https://eprint.iacr.org/2025/370)\
   **Simple Public Key Anamorphic Encryption and Signature using Multi-Message Extensions**\
