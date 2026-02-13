@@ -24,7 +24,9 @@ I am currently a researcher at the [Research Group Rupp](https://crypto.iti.kit.
 
 
 ### Recent News
-- I will be in the PC of ACM [APKC 2026](https://iseclab.ec.t.kanazawa-u.ac.jp/en/APKC2026.html). 
+- I will be in the PC of PKC 2027.
+- A paper on registered FE for attribute-weighted sums is accepted by [PKC 2026](https://pkc.iacr.org/2026/).
+- I am serving as a PC member of ACM [APKC 2026](https://iseclab.ec.t.kanazawa-u.ac.jp/en/APKC2026.html). 
 - Invited to join the PC of ACM [WWW'26](https://www2026.thewebconf.org).
 - A paper on a generic framework for building registered FEs is accepted by [Asiacrypt'25](https://asiacrypt.iacr.org/2025/). 
 - Invited to join the PC of ACM [CCS 2026](https://www.sigsac.org/ccs/CCS2026/).
