@@ -146,10 +146,10 @@ title: Research
 
 **Reviewer or Subreviewer**
 
-TCS, DCC, INDOCRYPT'20, INDOCRYPT'21, ACNS'22, IEEE-IFS, IET-IS, 
-CRYPTO'22, AsiaCCS'22, IEEE-IT, JCEN, TCC'22, PKC'23, ASIACRYPT'23, AsiaCCS'24, Eurocrypt'24, Crypto'24 
+IEEE-IT, TCS, DCC, ACNS'22, IEEE-IFS, IET-IS, CSI, JCEN, 
+AsiaCCS'22, INDOCRYPT'{20, 21}, TCC'22, PKC'23, ASIACRYPT'{23, 25}, AsiaCCS'24, Eurocrypt'{24, 25}, Crypto'{22, 24, 25, 26} 
 
 **Program Committee**
 
-ACM CCS'{24, 26}, ACM WWW'26, Indocrypt'{24, 25}, ICSP'{24, 25}
+ACM CCS'{24, 26}, ACM APKC'26, ACM WWW'26, Indocrypt'{24, 25}, ICSP'{24, 25}
 
