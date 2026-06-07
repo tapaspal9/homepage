@@ -1,221 +1,244 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Tapas Pal",
+    "label": "Cryptographer · Group Leader, Secure Computation & Communication, KASTEL SRL, KIT",
+    "image": "prof_pic.jpg",
+    "email": "tapas.pal@kit.edu",
+    "phone": "(+49) 15510083039",
+    "url": "https://tapaspal9.github.io",
+    "summary": "Cryptographer working on the foundations and real-world deployment of advanced public-key encryption. I design provably secure functional, attribute-based, and registered encryption schemes that decentralize trust, make computation on encrypted data verifiable, and bring strong privacy guarantees to cloud platforms, digital infrastructure, and AI systems. The work spans rigorous theory (pairing- and lattice-based constructions with formal security proofs) and applied impact (multiple international patents and industry technology due-diligence). Author of 20+ peer-reviewed papers at leading venues including Crypto, Eurocrypt, Asiacrypt, PKC, and the Journal of Cryptology.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Am Fasanengarten 5",
+      "postalCode": "76131",
+      "city": "Karlsruhe",
+      "countryCode": "DE",
+      "region": "Germany"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "Tapas Pal",
+        "url": "https://scholar.google.co.in/citations?user=7N8SUDMAAAAJ&hl=en"
+      },
+      {
+        "network": "DBLP",
+        "username": "Tapas Pal",
+        "url": "https://dblp.org/pid/222/6843.html"
+      },
+      {
+        "network": "ORCID",
+        "username": "0000-0001-6278-0418",
+        "url": "https://orcid.org/0000-0001-6278-0418"
+      },
+      {
+        "network": "GitHub",
+        "username": "tapaspal9",
+        "url": "https://github.com/tapaspal9"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "tapas-pal-7b5a88b7",
+        "url": "https://www.linkedin.com/in/tapas-pal-7b5a88b7/"
+      }
+    ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
+      "name": "KASTEL Security Research Labs, Karlsruhe Institute of Technology (KIT)",
+      "position": "Group Leader, Secure Computation & Communication",
+      "location": "Karlsruhe, Germany",
+      "startDate": "2024",
+      "endDate": "",
+      "summary": "Lead a research group on privacy-enhancing technologies, covering research strategy, proposal coordination, and mentoring of early-career researchers."
     },
     {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
+      "name": "Social Informatics Laboratories, NTT Corporation",
+      "position": "Postdoctoral Fellow",
+      "location": "Tokyo, Japan",
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "Computing on encrypted data and advanced functional-encryption primitives (host: Dr. Ryo Nishimaki)."
     },
     {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "Cyber Security Group, University of St. Gallen",
+      "position": "Visiting Researcher",
+      "location": "St. Gallen, Switzerland",
+      "startDate": "2023-09",
+      "endDate": "2023-10",
+      "summary": "Supervised the project on multi-client attribute-based unbounded inner-product functional encryption."
     },
     {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "R. C. Bose Centre for Cryptology & Security, ISI Kolkata",
+      "position": "Visiting Scientist",
+      "location": "Kolkata, India",
+      "startDate": "2021-11",
+      "endDate": "2021-12",
+      "summary": "Functional encryption and its applications (host: Prof. Mridul Nandi)."
     },
     {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "Cryptography & Information Security (CIS) Lab, NTT Research, Inc.",
+      "position": "Research Intern",
+      "location": "Sunnyvale, USA",
+      "startDate": "2021-02",
+      "endDate": "2021-10",
+      "summary": "Functional encryption (with Dr. Pratish Datta)."
+    },
+    {
+      "name": "Department of Mathematics, IIT Kharagpur",
+      "position": "Junior & Senior Research Fellow",
+      "location": "Kharagpur, India",
+      "startDate": "2016",
+      "endDate": "2021",
+      "summary": "Doctoral research in cryptography."
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "D11Z.Ventures GmbH & Co. KG",
+      "position": "Cryptography Consultant (pro bono)",
+      "startDate": "2025-11",
+      "endDate": "2025-11",
+      "summary": "Technical due-diligence on a password-less access-control platform (MyCena); startup evaluation and advisory."
+    },
+    {
+      "organization": "D11Z.Ventures GmbH & Co. KG",
+      "position": "Cryptography Consultant (pro bono)",
+      "startDate": "2025-03",
+      "endDate": "2025-03",
+      "summary": "Technical due-diligence on cryptographic image-authenticity technology (TrustNXT); startup evaluation and advisory."
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Physics",
-      "studyType": "PhD",
-      "startDate": "1900-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": ["Theory of Relativity"],
-      "highlights": ["Description 1.", "Description 2."]
+      "institution": "Indian Institute of Technology Kharagpur",
+      "location": "Kharagpur, India",
+      "area": "Cryptography",
+      "studyType": "Ph.D.",
+      "startDate": "2016",
+      "endDate": "2021",
+      "summary": "Advisor: Prof. Ratna Dutta. Thesis: Designing Provably Secure Advanced Cryptographic Primitives — Witness Encryption, Fully Homomorphic Encryption, and Functional Encryption. Defended 6 October 2021."
     },
     {
-      "institution": "Eidgenössische Technische Hochschule",
-      "location": "Zurich, Switzerland",
-      "area": "Physics",
-      "studyType": "Federal teaching diploma",
-      "startDate": "1896-01-01",
-      "endDate": "1900-01-01",
-      "score": "",
-      "courses": [],
-      "highlights": ["Description 1.", "Description 2."]
+      "institution": "Indian Institute of Technology Kharagpur",
+      "location": "Kharagpur, India",
+      "area": "Mathematics",
+      "studyType": "M.Sc.",
+      "startDate": "2014",
+      "endDate": "2016",
+      "score": "CGPA 9.47/10 · Batch Rank 2"
+    },
+    {
+      "institution": "Scottish Church College, University of Calcutta",
+      "location": "Kolkata, India",
+      "area": "Mathematics (Honours)",
+      "studyType": "B.Sc.",
+      "startDate": "2011",
+      "endDate": "2014",
+      "score": "First Class First · 88.88%"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Multi-Client Unbounded Attribute-Based Inner Product Functional Encryption",
+      "startDate": "2023",
+      "endDate": "2023",
+      "description": "Swiss National Science Foundation (SNSF) grant, University of St. Gallen, with PI Prof. Katerina Mitrokotsa. Completed.",
+      "url": "https://www.snf.ch/en"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Competing position offers (declined)",
+      "date": "2023",
+      "awarder": "University of St. Gallen & University of Klagenfurt",
+      "summary": "Senior Researcher, Cyber Security Group, University of St. Gallen, Switzerland; and Senior Scientist / Lecturer, Cyber Security Research Group, University of Klagenfurt, Austria."
     },
     {
-      "title": "Max Planck Medal",
-      "date": "2029-01-01",
-      "awarder": "German Physical Society",
-      "summary": ""
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
+      "title": "ERCIM Postdoctoral Fellowship",
+      "date": "2021",
+      "awarder": "European Research Consortium for Informatics and Mathematics, NTNU, Norway"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
+      "title": "Junior Research Fellowship (JRF), Mathematical Sciences",
+      "date": "2016",
+      "awarder": "University Grants Commission (UGC), India",
+      "summary": "All-India Rank 78."
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "title": "Joint Admission Test for M.Sc. (JAM), Mathematics",
+      "date": "2014",
+      "awarder": "IITs / IISc",
+      "summary": "All-India Rank 121."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "title": "Seven merit medals & prizes for excellence in Mathematics",
+      "date": "2013 – 2014",
+      "awarder": "Scottish Church College, Kolkata",
+      "summary": "Including the Krishnalal De Medal (best performance in Mathematics), Pravat Kr. Ghosh Medal, Prof. Alexander Thomson Prize, and Dr. Alexander Duff Memorial Prize."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Programming",
+      "keywords": ["C", "C++"]
+    },
+    {
+      "name": "Scientific Computing",
+      "keywords": ["MATLAB", "Mathematica"]
+    },
+    {
+      "name": "Tools & Typesetting",
+      "keywords": ["LaTeX", "Linux"]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "Bengali",
+      "fluency": "Native"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Fluent"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Full professional working proficiency"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Research Interests",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Functional & attribute-based encryption",
+        "Registered & multi-authority encryption",
+        "Verifiable computation on encrypted data",
+        "Privacy-enhancing technologies",
+        "Lattice- & pairing-based cryptography",
+        "Witness encryption & obfuscation",
+        "Threshold & post-quantum cryptography"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
+      "name": "Prof. Ratna Dutta",
+      "reference": "Department of Mathematics, IIT Kharagpur, India."
     },
     {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
-    }
-  ],
-  "projects": [
+      "name": "Prof. Sourav Mukhopadhyay",
+      "reference": "Department of Mathematics, IIT Kharagpur, India."
+    },
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "Dr. Andy Rupp",
+      "reference": "Faculty of Science, Technology & Medicine, University of Luxembourg, Luxembourg."
+    },
+    {
+      "name": "Prof. Katerina Mitrokotsa",
+      "reference": "School of Computer Science, University of St. Gallen, Switzerland."
+    },
+    {
+      "name": "Dr. Ryo Nishimaki",
+      "reference": "Distinguished Research Scientist, Social Informatics Laboratories, NTT, Tokyo, Japan."
     }
   ]
 }
