@@ -218,27 +218,5 @@
         "Threshold & post-quantum cryptography"
       ]
     }
-  ],
-  "references": [
-    {
-      "name": "Prof. Ratna Dutta",
-      "reference": "Department of Mathematics, IIT Kharagpur, India."
-    },
-    {
-      "name": "Prof. Sourav Mukhopadhyay",
-      "reference": "Department of Mathematics, IIT Kharagpur, India."
-    },
-    {
-      "name": "Dr. Andy Rupp",
-      "reference": "Faculty of Science, Technology & Medicine, University of Luxembourg, Luxembourg."
-    },
-    {
-      "name": "Prof. Katerina Mitrokotsa",
-      "reference": "School of Computer Science, University of St. Gallen, Switzerland."
-    },
-    {
-      "name": "Dr. Ryo Nishimaki",
-      "reference": "Distinguished Research Scientist, Social Informatics Laboratories, NTT, Tokyo, Japan."
-    }
   ]
 }
