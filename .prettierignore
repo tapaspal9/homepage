@@ -13,6 +13,7 @@ assets/**/*.min.css
 # --- content files whose custom formatting the linter flags (safe to skip) ---
 _config.yml
 _data/socials.yml
+_data/cv.yml
 _news/
 README.md
 
