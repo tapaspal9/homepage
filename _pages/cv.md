@@ -4,9 +4,9 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
+cv_pdf: /assets/pdf/cv.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+description: Cryptography researcher and group leader at KIT. My work spans functional encryption, anamorphic cryptography, verifiable computation, and privacy-enhancing technologies. Download the full CV using the link above.
 toc:
   sidebar: left
 ---
