@@ -1,4 +1,18 @@
+# --- al-folio generated / vendored files (do not format) ---
+_site/
+.jekyll-cache/
+.bundle/
+vendor/
+node_modules/
+assets/js/distillpub/
+assets/**/*.min.js
+assets/**/*.min.css
+*.min.js
+*.min.css
+
+# --- content files whose custom formatting the linter flags (safe to skip) ---
 _config.yml
 _data/socials.yml
 _news/
 README.md
+
