@@ -98,18 +98,20 @@ cv:
     Volunteer:
       - company: D11Z.Ventures GmbH & Co. KG
         position: Cryptography Consultant (pro bono)
+        location: Germany
         start_date: 2025-11
         end_date: 2025-11
         summary: Technical due-diligence on a password-less access-control platform (MyCena); startup evaluation and advisory.
 
       - company: D11Z.Ventures GmbH & Co. KG
         position: Cryptography Consultant (pro bono)
+        location: Germany
         start_date: 2025-03
         end_date: 2025-03
         summary: Technical due-diligence on cryptographic image-authenticity technology (TrustNXT); startup evaluation and advisory.
 
     Awards:
-      - title: Competing position offers (declined)
+      - title: Competing Position Offers
         date: 2023
         awarder: "University of St. Gallen & University of Klagenfurt"
         summary: Senior Researcher, Cyber Security Group, University of St. Gallen, Switzerland; and Senior Scientist / Lecturer, Cyber Security Research Group, University of Klagenfurt, Austria.
@@ -121,12 +123,12 @@ cv:
       - title: Junior Research Fellowship (JRF), Mathematical Sciences
         date: 2016
         awarder: University Grants Commission (UGC), India
-        summary: All-India Rank 78.
+        #summary: All-India Rank 78.
 
       - title: Joint Admission Test for M.Sc. (JAM), Mathematics
         date: 2014
         awarder: IITs / IISc
-        summary: All-India Rank 121.
+        #summary: All-India Rank 121.
 
       - title: Seven merit medals & prizes for excellence in Mathematics
         date: 2014
@@ -164,8 +166,8 @@ cv:
     Projects:
       - name: "SNSF Grant — Multi-Client Unbounded Attribute-Based Inner Product Functional Encryption"
         summary: Swiss National Science Foundation (SNSF) grant at the University of St. Gallen, with PI Prof. Katerina Mitrokotsa. Completed.
-        start_date: 2023
-        end_date: 2023
+        start_date: 2023-09
+        end_date: 2023-12
         highlights:
           - "Completed with publications at JoC, IEEE EuroS&P, and PKC."
 
