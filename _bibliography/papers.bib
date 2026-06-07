@@ -1,115 +1,305 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{crypto = {Annual International Cryptology Conference (CRYPTO)}}
+@string{eurocrypt = {Annual International Conference on the Theory and Applications of Cryptographic Techniques (EUROCRYPT)}}
+@string{asiacrypt = {International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT)}}
+@string{pkc = {IACR International Conference on Practice and Theory of Public-Key Cryptography (PKC)}}
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
+%% ------------------------------------------------------------------
+%% NOTE FROM SETUP:
+%%  - Author order below follows the common IACR alphabetical convention.
+%%    Please verify each entry against the published version / your DBLP
+%%    page and reorder if needed. DBLP gives you canonical BibTeX you can
+%%    paste straight in: https://dblp.org/pid/222/6843.html
+%%  - `selected={true}` controls which papers appear under "selected
+%%    publications" on the homepage. Adjust to taste.
+%%  - `abbr` is the little venue badge. `bibtex_show` enables the popup.
+%% ------------------------------------------------------------------
 
-@book{einstein1956investigations,
+%% ===================== CONFERENCE / EPRINT =====================
+
+@inproceedings{banerjee2026anamorphic,
+  abbr      = {CRYPTO},
+  title     = {Simple Public Key Anamorphic Encryption and Signature using Multi-Message Extensions},
+  author    = {Banerjee, Shalini and Pal, Tapas and Rupp, Andy and Slamanig, Daniel},
+  booktitle = crypto,
+  year      = {2026},
+  html      = {https://eprint.iacr.org/2025/370},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  selected  = {true}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@inproceedings{pal2026registered,
+  abbr      = {PKC},
+  title     = {Registered Functional Encryption for Attribute-Weighted Sums with Access Control},
+  author    = {Pal, Tapas and Sch{\"a}dlich, Robert},
+  booktitle = pkc,
+  year      = {2026},
+  html      = {https://eprint.iacr.org/2025/836},
+  bibtex_show = {true}
+}
+
+@inproceedings{pal2025framework,
+  abbr      = {ASIACRYPT},
+  title     = {A General Framework for Registered Functional Encryption via User-Specific Pre-Constraining},
+  author    = {Pal, Tapas and Sch{\"a}dlich, Robert},
+  booktitle = asiacrypt,
+  year      = {2025},
+  html      = {https://eprint.iacr.org/2025/2207},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  selected  = {true}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+@misc{pal2025registeredprf,
+  abbr         = {ePrint},
+  title        = {Registered Functional Encryption for Pseudorandom Functionalities from Lattices: Registered ABE for Unbounded Depth Circuits and Turing Machines, and More},
+  author       = {Pal, Tapas and Sch{\"a}dlich, Robert and Tairi, Erkan},
+  howpublished = {Cryptology ePrint Archive, Paper 2025/967},
+  year         = {2025},
+  html         = {https://eprint.iacr.org/2025/967},
+  bibtex_show  = {true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
+@inproceedings{dutta2025multiclient,
+  abbr      = {PKC},
+  title     = {Multi-Client Attribute-Based Unbounded Inner Product Functional Encryption, and More},
+  author    = {Dutta, Subhranil and Mitrokotsa, Aikaterini and Pal, Tapas and Tomy, Jenit},
+  booktitle = pkc,
+  year      = {2025},
+  html      = {https://eprint.iacr.org/2025/423},
+  bibtex_show = {true}
 }
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@inproceedings{datta2024registered,
+  abbr      = {ASIACRYPT},
+  title     = {Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more},
+  author    = {Datta, Pratish and Pal, Tapas and Yamada, Shota},
+  booktitle = asiacrypt,
+  year      = {2024},
+  html      = {https://eprint.iacr.org/2023/457},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  selected  = {true}
 }
 
-@book{przibram1967letters,
+@inproceedings{dowerah2024sacfe,
+  abbr      = {EuroS&P},
+  title     = {SACfe: Secure Access Control in Functional Encryption with Unbounded Data},
+  author    = {Dowerah, Uddipana and Dutta, Subhranil and Hartmann, Frank and Mitrokotsa, Aikaterini and Mukherjee, Sayantan and Pal, Tapas},
+  booktitle = {IEEE European Symposium on Security and Privacy (EuroS\&P)},
+  year      = {2024},
+  html      = {https://eprint.iacr.org/2024/1031},
+  bibtex_show = {true}
+}
+
+@inproceedings{hiroka2024certified,
+  abbr      = {EUROCRYPT},
+  title     = {Certified Everlasting Secure Collusion-Resistant Functional Encryption, and More},
+  author    = {Hiroka, Taiga and Kitagawa, Fuyuki and Morimae, Tomoyuki and Nishimaki, Ryo and Pal, Tapas and Yamakawa, Takashi},
+  booktitle = eurocrypt,
+  year      = {2024},
+  html      = {https://eprint.iacr.org/2023/236},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  selected  = {true}
+}
+
+@inproceedings{datta2023decentralized,
+  abbr      = {PKC},
+  title     = {Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded},
+  author    = {Datta, Pratish and Pal, Tapas},
+  booktitle = pkc,
+  year      = {2023},
+  html      = {https://eprint.iacr.org/2023/565},
+  bibtex_show = {true}
+}
+
+@misc{dutta2022embedded,
+  abbr         = {ePrint},
+  title        = {Embedded Identity Traceable Identity-Based IPFE from Pairings and Lattices},
+  author       = {Dutta, Subhranil and Mukhopadhyay, Sourav and Pal, Tapas and Singh, Amit Kumar},
+  howpublished = {Cryptology ePrint Archive, Paper 2022/1196 (shorter version at IACR CiC)},
+  year         = {2022},
+  html         = {https://eprint.iacr.org/2022/1196},
+  bibtex_show  = {true}
+}
+
+@inproceedings{datta2022compact,
+  abbr      = {ASIACRYPT},
+  title     = {Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH},
+  author    = {Datta, Pratish and Pal, Tapas and Takashima, Katsuyuki},
+  booktitle = asiacrypt,
+  year      = {2022},
+  html      = {https://eprint.iacr.org/2022/1594},
+  bibtex_show = {true}
+}
+
+@inproceedings{dutta2021fully,
+  abbr      = {ProvSec},
+  title     = {Fully Secure Unbounded Zero Inner Product Encryption with Short Ciphertexts and Keys},
+  author    = {Dutta, Ratna and Dutta, Subhranil and Pal, Tapas},
+  booktitle = {International Conference on Provable Security (ProvSec)},
+  year      = {2021},
+  html      = {https://link.springer.com/chapter/10.1007/978-3-030-90402-9_13},
+  bibtex_show = {true}
+}
+
+@inproceedings{datta2021adaptively,
+  abbr      = {ASIACRYPT},
+  title     = {(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin},
+  author    = {Datta, Pratish and Pal, Tapas},
+  booktitle = asiacrypt,
+  year      = {2021},
+  html      = {https://eprint.iacr.org/2021/1305},
+  bibtex_show = {true}
+}
+
+@inproceedings{dutta2021attribute,
+  abbr      = {LATINCRYPT},
+  title     = {Attribute-Based Access Control for Inner Product Functional Encryption from LWE},
+  author    = {Dutta, Ratna and Pal, Tapas},
+  booktitle = {International Conference on Cryptology and Information Security in Latin America (LATINCRYPT)},
+  year      = {2021},
+  html      = {https://eprint.iacr.org/2021/178},
+  bibtex_show = {true}
+}
+
+@inproceedings{dutta2021chosen,
+  abbr      = {ACISP},
+  title     = {Chosen Ciphertext Secure Functional Encryption from Constrained Witness PRF},
+  author    = {Dutta, Ratna and Pal, Tapas},
+  booktitle = {Australasian Conference on Information Security and Privacy (ACISP)},
+  year      = {2021},
+  html      = {https://eprint.iacr.org/2021/512},
+  bibtex_show = {true}
+}
+
+@inproceedings{dutta2021cca,
+  abbr      = {ACISP},
+  title     = {CCA Secure Attribute-Hiding Inner Product Encryption from Minimal Assumption},
+  author    = {Dutta, Ratna and Pal, Tapas},
+  booktitle = {Australasian Conference on Information Security and Privacy (ACISP)},
+  year      = {2021},
+  html      = {https://eprint.iacr.org/2020/1085},
+  bibtex_show = {true}
+}
+
+@inproceedings{dutta2020chosen,
+  abbr      = {CANS},
+  title     = {Chosen-Ciphertext Secure Multi-Identity and Multi-Attribute Pure FHE},
+  author    = {Dutta, Ratna and Pal, Tapas},
+  booktitle = {International Conference on Cryptology and Network Security (CANS)},
+  year      = {2020},
+  html      = {https://eprint.iacr.org/2020/1382},
+  bibtex_show = {true}
+}
+
+@inproceedings{dutta2020semi,
+  abbr      = {ProvSec},
+  title     = {Semi-Adaptively Secure Offline Witness Encryption from Puncturable Witness PRF},
+  author    = {Dutta, Ratna and Pal, Tapas},
+  booktitle = {International Conference on Provable Security (ProvSec)},
+  year      = {2020},
+  html      = {https://eprint.iacr.org/2020/479},
+  bibtex_show = {true}
+}
+
+@inproceedings{dutta2019offline,
+  abbr      = {ACISP},
+  title     = {Offline Witness Encryption from Witness PRF and Randomized Encoding in CRS Model},
+  author    = {Dutta, Ratna and Pal, Tapas},
+  booktitle = {Australasian Conference on Information Security and Privacy (ACISP)},
+  year      = {2019},
+  html      = {https://eprint.iacr.org/2018/587},
+  bibtex_show = {true}
+}
+
+%% ===================== JOURNAL =====================
+
+@article{dutta2025fully,
+  abbr    = {CiC},
+  title   = {Fully Collusion Resistant Traceable Identity-Based Inner Product Functional Encryption},
+  author  = {Dutta, Subhranil and Mukhopadhyay, Sourav and Pal, Tapas and Singh, Amit Kumar},
+  journal = {IACR Communications in Cryptology (CiC)},
+  year    = {2025},
+  html    = {https://cic.iacr.org/p/2/1/28},
+  bibtex_show = {true}
+}
+
+@article{datta2024compactjournal,
+  abbr    = {DCC},
+  title   = {Compact FE for Unbounded Attribute-Weighted Sums for Logspace from SXDH},
+  author  = {Datta, Pratish and Pal, Tapas and Takashima, Katsuyuki},
+  journal = {Designs, Codes and Cryptography (DCC)},
+  year    = {2024},
+  html    = {https://link.springer.com/article/10.1007/s10623-024-01432-8},
+  bibtex_show = {true}
+}
+
+@article{dutta2024reinforcing,
+  abbr    = {TCS},
+  title   = {Reinforcing Privacy in Cloud Computing via Adaptively Secure Non-Zero Inner Product Encryption and Anonymous Identity-Based Revocation in Unbounded Setting},
+  author  = {Dutta, Ratna and Dutta, Subhranil and Pal, Tapas},
+  journal = {Theoretical Computer Science (TCS)},
+  year    = {2024},
+  html    = {https://www.sciencedirect.com/science/article/pii/S0304397524001178},
+  bibtex_show = {true}
+}
+
+@article{dowerah2023unbounded,
+  abbr    = {JoC},
+  title   = {Unbounded Predicate Inner Product Functional Encryption from Pairings},
+  author  = {Dowerah, Uddipana and Dutta, Subhranil and Mitrokotsa, Aikaterini and Mukherjee, Sayantan and Pal, Tapas},
+  journal = {Journal of Cryptology (JoC)},
+  year    = {2023},
+  html    = {https://link.springer.com/article/10.1007/s00145-023-09458-2},
+  bibtex_show = {true},
+  selected = {true}
+}
+
+@article{datta2023adaptivelyjournal,
+  abbr    = {DCC},
+  title   = {(Compact) Adaptively Secure FE for Attribute-Weighted Sums from k-Lin},
+  author  = {Datta, Pratish and Pal, Tapas},
+  journal = {Designs, Codes and Cryptography (DCC)},
+  year    = {2023},
+  html    = {https://link.springer.com/article/10.1007/s10623-023-01219-3},
+  bibtex_show = {true}
+}
+
+%% ===================== PATENTS =====================
+
+@misc{patent_dmae_largeuniverse,
+  abbr   = {Patent},
+  title  = {Decentralized multi-authority attribute-based encryption for large universe and unbounded},
+  author = {Datta, Pratish and Pal, Tapas},
+  note   = {PCT/US2024/011273, filed by NTT Research, Inc.},
+  year   = {2024},
+  html   = {https://patents.google.com/patent/WO2024151871A1/}
+}
+
+@misc{patent_compact_aws,
+  abbr   = {Patent},
+  title  = {Compact functional encryption for unbounded attribute-weighted sums},
+  author = {Datta, Pratish and Pal, Tapas},
+  note   = {PCT/US2023/078860, filed by NTT Research, Inc.},
+  year   = {2023},
+  html   = {https://patents.google.com/patent/WO2024098074A2/}
+}
+
+@misc{patent_dmaipfe,
+  abbr   = {Patent},
+  title  = {Decentralized multi-authority attribute-based inner-product functional encryption},
+  author = {Datta, Pratish and Maitra, Monosij and Pal, Tapas},
+  note   = {EP23165683.6A, filed by NTT Research, Inc.},
+  year   = {2023},
+  html   = {https://patents.google.com/patent/EP4254858A1/}
+}
+
+@misc{patent_compact_adaptive_aws,
+  abbr   = {Patent},
+  title  = {Compact Adaptively Secure Functional Encryption For Attribute-Weighted Sums},
+  author = {Datta, Pratish and Pal, Tapas},
+  note   = {PCT/US2022/039569, filed by NTT Research, Inc.},
+  year   = {2022},
+  html   = {https://patents.google.com/patent/WO2023014969A1/}
 }
