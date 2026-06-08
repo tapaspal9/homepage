@@ -7,3 +7,41 @@
 
 "Vision":
   color: "#009f36"
+
+# ---- Conferences (navy) ----
+CRYPTO:
+  color: "#34507a"
+EUROCRYPT:
+  color: "#34507a"
+ASIACRYPT:
+  color: "#34507a"
+PKC:
+  color: "#34507a"
+"EuroS&P":
+  color: "#34507a"
+ProvSec:
+  color: "#34507a"
+LATINCRYPT:
+  color: "#34507a"
+ACISP:
+  color: "#34507a"
+CANS:
+  color: "#34507a"
+
+# ---- Journals (pumpkin) ----
+JoC:
+  color: "#D35400"
+CiC:
+  color: "#D35400"
+DCC:
+  color: "#D35400"
+TCS:
+  color: "#D35400"
+  
+# ---- Patents (amber) ----
+Patent:
+  color: "#9a6d2f"
+
+# ---- Preprints (gray) ----
+ePrint:
+  color: "#8a8f98"  
