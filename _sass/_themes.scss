@@ -198,3 +198,14 @@ html[data-theme-setting="light"] {
   padding-left: 0;
   margin-left: 0;
 }
+
+/* Publication venue badges — white text on the colored background */
+.publications abbr,
+.publications abbr a,
+.publications abbr a:hover,
+.publications .badge,
+.publications .badge a,
+abbr.badge,
+abbr.badge a {
+  color: #ffffff !important;
+}
