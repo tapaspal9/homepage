@@ -199,13 +199,11 @@ html[data-theme-setting="light"] {
   margin-left: 0;
 }
 
-/* Publication venue badges — white text on the colored background */
-.publications abbr,
-.publications abbr a,
-.publications abbr a:hover,
-.publications .badge,
-.publications .badge a,
-abbr.badge,
-abbr.badge a {
+/* Publication venue badges — force white text (covers both the linked and
+   unlinked badge variants; al-folio only whitens the linked <a> version) */
+.abbr abbr,
+.abbr abbr *,
+ol.bibliography abbr,
+ol.bibliography abbr * {
   color: #ffffff !important;
 }
