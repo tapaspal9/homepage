@@ -11,6 +11,11 @@ In June 2019, during my doctoral studies at IIT Kharagpur, I had the pleasure of
 
 While there, I gave a research seminar titled **"From Functional Encryption to Indistinguishability Obfuscation."** The talk followed one of the most striking threads in modern cryptography: how functional encryption — schemes that let a key holder learn a *specific function* of encrypted data and nothing more — turns out to be intimately connected to [indistinguishability obfuscation](https://en.wikipedia.org/wiki/Indistinguishability_obfuscation), a primitive powerful enough to bring an enormous range of cryptographic goals within reach of a single assumption.
 
+{% include figure.liquid loading="eager" path="assets/img/img-auck.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div class="caption">
+    Visiting the University of Auckland, June 2019.
+</div>
+
 ---
 
 #### What the talk covered
