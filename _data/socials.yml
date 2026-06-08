@@ -1,12 +1,11 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
+# cv_pdf: /assets/pdf/cv.pdf # path to your CV PDF file
 email: tapas.pal@kit.edu # your email address
 dblp_url: https://dblp.org/pid/222/6843.html   # your DBLP profile URL
-github_username: tapaspal9        # your GitHub user name
+# github_username: tapaspal9        # your GitHub user name
 linkedin_username: tapas-pal-7b5a88b7   # your LinkedIn user name
-rss_icon: false                   # set to true only if you keep a blog feed
 scholar_userid: 7N8SUDMAAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
