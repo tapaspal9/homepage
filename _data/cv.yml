@@ -7,8 +7,8 @@ cv:
   summary: Cryptographer working on the foundations and real-world deployment of advanced public-key encryption. I design provably secure functional, attribute-based, and registered encryption schemes that decentralize trust, make computation on encrypted data verifiable, and bring strong privacy guarantees to cloud platforms, digital infrastructure, and AI systems. Author of 20+ peer-reviewed papers at leading venues including Crypto, Eurocrypt, Asiacrypt, PKC, and the Journal of Cryptology.
 
   social_networks:
-    - network: GitHub
-      username: tapaspal9
+    #- network: GitHub
+    #  username: tapaspal9
     - network: LinkedIn
       username: tapas-pal-7b5a88b7
     - network: ORCID
