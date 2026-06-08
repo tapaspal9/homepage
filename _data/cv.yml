@@ -25,7 +25,7 @@ cv:
 
   sections:
     Education:
-        institution: Indian Institute of Technology Kharagpur
+      - institution: Indian Institute of Technology Kharagpur
         location: Kharagpur, India
         area: Cryptography
         studyType: Ph.D.
@@ -36,7 +36,7 @@ cv:
           - "Thesis: Designing Provably Secure Advanced Cryptographic Primitives — Witness Encryption, Fully Homomorphic Encryption, and Functional Encryption."
           - "Defended 6 October 2021."
 
-        institution: Indian Institute of Technology Kharagpur
+      - institution: Indian Institute of Technology Kharagpur
         location: Kharagpur, India
         area: Mathematics
         studyType: M.Sc.
@@ -44,7 +44,7 @@ cv:
         end_date: 2016
         score: "CGPA 9.47/10 · Batch Rank 2"
 
-        institution: Scottish Church College, University of Calcutta
+      - institution: Scottish Church College, University of Calcutta
         location: Kolkata, India
         area: Mathematics (Honours)
         studyType: B.Sc.
