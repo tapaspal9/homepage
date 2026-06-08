@@ -25,7 +25,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a Group Leader of a KASTEL Security Research Lab (Secure Computation &amp; Communication group) within the
+I am a researcher of the KASTEL Security Research Labs (Secure Computation &amp; Communication group) within the
 [Research Group Rupp](https://crypto.iti.kit.edu/english/research_group_rupp.php),
 headed by [Andy Rupp](https://crypto.kastel.kit.edu/english/head_of_group.php), under [KASTEL: Cryptography and Security Group](https://crypto.kastel.kit.edu/english/index.php),
 at the [Karlsruhe Institute of Technology](https://www.kit.edu/english/).
