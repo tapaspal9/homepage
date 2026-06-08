@@ -189,3 +189,12 @@ html[data-theme-setting="light"] {
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
 }
+
+/* CV page — remove bullet markers from entry highlight lists */
+#resume ul,
+.cv ul,
+.rendercv ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
