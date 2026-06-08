@@ -7,7 +7,7 @@ first_name: Tapas
 last_name: Pal
 email: tapas.pal@kit.edu
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach you is to drop an email at tapas[dot]real[AT]gmail[dot]com.
 description: Group Leader, KASTEL C&C @ KIT — cryptography & privacy-enhancing technologies.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -19,7 +19,7 @@ icon: 🌐 # the emoji used as the favicon (alternatively, provide image name in
 
 url: https://tapaspal9.github.io
 baseurl: 
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -404,7 +404,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: 5 # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
