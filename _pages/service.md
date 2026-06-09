@@ -4,7 +4,7 @@ permalink: /service/
 title: service
 description: Professional and academic service.
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 ## Program Committee
