@@ -19,6 +19,8 @@ nav_order: 2
 
 ## Reviewer / Subreviewer
 
+**Mathematical Reviews (MathSciNet)**, Reviewer for the [MR database](https://www.ams.org/publications/math-reviews/math-reviews) at American Mathematical Society (AMS).
+
 **Conferences** — Crypto 2022, 2024, 2025, 2026 · Eurocrypt 2024, 2025 · Asiacrypt 2023, 2025 · PKC 2023 · TCC 2022 · AsiaCCS 2022, 2024 · ACNS 2022 · Indocrypt 2020, 2021
 
 **Journals** — IEEE Transactions on Information Theory · IEEE Transactions on Information Forensics and Security · Theoretical Computer Science · Designs, Codes and Cryptography · IET Information Security · Journal of Cryptographic Engineering · CSI
