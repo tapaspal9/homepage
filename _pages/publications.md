@@ -7,6 +7,18 @@ nav: true
 nav_order: 1
 ---
 
+<div class="profile-links" style="text-align:center; font-size:1.7rem; margin-bottom:1.5rem;">
+  <a href="https://scholar.google.com/citations?user=7N8SUDMAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer" style="margin:0 0.5rem;">
+    <i class="ai ai-google-scholar"></i>
+  </a>
+  <a href="https://dblp.org/pid/222/6843.html" title="dblp" target="_blank" rel="noopener noreferrer" style="margin:0 0.5rem;">
+    <i class="ai ai-dblp"></i>
+  </a>
+  <a href="https://iacr.org/cryptodb/data/author.php?authorkey=11893" title="IACR CryptoDB" target="_blank" rel="noopener noreferrer" style="margin:0 0.5rem;">
+    <i class="fa-solid fa-database"></i>
+  </a>
+</div>
+
 <div style="margin: 0 0 1.5rem; font-size: 0.85rem;">
   <span style="display:inline-block;width:11px;height:11px;border-radius:2px;background:#34507a;vertical-align:middle;margin-right:5px;"></span>Conference
   &nbsp;&nbsp;
