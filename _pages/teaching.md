@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Past teaching activities.
 nav: true
-nav_order: 6
+nav_order: 3
 calendar: false
 ---
 
