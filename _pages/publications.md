@@ -7,7 +7,7 @@ nav: true
 nav_order: 1
 ---
 
-<div class="profile-links" style="text-align:center; font-size:1.7rem; margin-bottom:1.5rem;">
+<div class="profile-links" style="text-align:left; font-size:1.7rem; margin-bottom:1.5rem;">
   <a href="https://scholar.google.com/citations?user=7N8SUDMAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer" style="margin:0 0.5rem;">
     <i class="ai ai-google-scholar"></i>
   </a>
