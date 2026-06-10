@@ -1,6 +1,6 @@
 ---
 layout: page
-title: library
+title: resource center
 permalink: /books/
 nav: true  # choose false if show it in subminus
 nav_order: 6        # ← keep whatever value your file currently has, delete this if show it in subminus
