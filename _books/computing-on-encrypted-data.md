@@ -3,6 +3,7 @@ layout: book-review
 title: "Computing on Encrypted Data: FHE and FE"
 author: Fully Homomorphic Encryption · Functional Encryption
 cover: assets/img/library/comp-enc.jpg
+categories: cryptography
 tags: Advanced Encryption
 ---
 
