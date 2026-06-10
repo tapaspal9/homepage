@@ -2,7 +2,7 @@
 layout: page
 title:  "Beyond Trusted Authorities: Registered Functional Encryption and Access Control"
 description:  Advancing cryptographic systems beyond centralized trust through registered encryption paradigms (continuing)
-img: assets/img/reg-ab-fe.jpg
+img: assets/img/reg-abe-fe.jpg
 importance: 1
 category: work
 related_publications: true
@@ -12,7 +12,7 @@ related_publications: true
 (HGF) and supported by KASTEL Security Research Labs, Karlsruhe &nbsp;·&nbsp; NTT Social Informatics Laboratories Japan 
 >
 >
-{% include figure.liquid loading="eager" path="assets/img/reg-ab-fe.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/reg-abe-fe.jpg" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
 Redefining trust in advanced encryption systems: Eliminating centralized key-issuing authorities through decentralized registration-based architectures.
 </div>
