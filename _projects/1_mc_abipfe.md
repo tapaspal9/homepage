@@ -3,7 +3,7 @@ layout: page
 title: Multi-Client Unbounded Attribute-Based Inner Product Functional Encryption
 description: SNSF-funded project at the University of St. Gallen — PI Prof. Katerina Mitrokotsa. Completed.
 img: assets/img/mc_abipfe.jpg
-importance: 1
+importance: 2
 category: work
 related_publications: true
 ---
