@@ -5,6 +5,7 @@ author: The grammar of digital trust
 cover: assets/img/library/crypto-foundation.jpg
 categories: cryptography
 tags: cryptography foundations
+importance: 2
 ---
 
 ## What it is
