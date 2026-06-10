@@ -37,7 +37,7 @@ description: A curated library of texts and lecture notes for research and teach
 </style>
 
 <div class="lib-grid">
-{% assign items = site.books | sort: "title" %}
+{% assign items = site.books | sort: "importance" %}
 {% for book in items %}
   <div class="lib-card">
     <a href="{{ book.url | relative_url }}">
