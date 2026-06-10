@@ -13,7 +13,7 @@ related_publications: true
 
 {% include figure.liquid loading="eager" path="assets/img/mc_abipfe.jpg" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-Multi-client unbounded ABIPFE: each client encrypts its own data independently, at a length of its own choosing, while a function key evaluates a linear function across all clients' ciphertexts.
+Multi-client unbounded ABIPFE: each client encrypts its own data independently, at a length of its own choosing, while a function key evaluates a linear function across all clients' ciphertexts. (Image generated using ChatGPT)
 </div>
 
 Attribute-based inner product functional encryption (ABIPFE) brings fine-grained, attribute-based access control to linear computations over encrypted data. Inner product functional encryption (IPFE) already underpins many practical tasks — computing averages and Hamming distances, and machine-learning settings such as federated learning — while keeping the underlying data encrypted. Layering attribute-based access control on top both limits what the encrypted data leaks and widens the primitive's use in sensitive domains such as healthcare, pharma, and banking.
