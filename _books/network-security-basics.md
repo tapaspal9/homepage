@@ -1,5 +1,5 @@
 ---
-layout: book-review
+layout: book-page
 title: Network Security
 author: Securing systems and the web
 cover: assets/img/library/net-sec.jpg
