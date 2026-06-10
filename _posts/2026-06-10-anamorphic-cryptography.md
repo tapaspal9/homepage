@@ -36,6 +36,7 @@ $$
 \newcommand{\gp}{\mathsf{gp}}
 \newcommand{\msg}{\mathsf{msg}}
 \newcommand{\amsg}{\mathsf{amsg}}
+\newcommand{\amsgp}{\mu}  
 \newcommand{\msgvec}{\mathbf{msg}}
 \newcommand{\ctvec}{\mathbf{ct}}
 \newcommand{\actvec}{\mathbf{act}}
