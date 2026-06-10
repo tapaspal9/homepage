@@ -1,11 +1,10 @@
 ---
-layout: book-review
+layout: book-page
 title: Lattice-based Cryptography
 author: Post-quantum foundations
 cover: assets/img/library/lattices-crypto.jpg
 categories: cryptography
 tags: post-quantum
-status: Finished
 ---
 
 ## What it is
