@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div style="max-width: 800px; margin: 0 auto;">
+  <h1 style="margin-bottom: 0.25rem;">{{ page.title }}</h1>
+  {% if page.description %}
+    <p style="opacity: 0.7; font-size: 1.05rem; margin-top: 0;">{{ page.description }}</p>
+  {% endif %}
+
+  {% if page.cover %}
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.title }} cover"
+         style="float: right; width: 200px; max-width: 38%; margin: 0.25rem 0 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.18);">
+  {% endif %}
+
+  {{ content }}
+</div>
