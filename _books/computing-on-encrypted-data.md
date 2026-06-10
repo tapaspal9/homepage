@@ -5,6 +5,7 @@ author: Fully Homomorphic Encryption · Functional Encryption
 cover: assets/img/library/comp-enc.jpg
 categories: cryptography
 tags: Advanced Encryption
+importance: 5
 ---
 
 ## What it is
