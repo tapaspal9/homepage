@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Beyond Trusted Authorities: Registered Functional Encryption and Access Control
+title:  "Beyond Trusted Authorities: Registered Functional Encryption and Access Control"
 description:  Advancing cryptographic systems beyond centralized trust through registered encryption paradigms (continuing)
 img: assets/img/reg-ab-fe.jpg
 importance: 1
