@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Public-Key Anamorphic Extensions for Standard Cryptographic Primitives"
+title:  Public-Key Anamorphic Extensions for Practical and Standard Primitives
 description:  continuing
 img: assets/img/anam.jpg
 importance: 8
