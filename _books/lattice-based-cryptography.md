@@ -2,7 +2,7 @@
 layout: book-review
 title: Lattice-based Cryptography
 author: Post-quantum foundations
-cover: assets/img/library/lattice-crypto.png
+cover: assets/img/library/lattices-crypto.jpg
 tags: post-quantum
 ---
 
