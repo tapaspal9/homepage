@@ -13,7 +13,7 @@ related_publications: true
 
 {% include figure.liquid loading="eager" path="assets/img/reg-abe-fe.jpg" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-Redefining trust in advanced encryption systems: Eliminating centralized key-issuing authorities through decentralized registration-based architectures.
+Redefining trust in advanced encryption systems: Eliminating centralized key-issuing authorities through decentralized registration-based architectures. (Image generated using Gemini-image-AI)
 </div>
 
 Modern cryptographic systems increasingly need to support secure computation and fine-grained access control in environments where trust is distributed across many parties. Traditional functional encryption (FE) and attribute-based encryption (ABE) often rely on a central authority that generates and manages users’ secret keys. While powerful, this trust model creates practical challenges: a compromised authority can undermine security, and deploying such systems at scale requires managing sensitive key-generation infrastructure.
