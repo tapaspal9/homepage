@@ -24,5 +24,5 @@ My research explores the foundations and constructions of registered FE/ABE syst
 
 Through these works, my goal is to advance practical and theoretically robust cryptographic frameworks where users can participate in secure computation ecosystems without relying on centralized trust.
 
-The project is running, and the results have appeared at Asiacrypt {% datta2024registered %}, {% pal2025framework %}, at PKC {% cite pal2026registered %}, and a pre-print {% pal2025registeredprf %}.
+The project is running, and the results have appeared at Asiacrypt {% cite datta2024registered %} , {% cite pal2025framework %}, at PKC {% cite pal2026registered %}, and a pre-print {% cite pal2025registeredprf %}.
 
