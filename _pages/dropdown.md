@@ -5,7 +5,7 @@ nav: true
 nav_order: 6
 dropdown: true
 children:
-  - title: bookshelf
+  - title: resource
     permalink: /books/
   - title: divider
   - title: blog
