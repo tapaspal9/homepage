@@ -3,7 +3,7 @@ layout: page
 title:  "Beyond Trusted Authorities: Registered Functional Encryption and Access Control"
 description:  continuing
 img: assets/img/reg-abe-fe.jpg
-importance: 1
+importance: 9
 category: work
 related_publications: true
 ---
