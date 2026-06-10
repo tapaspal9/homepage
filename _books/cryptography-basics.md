@@ -1,5 +1,5 @@
 ---
-layout: book-review
+layout: book-page
 title:  Cryptography Foundations 
 author: The grammar of digital trust
 cover: assets/img/library/crypto-foundation.jpg
