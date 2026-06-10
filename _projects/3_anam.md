@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Anamorphic Cryptography: Building Covert Channels in Modern Crypto Systems"
+title:  "Public-Key Anamorphic Extensions for Standard Cryptographic Primitives"
 description:  continuing
 img: assets/img/anam.jpg
 importance: 8
