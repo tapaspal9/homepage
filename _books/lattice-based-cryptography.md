@@ -5,6 +5,7 @@ author: Post-quantum foundations
 cover: assets/img/library/lattices-crypto.jpg
 categories: cryptography
 tags: post-quantum
+importance: 4
 ---
 
 ## What it is
