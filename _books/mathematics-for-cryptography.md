@@ -4,6 +4,7 @@ title: Mathematics for Cryptography & Cyber Security
 author: Number theory · algebra · probability · information theory
 cover: assets/img/library/math-crypto.jpg
 categories: mathematics foundations cryptography
+status: Maths
 ---
 
 ## What it is
