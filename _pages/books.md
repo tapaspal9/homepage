@@ -2,7 +2,7 @@
 layout: page
 title: resource center
 permalink: /books/
-nav: true  # choose false if show it in subminus
+nav: false  # choose false if show it in subminus
 nav_order: 6        # ← keep whatever value your file currently has, delete this if show it in subminus
 description: A curated library of texts and lecture notes for research and teaching.
 ---
