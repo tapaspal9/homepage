@@ -3,7 +3,7 @@ layout: page
 title: Multi-Client Unbounded Attribute-Based Inner Product Functional Encryption
 description: SNSF-funded project. Completed.
 img: assets/img/mc_abipfe.jpg
-importance: 2
+importance: 10
 category: work
 related_publications: true
 ---
