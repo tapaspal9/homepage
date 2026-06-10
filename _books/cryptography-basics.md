@@ -4,7 +4,7 @@ title:  Cryptography Foundations
 author: The grammar of digital trust
 cover: assets/img/library/crypto-foundation.jpg
 categories: cryptography
-tags: cryptography
+tags: cryptography foundations
 ---
 
 ## What it is
