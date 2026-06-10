@@ -4,8 +4,6 @@ title: Lattice-based Cryptography
 author: Post-quantum foundations
 cover: assets/img/library/lattice-crypto.png
 categories: post-quantum cryptography
-date:  # leave blank or 2025-06-10
-tags: # optional or top-100
 ---
 
 ## What it is
