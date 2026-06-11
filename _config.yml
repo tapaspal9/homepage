@@ -336,7 +336,7 @@ jekyll-archives:
       tags: "/:collection/:type/:name/"
       categories: "/:collection/:type/:name/"
 
-display_tags: ["functional-encryption", "attribute-based-encryption", "fhe", "math", "zero-knowledge", "threshold", "anamorphic", "post-quantum", "lattice", "pairings", "encryption", "signature", "multi-client", "unbounded", "registered"] # these tags will be displayed on the front page of your blog
+display_tags: ["functional-encryption", "attribute-based-encryption", "anamorphic", "post-quantum", "lattice", "pairings", "signature", "multi-client", "unbounded", "registered"] # these tags will be displayed on the front page of your blog
 display_categories: [] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
