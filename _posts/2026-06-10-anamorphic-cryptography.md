@@ -36,7 +36,7 @@ $$
 \newcommand{\gp}{\mathsf{gp}}
 \newcommand{\msg}{\mathsf{msg}}
 \newcommand{\amsg}{\mathsf{amsg}}
-\newcommand{\amsgp}{\mu}  
+\newcommand{\amsgp}{&mu}  
 \newcommand{\msgvec}{\mathbf{msg}}
 \newcommand{\ctvec}{\mathbf{ct}}
 \newcommand{\actvec}{\mathbf{act}}
@@ -103,7 +103,7 @@ That is the question behind *anamorphic cryptography*. Ordinary encryption hides
 A useful picture: normal encryption is a **locked box**. Anyone with the key opens it and finds the message. Anamorphic encryption is a locked box with a **hidden compartment** built into the lid. Open it the usual way and you get the ordinary contents. But a receiver who knows the compartment is there — and holds a special *double key* — can quietly retrieve something else entirely.
 
 <div class="anam-fig">
-  <div class="anam-node anam-node--accent">Ciphertext</div>
+  <div class="anam-node anam-node--accent">Ciphertext of Anamorphic Encryption</div>
   <div class="anam-split">
     <div class="anam-branch">
       <div class="anam-arrow">&darr;</div>
