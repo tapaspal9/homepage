@@ -22,7 +22,7 @@ announcements:
   limit:  # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
 ---
 
 I am a researcher of the KASTEL Security Research Labs (Secure Computation &amp; Communication group) within the
