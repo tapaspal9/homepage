@@ -35,8 +35,7 @@ $$
 \newcommand{\td}{\mathsf{td}}
 \newcommand{\gp}{\mathsf{gp}}
 \newcommand{\msg}{\mathsf{msg}}
-\newcommand{\amsg}{\mathsf{amsg}}
-\newcommand{\amsgp}{&mu}  
+\newcommand{\amsg}{\mathsf{amsg}}  
 \newcommand{\msgvec}{\mathbf{msg}}
 \newcommand{\ctvec}{\mathbf{ct}}
 \newcommand{\actvec}{\mathbf{act}}
@@ -147,13 +146,13 @@ Earlier anamorphic schemes often tried to stuff both meanings into a **single** 
 
 > Don't overload one ciphertext. **Spread** the hidden information across several ordinary ciphertexts.
 
-We call this a $\msgp$-**message anamorphic extension**: the sender produces $\msgp$ regular ciphertexts that, taken together, secretly encode one anamorphic message $\amsg$. To the dictator they are just $\msgp$ normal encryptions of $\msgp$ normal messages.
+We call this a $\mu$-**message anamorphic extension**: the sender produces $\mu$ regular ciphertexts that, taken together, secretly encode one anamorphic message $\amsg$. To the dictator they are just $\mu$ normal encryptions of $\mu$ normal messages.
 
 <div class="anam-callout" markdown="1">
-**Syntax (informal).** A $\msgp$-message asymmetric anamorphic encryption extension attaches three algorithms to an ordinary PKE scheme:
+**Syntax (informal).** A $\mu$-message asymmetric anamorphic encryption extension attaches three algorithms to an ordinary PKE scheme:
 
 - $(\apk,\ask,\dk,\tk) \samp \aGen(1^{\secp})$ — generate the usual key pair **plus** an encryption *double key* $\dk$ and a decryption *double key* $\tk$.
-- $\actvec \samp \aenc(\apk,\dk,\msgvec,\amsg)$ — encrypt a vector of $\msgp$ regular messages $\msgvec$ together with one hidden message $\amsg$, producing $\msgp$ ciphertexts.
+- $\actvec \samp \aenc(\apk,\dk,\msgvec,\amsg)$ — encrypt a vector of $\mu$ regular messages $\msgvec$ together with one hidden message $\amsg$, producing $\mu$ ciphertexts.
 - $\amsg \samp \adec(\tk,\actvec)$ — recover the hidden message from those ciphertexts using $\tk$.
 
 Without $\tk$ and $\dk$, the dictator sees nothing but ordinary ciphertexts.
@@ -248,11 +247,11 @@ Encryption is not the only randomized primitive. **Signatures** carry randomness
 An anamorphic signature should: verify normally under the ordinary verification key, hide an extra message inside, and allow only a designated receiver to extract it. Note the asymmetry we introduce here: the sender signs, and a *separate* receiver — not the verifier — pulls out the hidden message.
 
 <div class="anam-callout" markdown="1">
-**Syntax (informal).** A $\msgp$-message asymmetric anamorphic *signature* extension of a signature scheme uses:
+**Syntax (informal).** A $\mu$-message asymmetric anamorphic *signature* extension of a signature scheme uses:
 
 - $(\ask,\avk,\td) \samp \aGenS(\gp)$ — the sender's signing/verification keys plus secret trapdoor $\td$.
 - $(\dk,\tk) \samp \aGenR(\gp)$ — the receiver's encryption/decryption double keys.
-- $\asigvec \samp \aSig(\ask,\td,\dk,\msgvec,\amsg)$ — sign $\msgp$ messages while embedding the hidden $\amsg$.
+- $\asigvec \samp \aSig(\ask,\td,\dk,\msgvec,\amsg)$ — sign $\mu$ messages while embedding the hidden $\amsg$.
 - $\amsg \samp \aDecSig(\tk,\avk,\asigvec,\msgvec)$ — the receiver extracts $\amsg$ from the signatures.
 </div>
 
@@ -306,7 +305,7 @@ SCAN solves this with a shared notification key and a pseudorandom function that
 </div>
 
 <div class="anam-callout" markdown="1">
-**Syntax (informal).** A SCAN with stream length $\stp$ wraps a $\msgp$-message extension in a sender–receiver protocol:
+**Syntax (informal).** A SCAN with stream length $\stp$ wraps a $\mu$-message extension in a sender–receiver protocol:
 
 - $\nk \samp \nGen(1^{\secp})$ — set up a notification key for signaling.
 - $\ctvec \samp \Sen(\apk,\msgvec)$ — the *normal* sender outputs $\stp$ ordinary ciphertexts.
