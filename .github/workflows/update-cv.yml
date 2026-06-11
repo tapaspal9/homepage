@@ -27,11 +27,13 @@ jobs:
 
       - name: Download latest CV
         run: |
-          mkdir -p assets/pdf
-
-          curl -L \
-          https://github.com/tapaspal9/Tapas-CV-Updated/raw/main/assets/pdf/CV.pdf \
-          -o assets/pdf/CV.pdf
+        mkdir -p assets/pdf
+        
+        curl -L \
+        https://raw.githubusercontent.com/tapaspal9/Tapas-CV-Updated/main/assets/pdf/CV.pdf \
+        -o assets/pdf/CV.pdf
+        
+        file assets/pdf/CV.pdf
 
       - name: Commit updated CV
         run: |
