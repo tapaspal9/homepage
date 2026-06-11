@@ -47,6 +47,20 @@ $$
 \newcommand{\sRFE}{\mathsf{sRFE}}
 \newcommand{\MDDH}{\mathsf{MDDH}}
 \newcommand{\pgb}{\mathsf{pgb}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\Garble}{\mathsf{Garble}}
+\newcommand{\Eval}{\mathsf{Eval}}
+\newcommand{\Sim}{\mathsf{Sim}}
+\newcommand{\impi}[1]{[\![#1]\!]_1}
+\newcommand{\impii}[1]{[\![#1]\!]_2}
+\newcommand{\impt}[1]{[\![#1]\!]_t}
+\newcommand{\ict}{\mathsf{ict}}
+\newcommand{\isk}{\mathsf{isk}}
+\newcommand{\Gt}{\mathbb{G}_t}
+\newcommand{\rnd}{\mathsf{rnd}}
+\newcommand{\att}{\mathsf{att}}
+\newcommand{\zo}{\lbrace 0,1\rbrace}
 $$
 </div>
 
@@ -144,9 +158,43 @@ In the *non-registered* world, a beautiful line of work builds expressive FE fro
 
 > **inner-product FE (IPFE)** $+$ **linear garbling** $=$ FE for rich functions.
 
-The garbling scheme is a weak, **one-time** secure gadget; IPFE supplies the "muscle" that re-randomizes each decryption so the gadget can be reused securely. Crucially, the garbling randomness is split between encryption and key generation, so every IPFE decryption produces a fresh-looking garbling.
+To see how, we first need the garbling gadget.
 
-Porting this to the registration-based setting runs into three walls:
+### The gadget: arithmetic key garbling (AKGS)
+
+An **arithmetic key garbling scheme** (AKGS) is a lightweight, *one-time* secure way to encode a computation. For a function $f$ and two secrets $\sigma_0,\sigma_1$, it offers three algorithms:
+
+<div class="rfe-callout" markdown="1">
+- $\mathbf{L} = (\mathbf{L}_1,\dotsc,\mathbf{L}_m) \samp \Garble(f,\sigma_0,\sigma_1;\br)$ — using randomness $\br$, turn $f$ and the secrets into $m$ **affine label functions**, given by coefficient vectors $\mathbf{L}_j$. On a public input $\bx$ they produce labels $\vec\ell = (1,\bx)\cdot\mathbf{L}$, i.e. $\ell_j = (1,\bx)\cdot\mathbf{L}_j$. **Crucially, each $\mathbf{L}_j$ is linear in $\sigma_0,\sigma_1$ and $\br$.**
+- $d \samp \Eval(f,\bx,\vec\ell)$ — a **linear** decoder that recovers $d = \sigma_1 f(\bx) + \sigma_0$.
+- $\widetilde{\vec\ell} \samp \Sim(f,\bx,\, d)$ — a simulator that, given only the value $d$, outputs labels with the *same distribution* as the honest ones.
+</div>
+
+The simulator is what "one-time security" means: from the labels alone you learn nothing beyond $f(\bx)$ (encoded in $d$). Lin and Luo gave AKGS for arithmetic branching programs and for logspace Turing machines — which is exactly why the same framework reaches all of $\lbrace \mathsf{ABP}, \mathsf{L}, \mathsf{NL}\rbrace$.
+
+### Lifting it with IPFE
+
+A one-time gadget isn't enough on its own — reuse it twice and it leaks. The classical trick lifts it to full security using IPFE as a re-randomizer. Take key-policy ABE as the running example. To encrypt a message $\mu$ under attribute $\bx$, pick a fresh scalar $s$ and pack $(\mu, s(1,\bx))$ into an IPFE ciphertext; to make a key for policy $f$, garble it and pack the coefficient vectors into IPFE keys:
+
+$$
+\ct_{\bx}:\ \impi{(\mu,\, s,\, s\bx)}, \qquad
+\sk_f:\ \impii{(1,\sigma_0,\vec 0)},\ \bigl\{\impii{(0,\mathbf{L}_j)}\bigr\}_{j\in[m]} .
+$$
+
+IPFE decryption pairs these up and reveals, **in the target group**, exactly the masked value and the randomized labels:
+
+$$
+\impt{\,\underbrace{\mu + s\,\sigma_0}_{d}\,}, \qquad
+\bigl\{\,\impt{\,\underbrace{s\,(1,\bx)\cdot\mathbf{L}_j}_{\ell_j}\,}\,\bigr\}_{j\in[m]} .
+$$
+
+Now the linearity of $\Garble$ pays off: $s\mathbf{L} = \Garble(f, s\sigma_0, s\sigma_1; s\br)$, so running the linear $\Eval$ in the exponent yields $s\,\sigma_1 f(\bx) + s\,\sigma_0$. Following the convention that $f(\bx)=0$ means "authorized," the $\sigma_1$ term vanishes, the decryptor learns the mask $s\sigma_0$, subtracts it from $d$, and recovers $\mu$ (a discrete log in $\Gt$ for a polynomial-size message space).
+
+Why is it secure? A suitable IPFE (function-hiding or slotted) guarantees that *only* the encodings of $d$ and the labels $\vec\ell$ ever leak. A DDH-style assumption then makes $(s\sigma_0, s\sigma_1, s\br)$ indistinguishable from **freshly sampled** randomness — so each decryption looks like an independent honest garbling, and the one-time security of the AKGS lifts to full IND-CPA.
+
+### Why it breaks in the registration-based setting
+
+This framework leans hard on two things: the ability to *sample garbling randomness while making a key*, and a *function-hiding* IPFE. Neither survives the move to registration. Porting it runs into three walls:
 
 <div class="rfe-chal" markdown="1">
 **Challenge 1 — randomness has nowhere to live.** In sRFE, secret keys are generated *independently of functions*; functions enter only during a **deterministic** aggregation step. But garbling labels need fresh randomness — and a deterministic step can't sample it.
@@ -162,7 +210,7 @@ Porting this to the registration-based setting runs into three walls:
 
 ## The Key Idea: Decompose the Garbling
 
-The unlock is to use garbling schemes whose garbling is **linear in the randomness** $\vec w$. Such a garbling splits cleanly into two stages:
+The unlock is the very property the AKGS already gave us: its garbling is **linear in the randomness** (call it $\vec w$). That linearity lets a garbling split cleanly into two stages:
 
 <div class="rfe-fig">
   <div class="rfe-flowrow">
