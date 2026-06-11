@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Asymmetric Anamorphic Encryption/Signatures: The Art of Covert Communications"
+title: "The Art of Covert Communications"
 date: 2026-06-10
 description: How a ciphertext can secretly carry a second message that even a key-holding "dictator" cannot detect — the intuition behind multi-message anamorphic encryption and signatures.
 tags: anamorphic-cryptography post-quantum signatures
