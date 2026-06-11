@@ -224,8 +224,8 @@ Plain IPFE is powerful but fragile: every released key leaks a linear view of th
 
 <div class="ripfe-fig">
   <div class="ripfe-flowrow">
-    <div class="ripfe-node">attribute-aggregation<br><small>from registered ABE ([Hohenberger et al. EC'23](https://ia.cr/2022/1500))</small></div>
-    <div class="ripfe-arrow"> &plus; </div>
+    <div class="ripfe-node">attribute-aggregation<br><small>from registered ABE (<a href="https://ia.cr/2022/1500" target="_blank" rel="noopener">Hohenberger et al. EC'23</a>)</small></div>
+    <div class="ripfe-arrow">+</div>
     <div class="ripfe-node ripfe-node--accent">function-aggregation<br><small>this work (registered IPFE)</small></div>
     <div class="ripfe-arrow">&rarr;</div>
     <div class="ripfe-node ripfe-node--good">registered ABIPFE</div>
@@ -238,7 +238,7 @@ $$
 \ct=\bigl(g_T^{s},\; g_T^{s\vecalpha+\vecx},\; g_1^{-s/\gamma},\; g_1^{-s/\pi},\; h^{s}W^{s},\; h^{\ip{\mathbf{v}}{\mathbf{m}_k}}\,T_{\rho(k)}^{s}\bigr).
 $$
 
-Decryption now produces an *extra* masking factor $e(h,g_2)^{s/\beta_i}$, which a user can cancel **only** if its attribute set $\Att_i$ satisfies the policy — using the same cross-term-cancellation idea, now applied to the attribute side. Unauthorized users, even holding valid IPFE keys, cannot strip the mask and learn nothing about $\ip{\vecx}{\vecy_i}$. The master public key and helper keys remain compact, $\poly(\secp,|\mathcal{U}_{\mathsf{att}}|, n, \log L)$.
+Decryption now produces an *extra* masking factor $e(h,g_2)^{s/\beta_i}$, which a user can cancel **only** if its attribute set $\Att_i$ satisfies the policy — using the same cross-term-cancellation idea, now applied to the attribute side. Unauthorized users, even holding valid IPFE keys, cannot strip the mask and learn nothing about $\ip{\vecx}{\vecy_i}$. The master public key and helper keys remain compact, $\poly(\secp, \lvert\mathcal{U}_{\mathsf{att}}\rvert, n, \log L)$.
 
 ## The Bigger Picture
 
