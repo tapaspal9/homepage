@@ -3,7 +3,7 @@ layout: post
 title: "Computing on Encrypted Data Without a Central Authority"
 date: 2025-12-19
 description: How registered functional encryption lets users learn a function of encrypted data with no trusted key authority — and a general framework that builds it from pairings via "user-specific pre-constraining."
-tags: functional-encryption registration-based pairings
+tags: functional-encryption registered pairings attribute-based-encryption
 toc:
   sidebar: left
 related_posts: false
