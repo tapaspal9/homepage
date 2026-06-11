@@ -1,0 +1,27 @@
+name: Update CV
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download CV
+        run: |
+          mkdir -p assets/pdf
+          curl -L \
+          https://raw.githubusercontent.com/tapaspal9/Tapas-CV-Updated/main/assets/pdf/CV.pdf \
+          -o assets/pdf/CV.pdf
+
+      - name: Commit update
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add assets/pdf/CV.pdf
+          git commit -m "Update CV" || exit 0
+          git push
