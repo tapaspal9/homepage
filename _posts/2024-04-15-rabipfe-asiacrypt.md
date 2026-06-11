@@ -67,7 +67,7 @@ $$
 </style>
 
 <div class="ripfe-callout" markdown="1">
-Based on joint work with **Pratish Datta** and **Shota Yamada** — *Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more* {% cite datta2024registered %}. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.
+Based on joint work with **Pratish Datta** and **Shota Yamada** — *Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more* {% cite datta2024registered %}. The paper appeared at Asiacrypt {% cite datta2024registered %}. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.
 </div>
 
 ## Computing on Encrypted Data — Without the Authority
@@ -224,8 +224,8 @@ Plain IPFE is powerful but fragile: every released key leaks a linear view of th
 
 <div class="ripfe-fig">
   <div class="ripfe-flowrow">
-    <div class="ripfe-node">attribute-aggregation<br><small>from registered ABE (Hohenberger et al.)</small></div>
-    <div class="ripfe-arrow">&plus;</div>
+    <div class="ripfe-node">attribute-aggregation<br><small>from registered ABE ([Hohenberger et al. EC'23](https://ia.cr/2022/1500))</small></div>
+    <div class="ripfe-arrow"> &plus; </div>
     <div class="ripfe-node ripfe-node--accent">function-aggregation<br><small>this work (registered IPFE)</small></div>
     <div class="ripfe-arrow">&rarr;</div>
     <div class="ripfe-node ripfe-node--good">registered ABIPFE</div>
