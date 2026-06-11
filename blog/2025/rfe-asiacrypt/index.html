@@ -1,0 +1,326 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Advanced Computation on Encrypted Data Without a Central Authority | Tapas Pal </title> <meta name="author" content="Tapas Pal"> <meta name="description" content="How registered functional encryption lets users learn a function of encrypted data with no trusted key authority — and a general framework that builds it from pairings via " user-specific pre-constraining.> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%90&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://tapaspal9.github.io/blog/2025/rfe-asiacrypt/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Tapas</span> Pal </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/service/">service </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">resource</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">Advanced Computation on Encrypted Data Without a Central Authority</h1> <p class="post-meta"> Created on December 19, 2025 </p> <p class="post-tags"> <a href="/blog/2025"> <i class="fa-solid fa-calendar fa-sm"></i> 2025 </a>   ·   <a href="/blog/tag/functional-encryption"> <i class="fa-solid fa-hashtag fa-sm"></i> functional-encryption</a>   <a href="/blog/tag/registration-based"> <i class="fa-solid fa-hashtag fa-sm"></i> registration-based</a>   <a href="/blog/tag/pairings"> <i class="fa-solid fa-hashtag fa-sm"></i> pairings</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <div style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true"> $$ \renewcommand{\vec}[1]{\boldsymbol{#1}} \newcommand{\Zp}{\mathbb{Z}_p} \newcommand{\G}{\mathbb{G}} \newcommand{\Gi}{\mathbb{G}_1} \newcommand{\Gii}{\mathbb{G}_2} \newcommand{\tr}{^\top} \newcommand{\samp}{\leftarrow} \newcommand{\otimesx}{\otimes} \newcommand{\imp}[1]{[\![#1]\!]} \newcommand{\impiii}[1]{[\![#1]\!]_{1,2}} \newcommand{\bL}{\mathbf{L}} \newcommand{\bT}{\mathbf{T}} \newcommand{\bV}{\mathbf{V}} \newcommand{\bU}{\mathbf{U}} \newcommand{\bM}{\mathbf{M}} \newcommand{\bI}{\mathbf{I}} \newcommand{\bW}{\mathbf{W}} \newcommand{\cF}{\mathcal{F}} \newcommand{\out}{\mathsf{out}} \newcommand{\pri}{\mathsf{pri}} \newcommand{\pub}{\mathsf{pub}} \newcommand{\mpk}{\mathsf{mpk}} \newcommand{\msk}{\mathsf{msk}} \newcommand{\hsk}{\mathsf{hsk}} \newcommand{\sk}{\mathsf{sk}} \newcommand{\pk}{\mathsf{pk}} \newcommand{\ct}{\mathsf{ct}} \newcommand{\crs}{\mathsf{crs}} \newcommand{\Setup}{\mathsf{Setup}} \newcommand{\Enc}{\mathsf{Enc}} \newcommand{\Dec}{\mathsf{Dec}} \newcommand{\Agg}{\mathsf{Agg}} \newcommand{\sRFE}{\mathsf{sRFE}} \newcommand{\MDDH}{\mathsf{MDDH}} \newcommand{\pgb}{\mathsf{pgb}} $$ </div> <style>
+.rfe-fig{margin:1.6rem 0;text-align:center}
+.rfe-node{display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.55rem .9rem;margin:.25rem;font-weight:600;background:rgba(128,128,128,.06)}
+.rfe-node small{font-weight:400;opacity:.7}
+.rfe-node--accent{border-color:var(--global-theme-color,#0076df);color:var(--global-theme-color,#0076df)}
+.rfe-node--good{border-color:#2e9e5b;color:#2e9e5b}
+.rfe-node--warn{border-color:#cc7a00;color:#cc7a00}
+.rfe-node--dashed{border-style:dashed;border-color:var(--global-theme-color,#0076df)}
+.rfe-arrow{font-size:1.2rem;opacity:.55;line-height:1;margin:.1rem}
+.rfe-flowrow{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1.2rem 0}
+.rfe-edgelabel{font-size:.78rem;opacity:.7;font-style:italic;padding:0 .15rem}
+.rfe-twocol{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.4rem 0}
+.rfe-panel{flex:1 1 270px;max-width:380px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05);text-align:center}
+.rfe-panel h4{margin:.1rem 0 .7rem;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8}
+.rfe-panel--good{border-color:rgba(46,158,91,.6)}
+.rfe-panel--warn{border-color:rgba(204,122,0,.55)}
+.rfe-callout{border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0}
+.rfe-chal{border-left:4px solid #cc7a00;background:rgba(204,122,0,.08);padding:.7rem 1.05rem;border-radius:0 8px 8px 0;margin:1rem 0}
+.rfe-chal b{color:#cc7a00}
+.rfe-branch{display:flex;flex-direction:column;gap:.5rem;align-items:flex-start}
+.rfe-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.86rem}
+.rfe-table th,.rfe-table td{border:1px solid rgba(128,128,128,.35);padding:.4rem .6rem;text-align:center}
+.rfe-table th{background:rgba(128,128,128,.12)}
+.rfe-table .me{font-weight:700;background:rgba(128,128,128,.10)}
+</style> <div class="rfe-callout"> <p>Based on joint work with <strong>Robert Schädlich</strong> — <em>A General Framework for Registered Functional Encryption via User-Specific Pre-Constraining</em>, ASIACRYPT 2025. Full version: <a href="https://ia.cr/2025/2207" rel="external nofollow noopener" target="_blank">ia.cr/2025/2207</a>. The paper appeared at Asiacrypt <a class="citation" href="#pal2025framework">(Pal &amp; Schädlich, 2025)</a>. This post is an intuitive tour of the ideas; the paper carries the constructions and proofs.</p> </div> <h2 id="computation-on-encrypted-data--but-who-holds-the-keys">Computation on Encrypted Data — But Who Holds the Keys?</h2> <p><strong>Functional encryption (FE)</strong> is one of the most powerful generalizations of public-key encryption. Instead of all-or-nothing decryption, a holder of a function key for $f$ can take a ciphertext of $x$ and learn exactly $f(x)$ — and nothing more about $x$. That single idea captures access control, privacy-preserving analytics, and much of modern advanced cryptography.</p> <p>There’s a catch, though, and it’s a big one: in standard FE a <strong>central authority</strong> holds a master secret key and hands out every function key. That authority can decrypt <em>everything</em>. This is the classic <strong>key-escrow problem</strong> — a single trusted party who must be trusted absolutely.</p> <p><strong>Registered FE (RFE)</strong> removes that party. Users generate their own keys and <em>register</em> their public keys with a transparent <strong>key curator</strong> that holds <strong>no secret</strong> at all. The curator’s only job is bookkeeping: combine everyone’s registered keys into one short master public key. No escrow, no trusted authority — yet decryption still yields exactly $f(x)$.</p> <div class="rfe-twocol"> <div class="rfe-panel rfe-panel--warn"> <h4>Standard FE — key escrow</h4> <p>An <strong>authority</strong> holds $\msk$ and issues every function key.</p> <div class="rfe-node rfe-node--warn">Authority · holds msk</div> <div class="rfe-arrow">↓</div> <div class="rfe-node">issues sk<sub>f</sub> to each user</div> <p><em>The authority can decrypt everything.</em></p> </div> <div class="rfe-panel rfe-panel--good"> <h4>Registered FE — no escrow</h4> <p>Users make their <strong>own</strong> keys; a secret-less curator just aggregates.</p> <div class="rfe-node">users register pk<sub>i</sub>, f<sub>i</sub> </div> <div class="rfe-arrow">↓</div> <div class="rfe-node rfe-node--good">Key curator · holds no secret</div> <p><em>No single party can decrypt.</em></p> </div> </div> <p>Our work asks a sweeping question: <strong>can we build registered FE for rich functionalities — fine-grained access control, Turing-machine policies, quadratic functions — from standard pairing assumptions, in a single unified framework?</strong> The answer is yes, and the engine behind it is a notion we call <em>user-specific pre-constraining</em>.</p> <h2 id="the-target-slotted-registered-functional-encryption">The Target: (Slotted) Registered Functional Encryption</h2> <p>Thanks to a “powers-of-two” compiler, it suffices to build the simpler <strong>slotted RFE (sRFE)</strong>, where the number of users $L$ is fixed and there’s no dynamic update machinery to worry about. Here’s the whole pipeline:</p> <div class="rfe-fig"> <div class="rfe-flowrow"> <div class="rfe-node">Each user $i$<br><small>generates $(\pk_i,\sk_i)$,<br>registers $\pk_i$ with function $f_i$</small> </div> <div class="rfe-arrow">→</div> <div class="rfe-node rfe-node--accent">Key aggregator<br><small>transparent, no secrets</small> </div> <div class="rfe-arrow">→</div> <div class="rfe-node">$\mpk$ and helper keys $\hsk_i$</div> </div> <div class="rfe-flowrow"> <div class="rfe-node">$\ct \samp \Enc(\mpk, x)$</div> <div class="rfe-arrow">→</div> <div class="rfe-node rfe-node--dashed">user $i$: $\Dec(\sk_i, \hsk_i, \ct)$</div> <div class="rfe-arrow">→</div> <div class="rfe-node rfe-node--dashed">$f_i(x)$</div> </div> </div> <p>Security demands that a user holding $\sk_i$ learns nothing about $x$ beyond $f_i(x)$. And there’s a sharp efficiency bar — <strong>compactness</strong>: the master public key, helper keys, and ciphertexts must scale only <em>polylogarithmically</em> in the number of users $L$. You cannot, for instance, afford to stuff a description of every user’s function into $\mpk$.</p> <h2 id="the-classical-recipe--and-why-it-breaks">The Classical Recipe — and Why It Breaks</h2> <p>In the <em>non-registered</em> world, a beautiful line of work builds expressive FE from a simple template:</p> <blockquote> <p><strong>inner-product FE (IPFE)</strong> $+$ <strong>linear garbling</strong> $=$ FE for rich functions.</p> </blockquote> <p>The garbling scheme is a weak, <strong>one-time</strong> secure gadget; IPFE supplies the “muscle” that re-randomizes each decryption so the gadget can be reused securely. Crucially, the garbling randomness is split between encryption and key generation, so every IPFE decryption produces a fresh-looking garbling.</p> <p>Porting this to the registration-based setting runs into three walls:</p> <div class="rfe-chal"> <p><strong>Challenge 1 — randomness has nowhere to live.</strong> In sRFE, secret keys are generated <em>independently of functions</em>; functions enter only during a <strong>deterministic</strong> aggregation step. But garbling labels need fresh randomness — and a deterministic step can’t sample it.</p> </div> <div class="rfe-chal"> <p><strong>Challenge 2 — no function-hiding to lean on.</strong> Classical proofs rely on <em>function-hiding</em> IPFE. In RFE the aggregation is transparent and deterministic by design (that’s the whole point — an auditable registration). A meaningful function-hiding notion is hard to even define here, and adding one would betray the model.</p> </div> <div class="rfe-chal"> <p><strong>Challenge 3 — vectors must be group elements.</strong> Pairing-based IPFE randomizes garbling by treating registered vectors as <em>group elements</em> (in $\Gi$ and $\Gii$) and invoking DDH-style assumptions. But existing sRFE-for-inner-products only register vectors over $\Zp$ — registering group elements seems out of reach.</p> </div> <h2 id="the-key-idea-decompose-the-garbling">The Key Idea: Decompose the Garbling</h2> <p>The unlock is to use garbling schemes whose garbling is <strong>linear in the randomness</strong> $\vec w$. Such a garbling splits cleanly into two stages:</p> <div class="rfe-fig"> <div class="rfe-flowrow"> <div class="rfe-node rfe-node--accent">1. Sample random $\vec w \samp \Zp^{*}$<br><small>needs randomness, <b>not</b> the function</small> </div> <div class="rfe-arrow">→</div> <div class="rfe-node">2. From the function, compute $\bL$<br>and output $\vec w\,\bL$<br><small>needs the function, fully <b>deterministic</b></small> </div> </div> <div class="rfe-edgelabel">do step 1 at <b>setup</b> (before functions are known) · do step 2 at <b>aggregation</b> (deterministic)</div> </div> <p>This maps <em>exactly</em> onto the two registration phases: the randomized half happens at setup, where randomness is allowed; the deterministic half happens at aggregation, where the function is finally known. Challenge 1 dissolves.</p> <p>But we need a building block that can compute an inner product <strong>and</strong> multiply by a matrix that was fixed earlier, at setup. That building block is the heart of the paper.</p> <h2 id="the-engine-inner-products-with-user-specific-pre-constraining">The Engine: Inner Products with User-Specific Pre-Constraining</h2> <p>We introduce an sRFE for a functionality we call <strong>pre-constrained inner product (Pre-IP)</strong>. Compared to ordinary inner-product sRFE, the setup gets to bake in a <em>user-specific</em> matrix $\bT_i$ up front:</p> <div class="rfe-fig"> <div class="rfe-flowrow"> <div class="rfe-node">$\Setup$ fixes $\lbrace \bT_i \rbrace_i$<br><small>per-user pre-constraint</small> </div> <div class="rfe-arrow">→</div> <div class="rfe-node">aggregator gets $(\pk_i, \bV_i)$</div> <div class="rfe-arrow">→</div> <div class="rfe-node">$\Enc$ produces a ciphertext for $\bU$</div> </div> <div class="rfe-flowrow"> <div class="rfe-edgelabel">user $i$ decrypts to obtain</div> <div class="rfe-node rfe-node--accent">$\bU\,\bT_i\,\bV_i$</div> </div> </div> <p>Now embed the garbling pieces into these matrices: the <strong>randomness</strong> $\vec w_i$ goes into the pre-constraint $\bT_i$ (chosen at setup), and the <strong>deterministic</strong> function matrix $\bL_i$ goes into $\bV_i$ (chosen at aggregation). Decryption multiplies them together and reconstructs the garbling. In the simplest case it really is this clean:</p> \[\vec u\,\bT_i\,\bV_i \;=\; \bigl(\,\underbrace{\vec z-\underline{\vec w}_i}_{\vec p_{i,1}},\ \underbrace{\vec w_i\bL_i}_{\vec p_{i,2}}\,\bigr),\] <p>which is exactly the garbling $(\vec p_{i,1}, \vec p_{i,2})$ of user $i$’s function — and applying the garbling’s decoder gives $\vec z\,h_i(\vec x)\tr$.</p> <p>Two more subtleties get handled by the same tool:</p> <p><strong>One-time security made many-time.</strong> A garbling is only one-time secure, so decrypting twice with one key could leak. We split the garbling randomness into a <strong>slot-specific</strong> part hidden in $\bT_i$ and a <strong>ciphertext-specific</strong> part carried by $\bU$ — so every ciphertext effectively gets a fresh garbling.</p> <p><strong>Sidestepping function-hiding (Challenge 2).</strong> Instead of function-hiding indistinguishability, we prove <strong>simulation security</strong>. The trick that makes it work: our simulator is given the decryption result in the <em>source groups</em> $\Gi$ and $\Gii$ — but <strong>not</strong> in $\Zp$.</p> <p><strong>Group elements for free (Challenge 3).</strong> Because the randomness now lives in $\bT_i$ (fixed at setup) rather than in the registered functions, we can evaluate the product $\impiii{\bU\,\bT_i}$ directly <em>in the groups</em> and randomize it via the <strong>bilateral $\MDDH$</strong> (i.e. bilateral $k$-Lin) assumption — so users never need to register vectors of group elements.</p> <div class="rfe-callout"> <p>Our Pre-IP also allows <strong>user-specific</strong> pre-constraining — each user $i$ gets its own matrix $\bT_i$ — generalizing prior pre-constrained inner-product sRFE that forced a single fixed matrix across all users.</p> </div> <h2 id="putting-it-together-a-modular-framework">Putting It Together: a Modular Framework</h2> <p>With Pre-IP in hand, the rest is modular. Combine Pre-IP with a garbling scheme for a function class $\cF \in \lbrace \mathsf{ABP}, \mathsf{L}, \mathsf{NL} \rbrace$ to get an sRFE for an intermediate functionality <strong>Pre-1AWS$_\cF$</strong>, parameterized by a pre-constraining matrix $\bM$:</p> \[f(\bM, \vec x, \vec z) \;=\; \vec z\,\bM\,h(\vec x)\tr ,\] <p>where $h$ is a vector of functions from $\cF$, $\vec x$ is the <em>public</em> input and $\vec z$ the <em>private</em> input. Then generic compilers lift this to the full target functionalities — and these compilers work for <strong>any</strong> $\cF$, so future garbling schemes plug right in.</p> <div class="rfe-fig"> <div class="rfe-flowrow"> <div class="rfe-node rfe-node--accent">Pre-IP</div> <div class="rfe-branch" style="align-items:center"> <div class="rfe-edgelabel">+ garbling for $\cF$</div> <div class="rfe-arrow">→</div> </div> <div class="rfe-node">Pre-1AWS$_\cF$</div> <div class="rfe-arrow">→</div> <div class="rfe-branch"> <div class="rfe-node rfe-node--dashed">AB-AWS$_\cF$</div> <div class="rfe-node rfe-node--dashed">AB-QF$_\cF$</div> </div> </div> <div class="rfe-edgelabel">$\cF \in \lbrace \mathsf{ABP},\ \mathsf{L},\ \mathsf{NL} \rbrace$ — arithmetic branching programs, deterministic / nondeterministic logspace Turing machines</div> </div> <h2 id="what-we-get">What We Get</h2> <p>Instantiating the framework yields several firsts, all from the standard <strong>(bilateral) $k$-Lin</strong> assumption in asymmetric pairing groups:</p> <ul> <li> <strong>Registered ABE for logspace Turing machines</strong> ($\mathsf{L}$ and $\mathsf{NL}$) — the first such schemes. The public parameters scale only with the TM’s number of <em>states</em>, independently of attribute length and the time/space bounds, so the system verifies <strong>unbounded-length attributes</strong>. This settles an open question of Zhu et al. (Asiacrypt 2023).</li> <li> <strong>Registered FE for attribute-based quadratic functions (AB-QF)</strong> with <strong>compact</strong> ciphertexts — the first quadratic RFE with built-in access control. A function $f=(g,h)$ on input $(\vec y,(\vec z_1,\vec z_2))$ returns $(\vec z_1\otimes\vec z_2)\,h\tr$ <strong>iff</strong> the policy $g(\vec y)=0$, with public attribute $\vec y$ and private $(\vec z_1,\vec z_2)$.</li> </ul> <table class="rfe-table"> <thead> <tr> <th>Work</th> <th>Functionality</th> <th>Security</th> <th>Assumption</th> </tr> </thead> <tbody> <tr> <td>FFMMRV23 / DPY24</td> <td>general</td> <td>Adp-IND</td> <td>iO + SSB</td> </tr> <tr> <td>DPY24</td> <td>IP; AB-IP for LSSS</td> <td>Adp-IND</td> <td>GGM</td> </tr> <tr> <td>ZLZGQ24</td> <td>IP; QF</td> <td>Adp-IND / Sel-SIM</td> <td>(bi-)$k$-Lin</td> </tr> <tr> <td>BLMMRW24</td> <td>IP; weak QF</td> <td>SelSta-IND / Adp-IND</td> <td>$q$-type / GGM</td> </tr> <tr> <td>Pal–Schädlich 2025</td> <td>AB-(1)AWS for ABP</td> <td>Adp-IND / Sel*-SIM</td> <td>bi-$k$-Lin</td> </tr> <tr class="me"> <td>This work</td> <td>AB-AWS for ABP, L, NL</td> <td>Sel*-SIM</td> <td>bi-$k$-Lin</td> </tr> <tr class="me"> <td>This work</td> <td>AB-QF for ABP, L, NL</td> <td>Sel*-SIM</td> <td>bi-$k$-Lin</td> </tr> </tbody> </table> <p style="font-size:.82rem;opacity:.7;margin-top:-.3rem">IP = inner product, QF = quadratic functions, AWS = attribute-weighted sums; "Adp / Sel / SelSta / Sel*" = adaptive / selective / selective-with-static-corruptions / very-selective; "weak QF" = quadratic with fixed functions.</p> <h2 id="why-it-matters">Why It Matters</h2> <p>The throughline is a single, reusable design: a generic compiler that fuses a <strong>specialized inner-product RFE</strong> (our Pre-IP) with <strong>information-theoretic garbling</strong>, transferring the classical Lin–Luo recipe into the registration-based world. Pre-IP cleanly encapsulates all the registration logic and hands the compiler exactly what it needs — fresh, user-specific garbling randomness sampled at setup and concealed until decryption.</p> <p>The payoff is registered FE that is <strong>expressive</strong> (Turing-machine policies, quadratic functions), <strong>access-controlled</strong>, <strong>compact</strong>, and <strong>simulation-secure</strong> — all without a trusted key authority, and from standard pairing assumptions.</p> <div class="rfe-callout"> <p>Want the full constructions, the compilers, and the security proofs? They’re in the paper: <a href="https://ia.cr/2025/2207" rel="external nofollow noopener" target="_blank">ia.cr/2025/2207</a>.</p> </div> </div> </article> <h2>References</h2> <div class="publications"> <ol class="bibliography"><li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#34507a"> <div>ASIACRYPT</div> </abbr> </div> <div id="pal2025framework" class="col-sm-8"> <div class="title">A General Framework for Registered Functional Encryption via User-Specific Pre-Constraining</div> <div class="author"> <em>Tapas Pal</em> and Robert Schädlich </div> <div class="periodical"> <em>In International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT)</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="https://eprint.iacr.org/2025/2207" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">pal2025framework</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A General Framework for Registered Functional Encryption via User-Specific Pre-Constraining}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Pal, Tapas and Sch{\"a}dlich, Robert}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> </div> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tapas Pal. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: June 11, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-service",
+          title: "service",
+          description: "Professional and academic service.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/service/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Past teaching activities.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Research projects and grants.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Cryptography researcher and group leader at KIT. My work spans functional encryption, anamorphic cryptography, verifiable computation, and privacy-enhancing technologies. Download the full CV using the link above.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "dropdown-resource",
+              title: "resource",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/books/";
+              },
+            },{id: "dropdown-blog",
+              title: "blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "post-the-art-of-covert-communications",
+        
+          title: "The Art of Covert Communications",
+        
+        description: "How a ciphertext can secretly carry a second message that even a key-holding &quot;dictator&quot; cannot detect — the intuition behind multi-message anamorphic encryption and signatures.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/anamorphic-cryptography/";
+          
+        },
+      },{id: "post-advanced-computation-on-encrypted-data-without-a-central-authority",
+        
+          title: "Advanced Computation on Encrypted Data Without a Central Authority",
+        
+        description: "How registered functional encryption lets users learn a function of encrypted data with no trusted key authority — and a general framework that builds it from pairings via &quot;user-specific pre-constraining.&quot;",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/rfe-asiacrypt/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "books-computing-on-encrypted-data-fhe-and-fe",
+          title: 'Computing on Encrypted Data: FHE and FE',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/computing-on-encrypted-data/";
+            },},{id: "books-cryptography-foundations",
+          title: 'Cryptography Foundations',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/cryptography-basics/";
+            },},{id: "books-lattice-based-cryptography",
+          title: 'Lattice-based Cryptography',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/lattice-based-cryptography/";
+            },},{id: "books-mathematics-for-cryptography-amp-cyber-security",
+          title: 'Mathematics for Cryptography &amp;amp; Cyber Security',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/mathematics-for-cryptography/";
+            },},{id: "books-network-security",
+          title: 'Network Security',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/network-security-basics/";
+            },},{id: "news-research-visit-to-the-university-of-auckland",
+          title: 'Research visit to the University of Auckland',
+          description: "A doctoral research visit to Prof. Steven Galbraith&#39;s group, and a seminar on the road from functional encryption to indistinguishability obfuscation.",
+          section: "News",handler: () => {
+              window.location.href = "/news/2019-auckland-visit/";
+            },},{id: "news-a-paper-https-eprint-iacr-org-2023-565-on-multi-authority-attribute-based-inner-product-fe-is-accepted-by-pkc-2023-https-pkc-iacr-org-2023",
+          title: 'A [paper](https://eprint.iacr.org/2023/565) on multi-authority attribute-based inner-product FE is accepted by [PKC 2023](https://pkc.iacr.org/2023/).',
+          description: "",
+          section: "News",},{id: "news-the-full-version-of-our-asiscrypt-39-21-paper-https-eprint-iacr-org-2021-1305-is-published-at-designs-codes-and-cryptography-https-link-springer-com-article-10-1007-s10623-023-01219-3",
+          title: 'The full version of our Asiscrypt&amp;#39;21 [paper](https://eprint.iacr.org/2021/1305) is published at [Designs, Codes and...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2023-483-on-unbounded-predicate-inner-product-fe-is-accepted-for-publication-at-the-journal-of-cryptology-https-link-springer-com-article-10-1007-s00145-023-09458-2",
+          title: 'A [paper](https://eprint.iacr.org/2023/483) on unbounded predicate inner product FE is accepted for publication at...',
+          description: "",
+          section: "News",},{id: "news-research-visit-to-the-university-of-st-gallen-and-a-talk-at-swiss-crypto-day",
+          title: 'Research visit to the University of St. Gallen and a talk at Swiss...',
+          description: "A research stay in Prof. Katerina Mitrokotsa&#39;s Cyber Security Group, and a talk on bringing inner product functional encryption closer to the real world.",
+          section: "News",handler: () => {
+              window.location.href = "/news/2023-stgallen-swiss-crypto-day/";
+            },},{id: "news-a-paper-https-eprint-iacr-org-2024-1031-on-functional-encryption-with-unbounded-data-sacfe-is-accepted-by-ieee-eurpsp-39-24-https-eurosp2024-ieee-security-org",
+          title: 'A [paper](https://eprint.iacr.org/2024/1031) on functional encryption with unbounded data (SACfe) is accepted by [IEEE...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2023-236-on-certified-everlasting-secure-fe-is-accepted-by-eurocrypt-2024-https-eurocrypt-iacr-org-2024",
+          title: 'A [paper](https://eprint.iacr.org/2023/236) on certified everlasting secure FE is accepted by [Eurocrypt 2024](https://eurocrypt.iacr.org/2024/)!',
+          description: "",
+          section: "News",},{id: "news-a-paper-on-adaptively-secure-inner-product-encryption-is-accepted-for-publication-at-the-journal-of-theoretical-computer-science-https-www-sciencedirect-com-science-article-pii-s0304397524001178",
+          title: 'A paper on adaptively secure inner product encryption is accepted for publication at...',
+          description: "",
+          section: "News",},{id: "news-the-full-version-of-our-asiscrypt-39-22-paper-https-eprint-iacr-org-2022-1594-is-published-at-designs-codes-and-cryptography-https-link-springer-com-article-10-1007-s10623-024-01432-8",
+          title: 'The full version of our Asiscrypt&amp;#39;22 [paper](https://eprint.iacr.org/2022/1594) is published at [Designs, Codes and...',
+          description: "",
+          section: "News",},{id: "news-our-paper-https-eprint-iacr-org-2023-457-on-registration-based-linear-functional-encryption-with-access-control-is-accepted-to-asiacrypt-39-24-https-asiacrypt-iacr-org-2024",
+          title: 'Our [paper](https://eprint.iacr.org/2023/457) on registration-based linear functional encryption with access control is accepted to...',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-reviewer-panel-of-the-mathematical-reviews-of-the-american-mathematical-society-ams-https-www-ams-org-home-page",
+          title: 'I am invited to join the reviewer panel of the Mathematical Reviews of...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-423-on-multi-client-attribute-based-unbounded-ipfe-is-accepted-to-pkc-39-25-https-pkc-iacr-org-2025",
+          title: 'A [paper](https://eprint.iacr.org/2025/423) on multi-client attribute-based unbounded IPFE is accepted to [PKC&amp;#39;25](https://pkc.iacr.org/2025/)!',
+          description: "",
+          section: "News",},{id: "news-our-traceable-functional-encryption-paper-https-eprint-iacr-org-2022-1196-is-accepted-for-publication-at-the-iacr-cic-https-cic-iacr-org-p-2-1-28-journal",
+          title: 'Our traceable functional encryption [paper](https://eprint.iacr.org/2022/1196) is accepted for publication at the IACR [CiC](https://cic.iacr.org/p/2/1/28)...',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-indocrypt-39-25-https-www-indocrypt2025-in",
+          title: 'I am invited to join the PC of [Indocrypt&amp;#39;25](https://www.indocrypt2025.in).',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-acm-ccs-2026-https-www-sigsac-org-ccs-ccs2026-for-the-privacy-and-anonymity-track",
+          title: 'I am invited to join the PC of ACM [CCS 2026](https://www.sigsac.org/ccs/CCS2026/) for the...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-2207-on-a-generic-framework-for-registered-fes-is-accepted-by-asiacrypt-39-25-https-asiacrypt-iacr-org-2025",
+          title: 'A [paper](https://eprint.iacr.org/2025/2207) on a generic framework for registered FEs is accepted by [Asiacrypt&amp;#39;25](https://asiacrypt.iacr.org/2025/)....',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-967-on-registered-pseudorandom-functional-encryption-for-tms-is-now-available-to-eprint",
+          title: 'A [paper](https://eprint.iacr.org/2025/967) on registered (pseudorandom) functional encryption for TMs is now available to...',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-acm-www-39-26-https-www2026-thewebconf-org",
+          title: 'I am invited to join the PC of ACM [WWW&amp;#39;26](https://www2026.thewebconf.org).',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-acm-apkc-2026-https-iseclab-ec-t-kanazawa-u-ac-jp-en-apkc2026-html",
+          title: 'I am invited to join the PC of ACM [APKC 2026](https://iseclab.ec.t.kanazawa-u.ac.jp/en/APKC2026.html).',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-pkc-2027-https-pkc-iacr-org-2027",
+          title: 'I am invited to join the PC of [PKC 2027](https://pkc.iacr.org/2027/).',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-836-on-registered-fe-for-attribute-weighted-sums-is-accepted-by-pkc-2026-https-pkc-iacr-org-2026",
+          title: 'A [paper](https://eprint.iacr.org/2025/836) on registered FE for attribute-weighted sums is accepted by [PKC 2026](https://pkc.iacr.org/2026/)....',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-370-on-anamorphic-cryptography-is-accepted-to-crypto-2026-https-crypto-iacr-org-2026",
+          title: 'A [paper](https://eprint.iacr.org/2025/370) on anamorphic cryptography is accepted to [Crypto 2026](https://crypto.iacr.org/2026/)!',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-space-39-26-https-space2026-isec-tugraz-at",
+          title: 'I am invited to join the PC of [SPACE&amp;#39;26](https://space2026.isec.tugraz.at).',
+          description: "",
+          section: "News",},{id: "projects-multi-client-unbounded-attribute-based-inner-product-functional-encryption",
+          title: 'Multi-Client Unbounded Attribute-Based Inner Product Functional Encryption',
+          description: "SNSF-funded project. Completed.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_mc_abipfe/";
+            },},{id: "projects-beyond-trusted-authorities-registered-functional-encryption-and-access-control",
+          title: 'Beyond Trusted Authorities: Registered Functional Encryption and Access Control',
+          description: "continuing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_reg-ab-fe/";
+            },},{id: "projects-public-key-anamorphic-extensions-for-practical-and-standard-primitives",
+          title: 'Public-Key Anamorphic Extensions for Practical and Standard Primitives',
+          description: "continuing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_anam/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%74%61%70%61%73.%70%61%6C@%6B%69%74.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/222/6843.html", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/tapas-pal-7b5a88b7", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=7N8SUDMAAAAJ", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
