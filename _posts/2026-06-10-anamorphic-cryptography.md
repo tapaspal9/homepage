@@ -90,7 +90,7 @@ $$
 </style>
 
 <div class="anam-callout" markdown="1">
-Based on joint work with **Shalini Banerjee, Andy Rupp, and Daniel Slamanig** — *Simple Asymmetric Anamorphic Encryption and Signature using Multi-Message Extensions*, [Cryptology ePrint Archive 2025/370](https://eprint.iacr.org/2025/370) and appeared at Crypto {% banerjee2026anamorphic %}. This post is an intuitive tour of the ideas; the paper has the full constructions and proofs.
+Based on joint work with **Shalini Banerjee, Andy Rupp, and Daniel Slamanig** — *Simple Asymmetric Anamorphic Encryption and Signature using Multi-Message Extensions*, [Cryptology ePrint Archive 2025/370](https://eprint.iacr.org/2025/370) and appeared at Crypto {% cite banerjee2026anamorphic %}. This post is an intuitive tour of the ideas; the paper has the full constructions and proofs.
 </div>
 
 ## Hidden Messages in Plain Sight
