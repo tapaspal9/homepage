@@ -1,5 +1,4 @@
------
-
+---
 ## layout: post
 title: “Computing on Unbounded Data with Predicates”
 date: 2023-05-17
@@ -9,6 +8,8 @@ toc:
 sidebar: left
 related_publications: true
 related_posts: false
+---
+
 
 <div style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true">
 $$
