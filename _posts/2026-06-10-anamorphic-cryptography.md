@@ -182,10 +182,10 @@ The art is in *how* the hidden message is woven into the ciphertexts so that (a)
 ElGamal is the cleanest place to see the trick. A ciphertext is
 
 $$
-\ct_1 = (\r_1, \c_1) = \big(g^{\kappa},\; \pk^{\kappa}\cdot \msg\big),
+\ct_1 = (r_1, c_1) = \big(g^{\kappa},\; \pk^{\kappa}\cdot \msg\big),
 $$
 
-and decryption recovers $\msg = \c_1 \cdot \r_1^{-\sk}$, where $\pk = g^{\sk}$.
+and decryption recovers $\msg = c_1 \cdot r_1^{-\sk}$, where $\pk = g^{\sk}$.
 
 The crucial observation: ElGamal is **randomized**, and that randomness $\kappa$ looks uniform. Random-looking components are exactly where a hidden signal can hide in plain sight.
 
