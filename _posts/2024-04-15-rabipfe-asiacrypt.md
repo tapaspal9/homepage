@@ -3,7 +3,7 @@ layout: post
 title: "Registration Model for Functional Encryption: Linear Functions with Access Control"
 date: 2024-04-15
 description: How to evaluate linear functions on encrypted data — with optional attribute-based access control — and no trusted key authority. A four-attempt build-up to registered (AB-)IPFE from pairings.
-tags: functional-encryption registration-based pairings
+tags: functional-encryption registered pairings attribute-based-encryption
 toc:
   sidebar: left
 related_publications: true
