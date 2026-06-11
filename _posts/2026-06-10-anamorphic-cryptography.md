@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Signals in Encryption: Exploring the Hidden Channels of Anamorphic Cryptography"
+title: "Asymmetric Anamorphic Encryption/Signatures: The Art of Covert Communications"
 date: 2026-06-10
 description: How a ciphertext can secretly carry a second message that even a key-holding "dictator" cannot detect — the intuition behind multi-message anamorphic encryption and signatures.
 tags: anamorphic-cryptography post-quantum signatures
@@ -90,14 +90,14 @@ $$
 </style>
 
 <div class="anam-callout" markdown="1">
-Based on joint work with **Shalini Banerjee, Andy Rupp, and Daniel Slamanig** — *Simple Public Key Anamorphic Encryption and Signature using Multi-Message Extensions*, [Cryptology ePrint Archive 2025/370](https://eprint.iacr.org/2025/370). This post is an intuitive tour of the ideas; the paper has the full constructions and proofs.
+Based on joint work with **Shalini Banerjee, Andy Rupp, and Daniel Slamanig** — *Simple Asymmetric Anamorphic Encryption and Signature using Multi-Message Extensions*, [Cryptology ePrint Archive 2025/370](https://eprint.iacr.org/2025/370) and appeared at Crypto {% banerjee2026anamorphic %}. This post is an intuitive tour of the ideas; the paper has the full constructions and proofs.
 </div>
 
 ## Hidden Messages in Plain Sight
 
 What if an encrypted message could carry **another** secret message — one that only a single chosen receiver can ever see?
 
-That is the question behind *anamorphic cryptography*. Ordinary encryption hides the **content** of a message, but it openly admits that communication is happening. Anamorphic encryption adds a second, invisible layer of meaning to the very same ciphertext.
+That is the question behind *anamorphic cryptography*. Ordinary encryption hides the **content** of a message, but it openly admits that communication is happening. Anamorphic encryption adds a second, invisible layer of meaning to the very same ciphertext. The concept was introduced by [Giuseppe Persiano, Duong Hieu Phan, and Moti Yung](https://ia.cr/2022/639) at Eurocrypt 2022.
 
 A useful picture: normal encryption is a **locked box**. Anyone with the key opens it and finds the message. Anamorphic encryption is a locked box with a **hidden compartment** built into the lid. Open it the usual way and you get the ordinary contents. But a receiver who knows the compartment is there — and holds a special *double key* — can quietly retrieve something else entirely.
 
@@ -278,7 +278,17 @@ The trick: if each user generates its own Waters-hash parameters and therefore k
 
 ## Finding Hidden Messages in a Stream
 
-So far the receiver knew *which* ciphertexts form an anamorphic bundle. In a real stream that information is itself sensitive — flagging it openly would betray the channel. Enter **SCAN — the Stream Ciphertext Anamorphism Notifier**.
+<style>
+.anam-flowrow{display:flex;align-items:center;justify-content:center;gap:.55rem;flex-wrap:wrap;margin:1.3rem 0}
+.anam-chain{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;align-items:flex-end;margin:.6rem 0 .25rem}
+.anam-ccell{min-width:3rem;padding:.5rem .3rem;text-align:center;border:1.5px solid rgba(128,128,128,.45);border-radius:7px;font-family:monospace;font-size:.8rem;font-weight:600;background:rgba(128,128,128,.05)}
+.anam-ccell sub{font-weight:400;opacity:.85}
+.anam-ccell--mark{border-color:var(--global-theme-color,#0076df);color:var(--global-theme-color,#0076df);border-width:2px;background:rgba(128,128,128,.12)}
+.anam-ccell--hid{border-style:dashed;border-color:var(--global-theme-color,#0076df)}
+.anam-brace{text-align:center;font-size:.78rem;opacity:.75;font-style:italic;margin-top:.15rem}
+</style>
+
+Once the hidden payload is spread across $\mu$ consecutive ciphertexts, the designated receiver faces a new problem: in a long stream of ordinary-looking ciphertexts, *which* short run actually carries the anamorphic message? The brute-force answer — anamorphically trial-decrypting every window of $\mu$ consecutive ciphertexts — is wasteful. **SCAN** (the *Stream Ciphertext Anamorphism Notifier*) lets the receiver jump straight to the right spot instead.
 
 The problem: a receiver watches a long stream and must figure out *where* the hidden channel switches on.
 
@@ -313,19 +323,6 @@ SCAN solves this with a shared notification key and a pseudorandom function that
 - $(\msgvec,\anm) \samp \Rec(\apk,\tk,\nk,\ctvec)$ — the receiver scans the stream and recovers the hidden payload.
 </div>
 
-<style>
-.anam-flowrow{display:flex;align-items:center;justify-content:center;gap:.55rem;flex-wrap:wrap;margin:1.3rem 0}
-.anam-chain{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;align-items:flex-end;margin:.6rem 0 .25rem}
-.anam-ccell{min-width:3rem;padding:.5rem .3rem;text-align:center;border:1.5px solid rgba(128,128,128,.45);border-radius:7px;font-family:monospace;font-size:.8rem;font-weight:600;background:rgba(128,128,128,.05)}
-.anam-ccell sub{font-weight:400;opacity:.85}
-.anam-ccell--mark{border-color:var(--global-theme-color,#0076df);color:var(--global-theme-color,#0076df);border-width:2px;background:rgba(128,128,128,.12)}
-.anam-ccell--hid{border-style:dashed;border-color:var(--global-theme-color,#0076df)}
-.anam-brace{text-align:center;font-size:.78rem;opacity:.75;font-style:italic;margin-top:.15rem}
-</style>
-
-## Finding Hidden Messages in a Stream
-
-Once the hidden payload is spread across $\mu$ consecutive ciphertexts, the designated receiver faces a new problem: in a long stream of ordinary-looking ciphertexts, *which* short run actually carries the anamorphic message? The brute-force answer — anamorphically trial-decrypting every window of $\mu$ consecutive ciphertexts — is wasteful. **SCAN** (the *Stream Ciphertext Anamorphism Notifier*) lets the receiver jump straight to the right spot instead.
 
 **It leans on one realistic assumption: in-order delivery.** Connection-oriented transports — TCP, QUIC, or the TLS record layer — guarantee reliable, in-order delivery, so against a *passive* dictator the receiver sees ciphertexts in exactly the order the sender produced them. Because the $\mu$ anamorphic ciphertexts therefore arrive back-to-back, and $\mu$ is a small constant the receiver already knows, it suffices to covertly mark just the **start** of the block.
 
@@ -372,15 +369,6 @@ For an ordinary ciphertext (fresh randomness) this fails; at the marker $i = k$ 
 **Why the dictator stays blind.** Without $K$, the PRF output is indistinguishable from uniform randomness — so the marker ciphertext looks exactly like any other freshly randomized encryption. The signal is visible only to someone holding the key.
 
 **Why it's fast.** Each ciphertext costs the receiver only one PRF evaluation, one re-encryption, and a comparison — no anamorphic trial-decryption of every $\mu$-window. The hidden message is recovered in essentially a single pass over the stream.
-
-<div class="anam-callout" markdown="1">
-**Syntax (informal).** A SCAN with stream length $\theta$ wraps a $\mu$-message extension in a sender–receiver protocol:
-
-- $\mathsf{nk} \leftarrow \mathsf{nGen}(1^{\lambda})$ — set up a notification key for signaling.
-- $\mathbf{ct} \leftarrow \mathsf{Sen}(\mathsf{apk}, \mathbf{msg})$ — the *normal* sender outputs $\theta$ ordinary ciphertexts.
-- $\mathbf{act} \leftarrow \mathsf{aSen}(\mathsf{apk}, \mathsf{dk}, \mathsf{nk}, \mathbf{msg}, (s, \mathsf{amsg}))$ — the *anamorphic* sender embeds a signal $s \in [\theta-\mu]$ marking where $\mathsf{amsg}$ begins.
-- $(\mathbf{msg}, \mathsf{anam}) \leftarrow \mathsf{Rec}(\mathsf{apk}, \mathsf{tk}, \mathsf{nk}, \mathbf{ct})$ — the receiver scans the stream and recovers the hidden payload.
-</div>
 
 
 
