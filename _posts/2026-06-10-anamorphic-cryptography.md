@@ -242,7 +242,7 @@ This demonstrates **anamorphic communication from post-quantum primitives** — 
 
 Encryption is not the only randomized primitive. **Signatures** carry randomness too — which raises a natural question:
 
-> Can a signature authenticate a message while *secretly carrying another one*\,?
+> Can a signature authenticate a message while *secretly carrying another one*$~$?
 
 An anamorphic signature should: verify normally under the ordinary verification key, hide an extra message inside, and allow only a designated receiver to extract it. Note the asymmetry we introduce here: the sender signs, and a *separate* receiver — not the verifier — pulls out the hidden message.
 
