@@ -7,6 +7,7 @@ tags: anamorphic-cryptography post-quantum signatures
 toc:
   sidebar: left
 related_posts: false
+related_publications: true
 ---
 
 <div style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true">
