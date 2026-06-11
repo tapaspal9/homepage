@@ -181,30 +181,30 @@ The art is in *how* the hidden message is woven into the ciphertexts so that (a)
 ElGamal is the cleanest place to see the trick. A ciphertext is
 
 $$
-(\ct_1, \ct_2) = \big(g^{\kappa},\; \pk^{\kappa}\cdot \msg\big),
+\ct_1 = (\r_1, \c_1) = \big(g^{\kappa},\; \pk^{\kappa}\cdot \msg\big),
 $$
 
-and decryption recovers $\msg = \ct_2 \cdot \ct_1^{-\sk}$.
+and decryption recovers $\msg = \c_1 \cdot \r_1^{-\sk}$, where $\pk = g^{\sk}$.
 
 The crucial observation: ElGamal is **randomized**, and that randomness $\kappa$ looks uniform. Random-looking components are exactly where a hidden signal can hide in plain sight.
 
-In the two-ciphertext extension, the first ciphertext is a perfectly ordinary encryption of $\msg_1$. For the **second** ciphertext, instead of drawing fresh randomness $\kappa_2$ uniformly, we *implicitly* program it:
+In the two-ciphertext extension, the first ciphertext is a perfectly ordinary encryption of $\msg_1$. For the **second** ciphertext $\ct_2 = (r_2, c_2)$, instead of drawing fresh randomness $\kappa_2$ uniformly, we *implicitly* program it:
 
 $$
 \kappa_2 \seteq \alpha\,\kappa + \amsg,\qquad
 r_2 = g^{\alpha\kappa+\amsg},\qquad
-c_2 = g^{x(\alpha\kappa+\amsg)}\cdot \msg_2 .
+c_2 = g^{\sk(\alpha\kappa+\amsg)}\cdot \msg_2 .
 $$
 
-Here the double keys are $\tk=\alpha$ and $\dk=(g^{\alpha}, g^{\alpha x})$. The receiver recovers the hidden message as a discrete logarithm,
+Here the double keys are $\tk=\alpha$ and $\dk=(g^{\alpha}, g^{\alpha \sk})$. The receiver recovers the hidden message as a discrete logarithm,
 
 $$
 \amsg = \log\!\big(r_2 \cdot r_1^{-\tk}\big),
 $$
 
-which is efficient because the anamorphic message space is a polynomially bounded subset of $\Z_q$.
+which is efficient because the anamorphic message space is a polynomially bounded subset of $\Z_q$. Note that, $(r_1, r_2)$ forms an ElGamal ciphertext encrypting $\amsg$. 
 
-To the dictator, $(\ct_1,\ct_2)$ are just two ordinary ElGamal ciphertexts. They never hold $(\tk,\dk)$, so they are completely oblivious to $\amsg$. The hidden channel rides entirely on randomness the dictator already expects to be random.
+To the dictator, $\actvec = (\ct_1,\ct_2)$ are just two ordinary ElGamal ciphertexts. They never hold $(\tk,\dk)$, so they are completely oblivious to $\amsg$. The hidden channel rides entirely on randomness the dictator already expects to be random.
 
 ## Anamorphic Dual-Regev: Hidden Signals in Post-Quantum Encryption
 
@@ -216,11 +216,11 @@ $$
 (\rrr^{\top}, c) \seteq \big(\sss^{\top}\AAA + \ee^{\top},\;\; \sss^{\top}\bbb + y + \msg\cdot\floor{q/2} \bmod q\big),
 $$
 
-with public key $\pk \seteq (\AAA, \bbb = \AAA\kkk)$ and secret key $\sk \seteq \kkk \samp \{0,1\}^m$.
+with public key $\pk \seteq (\AAA, \bbb = \AAA\kkk)$ and secret key $\sk \seteq \kkk \samp \lbrace 0,1 \rbrace^m$.
 
 The naive ElGamal-style move — biasing the secret $\sss_2$ so that $\amsg$ sits inside $\rrr_2^{\top}=\sss_2^{\top}\AAA+\ee_2^{\top}$ — **fails**, because there is no way to extract $\sss_2$ back out of $\rrr_2$. So we need a different embedding.
 
-The idea: introduce a second "double" public key $\wh{\bbb} = \AAA\,\wh{\kkk}$, with $\wh{\kkk}\samp\{0,1\}^m$ as the decryption double key $\tk$. We then **shape** the randomness of the second ciphertext so that the *first coordinate* of $\rrr_2^{\top}$ becomes a complete little Dual-Regev encryption of $\amsg$ under the double key. Concretely, sample $\sss_2 = [x_1,\dots,x_n]$ with $x_1,\dots,x_{n-1}$ uniform and the last entry chosen as
+The idea: introduce a second "double" public key $\wh{\bbb} = \AAA\,\wh{\kkk}$, with $\wh{\kkk}\samp\lbrace 0,1 \rbrace^m$ as the decryption double key $\tk$. We then **shape** the randomness of the second ciphertext so that the *first coordinate* of $\rrr_2^{\top}$ becomes a complete little Dual-Regev encryption of $\amsg$ under the double key. Concretely, sample $\sss_2 = [x_1,\dots,x_n]$ with $x_1,\dots,x_{n-1}$ uniform and the last entry chosen as
 
 $$
 x_n = \Big(-\textstyle\sum_{i=1}^{n-1} x_i\,a_i \;+\; \textcolor{blue}{\sss_1^{\top}\wh{\bbb} + \wh{y} + \amsg\cdot\floor{q/2}} \;-\; e_{2,1}\Big)\cdot a_n^{-1} \bmod q,
@@ -232,17 +232,17 @@ $$
 \textcolor{blue}{\wh{c} = \sss_1^{\top}\wh{\bbb} + \wh{y} + \amsg\cdot\floor{q/2} \bmod q},
 $$
 
-so the receiver can read off the regular Dual-Regev ciphertext $(\rrr_1^{\top}, \wh{c})$ and decrypt $\amsg$ with $\tk = \wh{\kkk}$. Under the $\dlwe$ assumption, $\sss_1^{\top}\wh{\bbb}+\wh{y}$ is uniform, so $x_n$ is uniform in the dictator's view — and $\act_1,\act_2$ remain two independent, ordinary Dual-Regev ciphertexts.
+so the receiver can read off the regular Dual-Regev ciphertext $(\rrr_1^{\top}, \wh{c})$ and decrypt $\amsg$ with $\tk = \wh{\kkk}$. Under the $\dlwe$ assumption, $\sss_1^{\top}\wh{\bbb}+\wh{y}$ is uniform, so $x_n$ is uniform in the dictator's view — and $\actvec = (\ct_1,\ct_2)$ remain two independent, ordinary Dual-Regev ciphertexts.
 
 <div class="anam-callout" markdown="1">
-This demonstrates **anamorphic communication from post-quantum primitives** — the hidden channel coexists with standard LWE-based encryption.
+This demonstrates **anamorphic communication from post-quantum primitives** — the hidden channel coexists with standard LWE-based encryption and without using any lattice tools (e.g., pre-image sampling or trapdoor matrices).
 </div>
 
 ## Anamorphic Signatures
 
 Encryption is not the only randomized primitive. **Signatures** carry randomness too — which raises a natural question:
 
-> Can a signature authenticate a message while *secretly carrying another one*?
+> Can a signature authenticate a message while *secretly carrying another one*\,?
 
 An anamorphic signature should: verify normally under the ordinary verification key, hide an extra message inside, and allow only a designated receiver to extract it. Note the asymmetry we introduce here: the sender signs, and a *separate* receiver — not the verifier — pulls out the hidden message.
 
@@ -312,6 +312,77 @@ SCAN solves this with a shared notification key and a pseudorandom function that
 - $\actvec \samp \aSen(\apk,\dk,\nk,\msgvec,(s,\amsg))$ — the *anamorphic* sender additionally embeds a signal $s$ marking where the hidden message $\amsg$ begins.
 - $(\msgvec,\anm) \samp \Rec(\apk,\tk,\nk,\ctvec)$ — the receiver scans the stream and recovers the hidden payload.
 </div>
+
+<style>
+.anam-flowrow{display:flex;align-items:center;justify-content:center;gap:.55rem;flex-wrap:wrap;margin:1.3rem 0}
+.anam-chain{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;align-items:flex-end;margin:.6rem 0 .25rem}
+.anam-ccell{min-width:3rem;padding:.5rem .3rem;text-align:center;border:1.5px solid rgba(128,128,128,.45);border-radius:7px;font-family:monospace;font-size:.8rem;font-weight:600;background:rgba(128,128,128,.05)}
+.anam-ccell sub{font-weight:400;opacity:.85}
+.anam-ccell--mark{border-color:var(--global-theme-color,#0076df);color:var(--global-theme-color,#0076df);border-width:2px;background:rgba(128,128,128,.12)}
+.anam-ccell--hid{border-style:dashed;border-color:var(--global-theme-color,#0076df)}
+.anam-brace{text-align:center;font-size:.78rem;opacity:.75;font-style:italic;margin-top:.15rem}
+</style>
+
+## Finding Hidden Messages in a Stream
+
+Once the hidden payload is spread across $\mu$ consecutive ciphertexts, the designated receiver faces a new problem: in a long stream of ordinary-looking ciphertexts, *which* short run actually carries the anamorphic message? The brute-force answer — anamorphically trial-decrypting every window of $\mu$ consecutive ciphertexts — is wasteful. **SCAN** (the *Stream Ciphertext Anamorphism Notifier*) lets the receiver jump straight to the right spot instead.
+
+**It leans on one realistic assumption: in-order delivery.** Connection-oriented transports — TCP, QUIC, or the TLS record layer — guarantee reliable, in-order delivery, so against a *passive* dictator the receiver sees ciphertexts in exactly the order the sender produced them. Because the $\mu$ anamorphic ciphertexts therefore arrive back-to-back, and $\mu$ is a small constant the receiver already knows, it suffices to covertly mark just the **start** of the block.
+
+**The marker is a PRF-chained ciphertext.** Sender and receiver share a PRF key $K$ (which can simply live inside the receiver's double key $\mathsf{dk}$). To announce that an anamorphic block $(\mathsf{ct}_{k+1}, \ldots, \mathsf{ct}_{k+\mu})$ begins at position $k+1$, the sender does *not* draw fresh randomness for the preceding ciphertext $\mathsf{ct}_k$. Instead it derives that randomness from the **previous** ciphertext through the PRF:
+
+$$
+r_k \leftarrow \mathsf{PRF}_K(\mathsf{ct}_{k-1}), \qquad
+\mathsf{ct}_k = \mathsf{Enc}(\mathsf{pk},\, \mathsf{msg}_k;\, r_k).
+$$
+
+<div class="anam-flowrow">
+  <div class="anam-node">ct<sub>k-1</sub><br><small>previous ciphertext</small></div>
+  <div class="anam-arrow">&rarr;</div>
+  <div class="anam-node anam-node--accent">PRF<sub>K</sub></div>
+  <div class="anam-arrow">&rarr;</div>
+  <div class="anam-node">r<sub>k</sub><br><small>randomness</small></div>
+  <div class="anam-arrow">&rarr;</div>
+  <div class="anam-node anam-node--hidden">ct<sub>k</sub> = marker<br><small>Enc(pk, msg<sub>k</sub>; r<sub>k</sub>)</small></div>
+</div>
+
+So $\mathsf{ct}_k$ is a perfectly valid encryption of an ordinary message $\mathsf{msg}_k$ — it just has randomness secretly tied to its predecessor.
+
+**Detection is a cheap scan.** As ciphertexts arrive, the receiver tests each one for the tell-tale chaining:
+
+$$
+\mathsf{ct}_i \;\stackrel{?}{=}\; \mathsf{Enc}\big(\mathsf{pk},\, \mathsf{msg}_i;\, \mathsf{PRF}_K(\mathsf{ct}_{i-1})\big).
+$$
+
+For an ordinary ciphertext (fresh randomness) this fails; at the marker $i = k$ it matches. The receiver then knows the next $\mu$ ciphertexts are the anamorphic block — and decodes only those.
+
+<div class="anam-fig">
+  <div class="anam-chain">
+    <div class="anam-ccell">ct<sub>k-1</sub></div>
+    <div class="anam-ccell anam-ccell--mark">ct<sub>k</sub> &#9733;</div>
+    <div class="anam-ccell anam-ccell--hid">ct<sub>k+1</sub></div>
+    <div class="anam-ccell anam-ccell--hid">ct<sub>k+2</sub></div>
+    <div class="anam-ccell anam-ccell--hid">&#8230;</div>
+    <div class="anam-ccell anam-ccell--hid">ct<sub>k+&mu;</sub></div>
+    <div class="anam-ccell">ct<sub>k+&mu;+1</sub></div>
+  </div>
+  <div class="anam-brace">&#9733; marker (PRF-chained) &nbsp;&middot;&nbsp; dashed = the &mu; anamorphic ciphertexts &nbsp;&middot;&nbsp; solid = ordinary traffic</div>
+</div>
+
+**Why the dictator stays blind.** Without $K$, the PRF output is indistinguishable from uniform randomness — so the marker ciphertext looks exactly like any other freshly randomized encryption. The signal is visible only to someone holding the key.
+
+**Why it's fast.** Each ciphertext costs the receiver only one PRF evaluation, one re-encryption, and a comparison — no anamorphic trial-decryption of every $\mu$-window. The hidden message is recovered in essentially a single pass over the stream.
+
+<div class="anam-callout" markdown="1">
+**Syntax (informal).** A SCAN with stream length $\theta$ wraps a $\mu$-message extension in a sender–receiver protocol:
+
+- $\mathsf{nk} \leftarrow \mathsf{nGen}(1^{\lambda})$ — set up a notification key for signaling.
+- $\mathbf{ct} \leftarrow \mathsf{Sen}(\mathsf{apk}, \mathbf{msg})$ — the *normal* sender outputs $\theta$ ordinary ciphertexts.
+- $\mathbf{act} \leftarrow \mathsf{aSen}(\mathsf{apk}, \mathsf{dk}, \mathsf{nk}, \mathbf{msg}, (s, \mathsf{amsg}))$ — the *anamorphic* sender embeds a signal $s \in [\theta-\mu]$ marking where $\mathsf{amsg}$ begins.
+- $(\mathbf{msg}, \mathsf{anam}) \leftarrow \mathsf{Rec}(\mathsf{apk}, \mathsf{tk}, \mathsf{nk}, \mathbf{ct})$ — the receiver scans the stream and recovers the hidden payload.
+</div>
+
+
 
 ## SSAN: Signaling for Signatures
 
