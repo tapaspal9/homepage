@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Computing on Unbounded Data with Predicates
+title: Linear Computations with Predicates Hiding Attributes
 date: 2023-05-17
 description: Evaluating weighted statistics on encrypted medical records — gated by a hidden policy, with no preset bound on data or attribute size. The ideas behind unbounded, attribute-hiding predicate IPFE from pairings.
 tags: functional-encryption attribute-based-encryption pairings unbounded
