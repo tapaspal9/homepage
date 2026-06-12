@@ -19,8 +19,8 @@ Cryptography is the invisible substrate of modern life — every HTTPS connectio
 ## Books & surveys
 
 - **[A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/)** — Dan Boneh & Victor Shoup. Free, complete, definition-and-proof oriented. *(book)*
-- *Introduction to Modern Cryptography* — Jonathan Katz & Yehuda Lindell. The standard first textbook (not free). *(book)*
+- **[Introduction to Modern Cryptography](http://staff.ustc.edu.cn/~mfy/moderncrypto/reading%20materials/Introduction_to_Modern_Cryptography.pdf)** — Jonathan Katz & Yehuda Lindell. The standard first textbook. Also [here](https://drive.google.com/file/d/1TGsrggtGNRpdrJXLjNPgl2VkgfQHeoW-/view?usp=sharing).
 
 ## Lecture notes & courses
 
-- **[Stanford CS255 — Introduction to Cryptography](https://crypto.stanford.edu/~dabo/courses/cs255_winter18/syllabus.html)** — Dan Boneh. Lecture-by-lecture readings over the whole field. *(course)*
+- **[Stanford CS255 — Introduction to Cryptography](https://crypto.stanford.edu/~dabo/courses/cs255_winter18/syllabus.html)** — Dan Boneh.
