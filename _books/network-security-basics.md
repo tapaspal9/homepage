@@ -16,6 +16,10 @@ The practice of protecting networks, protocols, and the systems on them — secu
 
 Most people meet cryptography through network security: it's what keeps a login, a payment, or a hospital's systems from being hijacked. Sound network-security fundamentals protect critical infrastructure and ordinary users alike, and translate abstract crypto guarantees into systems that actually hold up in the wild.
 
-## Lecture notes & courses
+## Books
+- **[CRYPTOGRAPHY AND NETWORK SECURITY - PRINCIPLES AND PRACTICE](https://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Cryptography_and_Network_Security.pdf)** - Stallings.
+- **[Security Engineering](http://deadnet.se:8080/Books_on_Tech_Survival_woodworking_foraging_etc/security_engineering_a_guide_to_building_dependable_distributed_systems.pdf)** - Anderson. Also [here](https://drive.google.com/file/d/1xpZWbeprfti0YUfdPkhyeSN_bEuGT2BB/view?usp=sharing).
 
-- *To add: Stanford CS155 — Computer & Network Security (course); and a networking primer such as Kurose & Ross, "Computer Networking: A Top-Down Approach."*
+
+## Lecture Notes
+- Stanford - Computer & Network Security ([course](https://cs155.stanford.edu/syllabus.html))
