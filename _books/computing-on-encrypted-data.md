@@ -18,8 +18,11 @@ These tools dissolve the usual trade-off between using data and protecting it. T
 
 ## Books & surveys
 
-- **[Homomorphic Encryption — tutorial chapter](https://shaih.github.io/pubs/he-chapter.pdf)** — Shai Halevi. A readable end-to-end tour of FHE. *(survey)*
-- **[Computing Blindfolded: New Developments in FHE](https://www.cs.toronto.edu/~vinodv/FHE-focs-survey.pdf)** — Vinod Vaikuntanathan. Short, high-level survey. *(survey)*
+- **[Homomorphic Encryption — tutorial chapter](https://shaih.github.io/pubs/he-chapter.pdf)** — Shai Halevi. A readable end-to-end tour of FHE. 
+- **[Computing Blindfolded: New Developments in FHE](https://www.cs.toronto.edu/~vinodv/FHE-focs-survey.pdf)** — Vinod Vaikuntanathan. Short, high-level survey. 
+- [More on FHE](https://drive.google.com/drive/folders/1cWkc16DPpcu_Hfxq1zmK7-XgjHFGMwKb?usp=share_link).
+- [A nice collection of papers on functional encryption](https://cseweb.ucsd.edu/~daniele/LatticeLinks/FE.html)
+- Functional Encryption library - [CiFEr](https://github.com/fentec-project/CiFEr), [dmcfe](https://github.com/Cosmian/dmcfe)
 
 ## Lecture notes & courses
 
