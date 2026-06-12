@@ -181,7 +181,7 @@ Concretely, in the dual pairing vector space (DPVS), with $\dbi{\cdot}$ / $\dbii
 
 $$
 \SK_{\by,\bv}:\quad
-\dbii{\bk_i=(\rho_i(-i,1),\,y_i,\,\gamma_i)\bB^*}\ \ \text{and}\ \
+\dbii{\bk_i=(\rho_i(-i,1),\,y_i,\,\gamma_i)\bB^{*}}\ \ \text{and}\ \
 \dbii{\bk_j=(\widetilde{\rho}_j(-j,1),\,\omega v_j,\,\widetilde{\gamma}_j)\bB^*}
 \quad\text{s.t. }\textstyle\sum_i\gamma_i+\sum_j\widetilde{\gamma}_j=0,
 $$
