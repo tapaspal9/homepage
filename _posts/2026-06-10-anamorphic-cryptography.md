@@ -327,7 +327,7 @@ SCAN solves this with a shared notification key and a pseudorandom function that
 
 **It leans on one realistic assumption: in-order delivery.** Connection-oriented transports — TCP, QUIC, or the TLS record layer — guarantee reliable, in-order delivery, so against a *passive* dictator the receiver sees ciphertexts in exactly the order the sender produced them. Because the $\mu$ anamorphic ciphertexts therefore arrive back-to-back, and $\mu$ is a small constant the receiver already knows, it suffices to covertly mark just the **start** of the block.
 
-**The marker is a PRF-chained ciphertext.** Sender and receiver share a PRF key $K$ (which can simply live inside the receiver's double key $\mathsf{dk}$). To announce that an anamorphic block \((\mathsf{ct}_{k+1}, \ldots, \mathsf{ct}_{k+\mu})\) begins at position $k+1$, the sender does *not* draw fresh randomness for the preceding ciphertext $\mathsf{ct}_k$. Instead it derives that randomness from the **previous** ciphertext through the PRF:
+**The marker is a PRF-chained ciphertext.** Sender and receiver share a PRF key $K$ (which can simply live inside the receiver's double key $\mathsf{dk}$). To announce that an anamorphic block $(\mathsf{ct}_{k+1}, \cdots, \mathsf{ct}_{k+\mu})$ begins at position $k+1$, the sender does *not* draw fresh randomness for the preceding ciphertext $\mathsf{ct}_k$. Instead it derives that randomness from the **previous** ciphertext through the PRF:
 
 $$
 r_k \leftarrow \mathsf{PRF}_K(\mathsf{ct}_{k-1}), \qquad
