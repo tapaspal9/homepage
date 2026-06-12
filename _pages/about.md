@@ -23,6 +23,8 @@ announcements:
 
 latest_posts:
   enabled: true
+  scrollable: true
+  limit: 3
 ---
 
 I am a researcher of the KASTEL Security Research Labs (Secure Computation &amp; Communication group) within the
