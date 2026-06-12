@@ -1,15 +1,14 @@
 ---
-## layout: post
-title: “Computing on Unbounded Data with Predicates”
-date: 2023-05-17
+layout: post
+title: Computing on Unbounded Data with Predicates
+date: 2026-06-13
 description: Evaluating weighted statistics on encrypted medical records — gated by a hidden policy, with no preset bound on data or attribute size. The ideas behind unbounded, attribute-hiding predicate IPFE from pairings.
 tags: functional-encryption predicate-encryption pairings
 toc:
-sidebar: left
+  sidebar: left
 related_publications: true
 related_posts: false
 ---
-
 
 <div style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true">
 $$
@@ -32,37 +31,7 @@ $$
 $$
 </div>
 
-<style>
-.pipfe-fig{margin:1.6rem 0;text-align:center}
-.pipfe-node{display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.55rem .9rem;margin:.25rem;font-weight:600;background:rgba(128,128,128,.06)}
-.pipfe-node small{font-weight:400;opacity:.72}
-.pipfe-node--accent{border-color:var(--global-theme-color,#0076df);color:var(--global-theme-color,#0076df)}
-.pipfe-node--good{border-color:#2e9e5b;color:#2e9e5b}
-.pipfe-node--warn{border-color:#cc7a00;color:#cc7a00}
-.pipfe-node--dashed{border-style:dashed;border-color:var(--global-theme-color,#0076df)}
-.pipfe-arrow{font-size:1.2rem;opacity:.55;line-height:1;margin:.1rem}
-.pipfe-flowrow{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1.1rem 0}
-.pipfe-edgelabel{font-size:.78rem;opacity:.72;font-style:italic;padding:0 .15rem}
-.pipfe-twocol{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.4rem 0}
-.pipfe-panel{flex:1 1 260px;max-width:380px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05);text-align:left}
-.pipfe-panel h4{margin:.1rem 0 .55rem;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center}
-.pipfe-chip{display:inline-block;font-size:.72rem;border:1px solid rgba(128,128,128,.4);border-radius:999px;padding:.08rem .5rem;margin:.12rem;background:rgba(128,128,128,.07);font-family:monospace}
-.pipfe-chip--hide{border-color:#cc7a00;color:#cc7a00}
-.pipfe-callout{border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0}
-.pipfe-attack{border-left:4px solid #cc3a2f;background:rgba(204,58,47,.08);padding:.7rem 1.05rem;border-radius:0 8px 8px 0;margin:1.2rem 0}
-.pipfe-attack b{color:#cc3a2f}
-.pipfe-ladder{display:flex;flex-direction:column;gap:.5rem;max-width:600px;margin:1.4rem auto}
-.pipfe-rung{display:flex;align-items:center;gap:.7rem;border:1px solid rgba(128,128,128,.35);border-radius:9px;padding:.5rem .8rem;background:rgba(128,128,128,.05)}
-.pipfe-badge{flex:0 0 auto;width:1.6rem;height:1.6rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:.85rem}
-.pipfe-badge--good{background:#2e9e5b}.pipfe-badge--warn{background:#cc7a00}.pipfe-badge--bad{background:#cc3a2f}
-.pipfe-rung small{opacity:.75}
-.pipfe-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.86rem}
-.pipfe-table th,.pipfe-table td{border:1px solid rgba(128,128,128,.35);padding:.45rem .6rem;text-align:center}
-.pipfe-table th{background:rgba(128,128,128,.12)}
-.pipfe-table td:first-child{font-weight:700}
-</style>
-
-<div class="pipfe-callout" markdown="1">
+<div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0" markdown="1">
 Based on joint work with **Uddipana Dowerah, Subhranil Dutta, Aikaterini Mitrokotsa, and Sayantan Mukherjee** — *Unbounded Predicate Inner Product Functional Encryption from Pairings* {% cite dowerah2023unbounded %}. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.
 </div>
 
@@ -70,46 +39,44 @@ Based on joint work with **Uddipana Dowerah, Subhranil Dutta, Aikaterini Mitroko
 
 Picture the Ministry of Health (MoH) wanting the average blood pressure of patients recently treated for influenza — computed over records that hospitals have **encrypted** and parked in a cloud. The MoH should learn that one statistic, and *only* for the patients matching a policy, without ever seeing the raw records or the sensitive identifiers attached to them.
 
-This is exactly what **attribute-based inner-product FE (AB-IPFE)** promises. A hospital encrypts a patient’s vitals $\bx$ (temperature, heart rate, blood pressure, …) under an **attribute** $\bw$ (SSN, age, sex, eligible designations, …). A research centre holds a key for a **policy** $P$ and a **weight vector** $\by$. Decryption reveals the weighted statistic $\ip{\bx}{\by}$ — but only if the attribute satisfies the policy.
+This is exactly what **attribute-based inner-product FE (AB-IPFE)** promises. A hospital encrypts a patient's vitals $\bx$ (temperature, heart rate, blood pressure, …) under an **attribute** $\bw$ (SSN, age, sex, eligible designations, …). A research centre holds a key for a **policy** $P$ and a **weight vector** $\by$. Decryption reveals the weighted statistic $\ip{\bx}{\by}$ — but only if the attribute satisfies the policy.
 
-<div class="pipfe-fig">
-  <div class="pipfe-flowrow">
-    <div class="pipfe-node">Hospital <small>(data owner)</small><br><small>encrypts vitals $\bx$ under attribute $\bw$</small></div>
-    <div class="pipfe-arrow">&rarr;</div>
-    <div class="pipfe-node pipfe-node--dashed">$\CT_{\bx,\bw}$ on the cloud<br><small>attribute $\bw$ stays hidden</small></div>
+<div style="margin:1.6rem 0;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1.1rem 0">
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;margin:.25rem;font-weight:600;background:rgba(128,128,128,.06)">Hospital <small>(data owner)</small><br><small style="font-weight:400;opacity:.72">encrypts vitals $\bx$ under attribute $\bw$</small></div>
+    <div style="font-size:1.2rem;opacity:.55;margin:.1rem">&rarr;</div>
+    <div style="display:inline-block;border:1.5px dashed var(--global-theme-color,#0076df);border-radius:10px;padding:.5rem .85rem;margin:.25rem;font-weight:600;background:rgba(128,128,128,.06)">$\CT_{\bx,\bw}$ on the cloud<br><small style="font-weight:400;opacity:.72">attribute $\bw$ stays hidden</small></div>
   </div>
-  <div class="pipfe-flowrow">
-    <div class="pipfe-node">MoH <small>(authority)</small><br><small>issues $\SK_{P,\by}$</small></div>
-    <div class="pipfe-arrow">&rarr;</div>
-    <div class="pipfe-node">Specialist <small>(data user)</small></div>
-    <div class="pipfe-arrow">&rarr;</div>
-    <div class="pipfe-node pipfe-node--good">learns $\ip{\bx}{\by}$<br><small>iff $P(\bw)$ holds</small></div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1.1rem 0">
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;margin:.25rem;font-weight:600;background:rgba(128,128,128,.06)">MoH <small>(authority)</small><br><small style="font-weight:400;opacity:.72">issues $\SK_{P,\by}$</small></div>
+    <div style="font-size:1.2rem;opacity:.55;margin:.1rem">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;margin:.25rem;font-weight:600;background:rgba(128,128,128,.06)">Specialist <small>(data user)</small></div>
+    <div style="font-size:1.2rem;opacity:.55;margin:.1rem">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .85rem;margin:.25rem;font-weight:600;background:rgba(128,128,128,.06)">learns $\ip{\bx}{\by}$<br><small style="font-weight:400;opacity:.72">iff $P(\bw)$ holds</small></div>
   </div>
-  <div style="margin-top:.4rem">
-    <span class="pipfe-chip pipfe-chip--hide">SSN</span>
-    <span class="pipfe-chip pipfe-chip--hide">Race</span>
-    <span class="pipfe-chip pipfe-chip--hide">Age</span>
-    <span class="pipfe-chip pipfe-chip--hide">Sex</span>
-    <span class="pipfe-chip">Scientist&nbsp;ID</span>
-    <span class="pipfe-edgelabel">&nbsp; attribute $\bw$ &mdash; orange entries must stay private</span>
+  <div style="margin-top:.4rem;line-height:1.9">
+    <span style="display:inline-block;font-size:.72rem;border:1px solid #cc7a00;color:#cc7a00;border-radius:999px;padding:.08rem .5rem;margin:.12rem;font-family:monospace">SSN</span>
+    <span style="display:inline-block;font-size:.72rem;border:1px solid #cc7a00;color:#cc7a00;border-radius:999px;padding:.08rem .5rem;margin:.12rem;font-family:monospace">Race</span>
+    <span style="display:inline-block;font-size:.72rem;border:1px solid #cc7a00;color:#cc7a00;border-radius:999px;padding:.08rem .5rem;margin:.12rem;font-family:monospace">Age</span>
+    <span style="display:inline-block;font-size:.72rem;border:1px solid #cc7a00;color:#cc7a00;border-radius:999px;padding:.08rem .5rem;margin:.12rem;font-family:monospace">Sex</span>
+    <span style="display:inline-block;font-size:.72rem;border:1px solid rgba(128,128,128,.4);border-radius:999px;padding:.08rem .5rem;margin:.12rem;font-family:monospace">Scientist&nbsp;ID</span>
+    <span style="font-size:.78rem;opacity:.72;font-style:italic">&nbsp; attribute $\bw$ &mdash; orange entries must stay private</span>
   </div>
-  <div class="pipfe-edgelabel" style="margin-top:.3rem">policy example &nbsp; $P:\ (5000 &lt; \text{SSN} &lt; 8000)\ \wedge\ (\text{Infectious Disease Specialist})$</div>
+  <div style="font-size:.78rem;opacity:.72;font-style:italic;margin-top:.35rem">policy example &nbsp; $P:\ (5000 &lt; \text{SSN} &lt; 8000)\ \wedge\ (\text{Infectious Disease Specialist})$</div>
 </div>
 
-Inner-product predicates are expressive — they capture disjunctions, polynomials, and CNF/DNF formulae — so this single primitive covers a lot of “search-then-aggregate” tasks. But deploy it with existing AB-IPFE and you hit two walls.
+Inner-product predicates are expressive — they capture disjunctions, polynomials, and CNF/DNF formulae — so this single primitive covers a lot of "search-then-aggregate" tasks. But deploy it with existing AB-IPFE and you hit two walls.
 
-<div class="pipfe-twocol">
-  <div class="pipfe-panel" markdown="1">
-  <h4>Wall 1 — bounded sizes</h4>
+<div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.4rem 0">
+  <div style="flex:1 1 260px;max-width:380px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)" markdown="1">
+  <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Wall 1 — bounded sizes</div>
 
-Existing AB-IPFE fixes a maximum data/attribute length **at setup**. The MoH cannot guess that bound in advance, and once chosen, the master public key — and *every* ciphertext a hospital ever produces — grows with the bound, even when the actual record is tiny.
-
+  Existing AB-IPFE fixes a maximum data/attribute length **at setup**. The MoH cannot guess that bound in advance, and once chosen, the master public key — and *every* ciphertext a hospital ever produces — grows with the bound, even when the actual record is tiny.
   </div>
-  <div class="pipfe-panel" markdown="1">
-  <h4>Wall 2 — leaked attributes</h4>
+  <div style="flex:1 1 260px;max-width:380px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)" markdown="1">
+  <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Wall 2 — leaked attributes</div>
 
-Existing AB-IPFE reveals the attribute $\bw$ attached to a ciphertext. That hands the SSN, age, and other identifiers straight to the data user — a privacy breach the hospital cannot allow.
-
+  Existing AB-IPFE reveals the attribute $\bw$ attached to a ciphertext. That hands the SSN, age, and other identifiers straight to the data user — a privacy breach the hospital cannot allow.
   </div>
 </div>
 
@@ -119,105 +86,151 @@ Our work removes both walls at once with **unbounded, attribute-hiding predicate
 
 A ciphertext $\CT_{\bx,\bw}$ carries a message $\bx$ and attribute $\bw$; a secret key $\SK_{\by,\bv}$ carries a key vector $\by$ and a predicate vector $\bv$. Decryption returns $\ip{\bx}{\by}$ — but only when two conditions line up: an **index-set relation** and a **predicate** $R(\bw,\bv)$.
 
-Because vectors are unbounded, they live on index sets, and two flavours of compatibility matter:
-
-<div class="pipfe-twocol">
-  <div class="pipfe-panel" markdown="1">
-  <h4>Index relation</h4>
-
-- **Permissive** $\Rp$: defined when $I_{\bv}\subseteq I_{\bw}$, summing over the smaller set.
-- **Strict** $\Rs$: defined only when $I_{\bw}=I_{\bv}$.
-
-  </div>
-  <div class="pipfe-panel" markdown="1">
-  <h4>Predicate $R(\bw,\bv)$</h4>
-
-- **Zero** (UZP-IPFE): accept iff $\ip{\bw}{\bv}=0$.
-- **Non-zero** (UNP-IPFE): accept iff $\ip{\bw}{\bv}\neq 0$.
-
+<div style="margin:1.5rem 0;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap">
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\CT_{\bx,\bw}$</div>
+    <div style="font-size:1.1rem;opacity:.6">$+$</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\SK_{\by,\bv}$</div>
+    <div style="font-size:1.2rem;opacity:.55">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">index relation holds?<br><small style="font-weight:400;opacity:.72">permissive / strict</small></div>
+    <div style="font-size:1.2rem;opacity:.55">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$R(\bw,\bv)=1$?<br><small style="font-weight:400;opacity:.72">zero / non-zero</small></div>
+    <div style="font-size:1.2rem;opacity:.55">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">output $\ip{\bx}{\by}$</div>
   </div>
 </div>
 
-The security goal is **attribute-hiding**: an adversary holding many keys — both *accepting* and *non-accepting* with respect to the challenge — should learn nothing beyond $\ip{\bx}{\by}$ (and not even the attribute $\bw$). *Full* attribute-hiding allows arbitrary accepting and non-accepting keys; *weak* attribute-hiding restricts the predicate vectors of accepting keys so the attribute can’t simply be read off. The paper delivers two schemes sitting at different, complementary points of this design space.
+Because vectors are unbounded, they live on index sets, and two flavours of compatibility matter:
+
+<div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.4rem 0">
+  <div style="flex:1 1 260px;max-width:380px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)" markdown="1">
+  <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Index relation</div>
+
+  - **Permissive** $\Rp$: defined when $I_{\bv}\subseteq I_{\bw}$, summing over the smaller set.
+  - **Strict** $\Rs$: defined only when $I_{\bw}=I_{\bv}$.
+  </div>
+  <div style="flex:1 1 260px;max-width:380px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)" markdown="1">
+  <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Predicate $R(\bw,\bv)$</div>
+
+  - **Zero** (UZP-IPFE): accept iff $\ip{\bw}{\bv}=0$.
+  - **Non-zero** (UNP-IPFE): accept iff $\ip{\bw}{\bv}\neq 0$.
+  </div>
+</div>
+
+The security goal is **attribute-hiding**: an adversary holding many keys — both *accepting* and *non-accepting* with respect to the challenge — should learn nothing beyond $\ip{\bx}{\by}$ (and not even the attribute $\bw$). *Full* attribute-hiding allows arbitrary accepting and non-accepting keys; *weak* attribute-hiding restricts the predicate vectors of accepting keys so the attribute can't simply be read off. The paper delivers two schemes at complementary points of this space.
 
 ## Construction 1 — UZP-IPFE (the technical heart)
 
-The first scheme is a **public-key**, permissive, **zero-predicate** UP-IPFE with **full attribute-hiding** in the standard model under $\sxdh$. Its starting point is the unbounded IPFE of Tomida and Takashima (TT18), whose index-encoding trick supplies both the unboundedness and the entropy needed to block illegitimate keys. Getting from there to a *attribute-hiding* predicate scheme takes a careful, four-step climb.
+The first scheme is a **public-key**, permissive, **zero-predicate** UP-IPFE with **full attribute-hiding** in the standard model under $\sxdh$. Its starting point is the unbounded IPFE of Tomida and Takashima (TT18), whose index-encoding trick supplies both the unboundedness and the entropy needed to block illegitimate keys. Getting from there to an attribute-hiding predicate scheme takes a careful, four-step climb.
 
-<div class="pipfe-ladder">
-  <div class="pipfe-rung"><span class="pipfe-badge pipfe-badge--warn">1</span><span><b>Concatenate &amp; randomize</b> &mdash; <small>one TT18 call on $(\bx,\bw)$, $(\by,\bv)$; randomize to hide $\ip{\bx}{\by}$ when $\ip{\bw}{\bv}\neq 0$.</small></span></div>
-  <div class="pipfe-rung"><span class="pipfe-badge pipfe-badge--bad">2</span><span><b>Two independent calls</b> &mdash; <small>fixes permissiveness, but opens a mix-n-match attack.</small></span></div>
-  <div class="pipfe-rung"><span class="pipfe-badge pipfe-badge--good">3</span><span><b>A middle route</b> &mdash; <small>two calls bound by a joint secret-sharing of zero.</small></span></div>
-  <div class="pipfe-rung"><span class="pipfe-badge pipfe-badge--good">4</span><span><b>Separate bases</b> &mdash; <small>different DPVS bases to stop cross-pairing.</small></span></div>
+<div style="display:flex;flex-direction:column;gap:.5rem;max-width:620px;margin:1.4rem auto">
+  <div style="display:flex;align-items:center;gap:.7rem;border:1px solid rgba(128,128,128,.35);border-radius:9px;padding:.5rem .8rem;background:rgba(128,128,128,.05)"><span style="flex:0 0 auto;width:1.6rem;height:1.6rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:.85rem;background:#cc7a00">1</span><span><b>Concatenate &amp; randomize</b> &mdash; <small style="opacity:.75">one TT18 call; randomize to mask $\ip{\bx}{\by}$ when $\ip{\bw}{\bv}\neq 0$.</small></span></div>
+  <div style="display:flex;align-items:center;gap:.7rem;border:1px solid rgba(128,128,128,.35);border-radius:9px;padding:.5rem .8rem;background:rgba(128,128,128,.05)"><span style="flex:0 0 auto;width:1.6rem;height:1.6rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:.85rem;background:#cc3a2f">2</span><span><b>Two independent calls</b> &mdash; <small style="opacity:.75">fixes permissiveness, but opens a mix-n-match attack.</small></span></div>
+  <div style="display:flex;align-items:center;gap:.7rem;border:1px solid rgba(128,128,128,.35);border-radius:9px;padding:.5rem .8rem;background:rgba(128,128,128,.05)"><span style="flex:0 0 auto;width:1.6rem;height:1.6rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:.85rem;background:#2e9e5b">3</span><span><b>A middle route</b> &mdash; <small style="opacity:.75">two calls bound by a joint secret-sharing of zero.</small></span></div>
+  <div style="display:flex;align-items:center;gap:.7rem;border:1px solid rgba(128,128,128,.35);border-radius:9px;padding:.5rem .8rem;background:rgba(128,128,128,.05)"><span style="flex:0 0 auto;width:1.6rem;height:1.6rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:.85rem;background:#2e9e5b">4</span><span><b>Separate bases</b> &mdash; <small style="opacity:.75">different DPVS bases to stop cross-pairing.</small></span></div>
 </div>
 
 ### Step 1 — concatenate, then randomize
 
-Pack $(\bx,\bw)$ as the message and $(\by,\bv)$ as the key into a single TT18 ciphertext and key. Correctness of TT18 hands you the **sum**
+Pack $(\bx,\bw)$ as the message and $(\by,\bv)$ as the key into a single TT18 ciphertext and key. Correctness hands you the **sum** $\ip{\bw}{\bv} + \ip{\bx}{\by}$ — which is exactly $\ip{\bx}{\by}$ when $\ip{\bw}{\bv}=0$. To stop a non-accepting key ($\ip{\bw}{\bv}\neq 0$) from leaking, scale the attribute side by fresh randomness $\delta,\omega$:
 
-$$
-\ip{\bw}{\bv} + \ip{\bx}{\by},
-$$
+<div style="margin:1.4rem 0;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap">
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">TT18 decrypt</div>
+    <div style="font-size:1.2rem;opacity:.55">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\delta\omega\,\ip{\bw}{\bv} + \ip{\bx}{\by}$</div>
+  </div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:wrap;margin-top:.7rem">
+    <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\ip{\bw}{\bv}=0\ \Rightarrow\ \ip{\bx}{\by}$<br><small style="font-weight:400;opacity:.72">accepting: statistic revealed</small></div>
+    <div style="display:inline-block;border:1.5px dashed var(--global-theme-color,#0076df);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\ip{\bw}{\bv}\neq0\ \Rightarrow\ \text{masked}$<br><small style="font-weight:400;opacity:.72">non-accepting: nothing leaks</small></div>
+  </div>
+</div>
 
-which is exactly $\ip{\bx}{\by}$ when $\ip{\bw}{\bv}=0$. But when $\ip{\bw}{\bv}\neq 0$, that sum is distinguishable — leaking that the key is non-accepting. The fix is to scale the attribute side by fresh randomness $\delta,\omega$, turning the sum into
-
-$$
-\delta\omega,\ip{\bw}{\bv} + \ip{\bx}{\by},
-$$
-
-so a non-zero $\ip{\bw}{\bv}$ now *masks* $\ip{\bx}{\by}$. Good intuition — but concatenation quietly **breaks permissiveness** (the combined index set no longer splits cleanly into the $\bx$- and $\bw$-parts), and the masking trick won’t line up across the two challenge attributes for non-accepting keys. Concatenation is a dead end.
+Good intuition — but concatenation quietly **breaks permissiveness** (the merged index set no longer splits into the $\bx$- and $\bw$-parts), and the mask won't line up across challenge attributes for non-accepting keys. Dead end.
 
 ### Step 2 — two independent calls (and a new attack)
 
-Encrypt $\bw$ and $\bx$ with **two** TT18 calls, and let the key be two TT18 keys, for $(\bv,I_{\bv})$ and $(\by,I_{\by})$. Now permissiveness holds separately on each side. But independence is too much freedom:
+Encrypt $\bw$ and $\bx$ with **two** TT18 calls, and let the key be two TT18 keys, for $(\bv,I_{\bv})$ and $(\by,I_{\by})$. Permissiveness now holds on each side — but independence is too much freedom:
 
-<div class="pipfe-attack" markdown="1">
-**Mix-n-match attack.** From keys $\SK_{\bv,\by}=(\mathsf{sk}_{\bv},\mathsf{sk}_{\by})$ and $\SK_{\bv',\by'}=(\mathsf{sk}_{\bv'},\mathsf{sk}_{\by'})$, an adversary can splice together a brand-new legitimate-looking key $\SK_{\bv,\by'}=(\mathsf{sk}_{\bv},\mathsf{sk}_{\by'})$ — recombining a predicate from one key with a function from another, and breaking security.
+<div style="border-left:4px solid #cc3a2f;background:rgba(204,58,47,.08);padding:.7rem 1.05rem;border-radius:0 8px 8px 0;margin:1.2rem 0" markdown="1">
+<b style="color:#cc3a2f">Mix-n-match attack.</b> From keys $\SK_{\bv,\by}=(\mathsf{sk}_{\bv},\mathsf{sk}_{\by})$ and $\SK_{\bv',\by'}=(\mathsf{sk}_{\bv'},\mathsf{sk}_{\by'})$, an adversary splices a brand-new legitimate-looking key $\SK_{\bv,\by'}=(\mathsf{sk}_{\bv},\mathsf{sk}_{\by'})$ — recombining a predicate from one key with a function from another, breaking security.
 </div>
 
 ### Step 3 — a middle route: bind the two halves
 
-The fix is a hybrid: still two parallel TT18 calls, but **no longer independent**. We tie the two key halves together with a *joint secret-sharing of zero* — a set $\mathcal{S}=\lbrace \gamma_i,\widetilde{\gamma}_j\rbrace$ whose shares satisfy $\sum_i\gamma_i+\sum_j\widetilde{\gamma}*j=0$ — and let the two ciphertext halves share a *common randomness* $z$ so the shares recombine exactly at decryption. Concretely, in the dual pairing vector space (DPVS), with $\db{\cdot}*\iota$ denoting an encoding in group $\iota$:
+The fix is a hybrid: still two parallel TT18 calls, but **no longer independent**. Tie the two key halves together with a *joint secret-sharing of zero* — shares $\lbrace \gamma_i,\widetilde{\gamma}_j\rbrace$ with $\sum_i\gamma_i+\sum_j\widetilde{\gamma}_j=0$ — and let the two ciphertext halves share a *common randomness* $z$ so the shares recombine exactly at decryption.
+
+<div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.3rem 0">
+  <div style="flex:1 1 260px;max-width:360px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:.9rem 1rem;background:rgba(128,128,128,.05);text-align:center">
+    <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">secret key — bound by $\sum\gamma=0$</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{sk}_{\by}$ &nbsp;<small style="font-weight:400;opacity:.7">share $\gamma_i$</small></div>
+    <div style="font-size:.95rem;color:var(--global-theme-color,#0076df);font-weight:700">&#8597; joint zero-share</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{sk}_{\bv}$ &nbsp;<small style="font-weight:400;opacity:.7">share $\widetilde{\gamma}_j$</small></div>
+    <div style="font-size:.76rem;opacity:.72;font-style:italic;margin-top:.4rem">splicing a foreign half breaks the zero-sum &rarr; mix-n-match blocked</div>
+  </div>
+  <div style="flex:1 1 260px;max-width:360px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:.9rem 1rem;background:rgba(128,128,128,.05);text-align:center">
+    <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">ciphertext — shared $z$</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{ct}_{\bx}$ &nbsp;<small style="font-weight:400;opacity:.7">randomness $z$</small></div>
+    <div style="font-size:.95rem;color:var(--global-theme-color,#0076df);font-weight:700">&#8597; common $z$</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{ct}_{\bw}$ &nbsp;<small style="font-weight:400;opacity:.7">randomness $z$</small></div>
+    <div style="font-size:.76rem;opacity:.72;font-style:italic;margin-top:.4rem">lets the holder recombine the shares at decryption</div>
+  </div>
+</div>
+
+Concretely, in the dual pairing vector space (DPVS), with $\dbi{\cdot}$ / $\dbii{\cdot}$ denoting encodings in the two source groups:
 
 $$
 \SK_{\by,\bv}:\quad
-\dbii{\bk_i=(\rho_i(-i,1),,y_i,,\gamma_i)\bB^*}\ \ \text{and}\   
-\dbii{\bk_j=(\widetilde{\rho}_j(-j,1),,\omega v_j,,\widetilde{\gamma}_j)\bB^*}
+\dbii{\bk_i=(\rho_i(-i,1),\,y_i,\,\gamma_i)\bB^*}\ \ \text{and}\ \
+\dbii{\bk_j=(\widetilde{\rho}_j(-j,1),\,\omega v_j,\,\widetilde{\gamma}_j)\bB^*}
 \quad\text{s.t. }\textstyle\sum_i\gamma_i+\sum_j\widetilde{\gamma}_j=0,
 $$
 
 $$
 \CT_{\bx,\bw}:\quad
-\dbi{\bc_i=(\pi_i(1,i),,x_i,,z)\bB}\ \ \text{and}\   
-\dbi{\bc_j=(\widetilde{\pi}_j(1,j),,\delta w_j,,z)\bB}.
+\dbi{\bc_i=(\pi_i(1,i),\,x_i,\,z)\bB}\ \ \text{and}\ \
+\dbi{\bc_j=(\widetilde{\pi}_j(1,j),\,\delta w_j,\,z)\bB}.
 $$
 
-The first two coordinates encode the index (the source of unboundedness), the third the vector entry, and the last the binding randomness. The shared zero-sum locks $\mathsf{sk}*{\by}$ and $\mathsf{sk}*{\bv}$ together — a spliced key no longer reconstructs the secret, killing the mix-n-match attack.
+The first two coordinates encode the index (the source of unboundedness), the third the vector entry, and the last the binding randomness.
 
 ### Step 4 — separate bases stop cross-pairing
 
-One subtlety remains. With overlapping index sets, an adversary could pair $\bk_i$ with $\bc_j$ and $\bk_j$ with $\bc_i$ — crossing the wires — to obtain $\delta\ip{\bw}{\by}+\omega\ip{\bx}{\bv}$ and leak unwanted information about $\bx$.
+One subtlety remains: with overlapping index sets, an adversary could pair $\bk_i$ with $\bc_j$ and $\bk_j$ with $\bc_i$ — crossing the wires — to obtain $\delta\ip{\bw}{\by}+\omega\ip{\bx}{\bv}$ and leak information about $\bx$.
 
-<div class="pipfe-callout" markdown="1">
-**Fix.** Encode the message side $(\bx,\by)$ and the attribute side $(\bw,\bv)$ under *different* DPVS bases — $(\bB,\bB^*)$ for one and $(\widetilde{\bB},\widetilde{\bB}^*)$ for the other. Cross-pairings now land in incompatible spaces and vanish.
+<div style="margin:1.3rem 0;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;gap:1.6rem;flex-wrap:wrap">
+    <div>
+      <div style="display:inline-block;border:1.5px solid #cc3a2f;color:#cc3a2f;border-radius:10px;padding:.5rem .8rem;font-weight:600;background:rgba(204,58,47,.06)">same basis $\bB$ everywhere<br><small style="font-weight:400">$\bk_i\times\bc_j,\ \bk_j\times\bc_i$ pair up &rarr; leak</small></div>
+    </div>
+    <div style="font-size:1.3rem;opacity:.55">&rArr;</div>
+    <div>
+      <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .8rem;font-weight:600;background:rgba(46,158,91,.06)">$(\bB,\bB^*)$ for $(\bx,\by)$<br>$(\widetilde{\bB},\widetilde{\bB}^*)$ for $(\bw,\bv)$<br><small style="font-weight:400">cross-pairings land in incompatible spaces &rarr; vanish</small></div>
+    </div>
+  </div>
 </div>
 
-The result is a full attribute-hiding UZP-IPFE: it must protect message *and* attribute against an adversary as strong as a TT18 adversary **and** a full attribute-hiding zero-predicate adversary combined — handled by extending the TT18 framework from “hiding an unbounded message” to “hiding an unbounded message *and* attribute.”
+The result is a full attribute-hiding UZP-IPFE that protects message *and* attribute against an adversary as strong as a TT18 adversary **and** a full attribute-hiding zero-predicate adversary combined — achieved by extending the TT18 framework from "hiding an unbounded message" to "hiding an unbounded message *and* attribute."
 
 ## Construction 2 — UNP-IPFE (simple, generic, succinct keys)
 
-The second scheme flips several choices: it’s a **secret-key**, strict, **non-zero-predicate** UP-IPFE with **weak** attribute-hiding, proven in the stronger **simulation** model under bilateral $k$-Lin. Its headline feature is **constant-size secret keys** — independent of the (unbounded) vector lengths — which the first scheme doesn’t offer.
+The second scheme flips several choices: **secret-key**, strict, **non-zero-predicate**, with **weak** attribute-hiding in the stronger **simulation** model under bilateral $k$-Lin. Its headline feature is **constant-size secret keys** — independent of the (unbounded) vector lengths.
 
-The route is a classic transformation: a non-zero-predicate scheme can be built from IPFE by encoding the attribute alongside the payload, recovering the payload only when $\ip{\bw}{\bv}\neq 0$. Here the “payload” is itself an inner product, so the natural move is to encrypt the **tensor** $\bx\otimes\bw$. Decryption yields
+The route is a classic transformation: encode the attribute alongside the payload, and recover the payload only when $\ip{\bw}{\bv}\neq 0$. Here the "payload" is itself an inner product, so encrypt the **tensor** $\bx\otimes\bw$:
 
-$$
-\ip{\bx\otimes\bw}{\by\otimes\bv} = \ip{\bx}{\by}\cdot\ip{\bw}{\bv}
-\quad\text{and}\quad \ip{\bw}{\bv},
-$$
+<div style="margin:1.3rem 0;text-align:center">
+  <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap">
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .8rem;font-weight:600;background:rgba(128,128,128,.06)">encrypt $\bx\otimes\bw$<br><small style="font-weight:400;opacity:.72">via UQFE (compact)</small></div>
+    <div style="font-size:1.2rem;opacity:.55">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .8rem;font-weight:600;background:rgba(128,128,128,.06)">$\ip{\bx}{\by}\cdot\ip{\bw}{\bv}$ &nbsp;and&nbsp; $\ip{\bw}{\bv}$</div>
+    <div style="font-size:1.2rem;opacity:.55">&rarr;</div>
+    <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .8rem;font-weight:600;background:rgba(128,128,128,.06)">divide out $\ip{\bw}{\bv}$<br><small style="font-weight:400;opacity:.72">get $\ip{\bx}{\by}$ if $\ip{\bw}{\bv}\neq0$</small></div>
+  </div>
+</div>
 
-from which $\ip{\bx}{\by}$ falls out whenever $\ip{\bw}{\bv}\neq 0$. The snag: a tensor makes the ciphertext **quadratic** in the vector lengths. The cure is to compute that quadratic term with an **unbounded quadratic FE (UQFE)** instead, whose ciphertext scales only *linearly*:
+The identity $\ip{\bx\otimes\bw}{\by\otimes\bv}=\ip{\bx}{\by}\cdot\ip{\bw}{\bv}$ does the work. The snag is that a tensor naively makes the ciphertext **quadratic** in the vector lengths; computing that quadratic term with an **unbounded quadratic FE (UQFE)** instead keeps the ciphertext **linear**:
 
-<div class="pipfe-callout" markdown="1">
+<div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0" markdown="1">
 $$
 \SK_{\by,\bv}:\ \mathsf{qsk}_{\by\otimes\bv},\ \mathsf{isk}_{\bv}
 \qquad\qquad
@@ -226,19 +239,14 @@ $$
 A UQFE handles the quadratic $\bx\otimes\bw$ part with compact ciphertexts; a plain unbounded IPFE recovers $\ip{\bw}{\bv}$.
 </div>
 
-This gives a simulation-secure UNP-IPFE with compact ciphertexts and constant-size keys — and motivates a question the paper also takes up: building a **simulation-secure UQFE** with constant keys and compact ciphertexts, since the only prior UQFE is indistinguishability-based with linear-size keys.
+This yields a simulation-secure UNP-IPFE with compact ciphertexts and constant-size keys — and motivates a question the paper also takes up: building a **simulation-secure UQFE** with constant keys and compact ciphertexts, since the only prior UQFE is indistinguishability-based with linear-size keys.
 
 ## The Two Schemes at a Glance
 
-<table class="pipfe-table">
-  <thead>
-    <tr><th>Scheme</th><th>Setting</th><th>Index relation</th><th>Predicate</th><th>Attribute-hiding</th><th>Assumption</th><th>Notable</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>UZP-IPFE</td><td>public key</td><td>permissive</td><td>zero ($\ip{\bw}{\bv}=0$)</td><td>full, IND, semi-adaptive</td><td>SXDH</td><td>standard model</td></tr>
-    <tr><td>UNP-IPFE</td><td>secret key</td><td>strict</td><td>non-zero ($\ip{\bw}{\bv}\neq0$)</td><td>weak, SIM, semi-adaptive</td><td>bilateral $k$-Lin</td><td>constant-size keys</td></tr>
-  </tbody>
-</table>
+| Scheme | Setting | Index relation | Predicate | Attribute-hiding | Assumption | Notable |
+|---|---|---|---|---|---|---|
+| **UZP-IPFE** | public key | permissive | zero ($\ip{\bw}{\bv}=0$) | full, IND, semi-adaptive | SXDH | standard model |
+| **UNP-IPFE** | secret key | strict | non-zero ($\ip{\bw}{\bv}\neq0$) | weak, SIM, semi-adaptive | bilateral $k$-Lin | constant-size keys |
 
 ## Why It Matters
 
@@ -246,6 +254,6 @@ Back to the hospital. With UP-IPFE, the MoH never fixes a size bound at setup, s
 
 To our knowledge these are the first unbounded AB-IPFE schemes that are simultaneously **attribute-hiding** and **unbounded** — one maximizing security (full attribute-hiding in the standard model), the other maximizing succinctness (constant-size keys, simulation security) — turning a clean theoretical primitive into something that fits the messy, unbounded shape of real data.
 
-<div class="pipfe-callout" markdown="1">
+<div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0" markdown="1">
 Want the formal definitions, the dual-system security proofs, and the full UQFE discussion? They're in the paper {% cite dowerah2023unbounded %}.
 </div>
