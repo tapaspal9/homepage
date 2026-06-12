@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Computing on Unbounded Data with Predicates
-date: 2026-06-13
+date: 2023-05-17
 description: Evaluating weighted statistics on encrypted medical records — gated by a hidden policy, with no preset bound on data or attribute size. The ideas behind unbounded, attribute-hiding predicate IPFE from pairings.
-tags: functional-encryption predicate-encryption pairings
+tags: functional-encryption attribute-based-encryption pairings unbounded
 toc:
   sidebar: left
 related_publications: true
@@ -32,7 +32,7 @@ $$
 </div>
 
 <div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0" markdown="1">
-Based on joint work with **Uddipana Dowerah, Subhranil Dutta, Aikaterini Mitrokotsa, and Sayantan Mukherjee** — *Unbounded Predicate Inner Product Functional Encryption from Pairings* {% cite dowerah2023unbounded %}. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.
+Based on joint work with **Uddipana Dowerah, Subhranil Dutta, Aikaterini Mitrokotsa, and Sayantan Mukherjee** — *Unbounded Predicate Inner Product Functional Encryption from Pairings* {% cite dowerah2023unbounded %}, appeared in the Journal of Cryptology. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.
 </div>
 
 ## A Hospital, a Cloud, and a Statistic
@@ -255,5 +255,5 @@ Back to the hospital. With UP-IPFE, the MoH never fixes a size bound at setup, s
 To our knowledge these are the first unbounded AB-IPFE schemes that are simultaneously **attribute-hiding** and **unbounded** — one maximizing security (full attribute-hiding in the standard model), the other maximizing succinctness (constant-size keys, simulation security) — turning a clean theoretical primitive into something that fits the messy, unbounded shape of real data.
 
 <div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0" markdown="1">
-Want the formal definitions, the dual-system security proofs, and the full UQFE discussion? They're in the paper {% cite dowerah2023unbounded %}.
+Want the formal definitions, the dual-system security proofs, and the full UQFE discussion? They're in the paper {% cite dowerah2023unbounded %} and at [ePrint 2023/483](https://ia.cr/2023/483).
 </div>
