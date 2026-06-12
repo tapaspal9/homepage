@@ -26,4 +26,4 @@ These tools dissolve the usual trade-off between using data and protecting it. T
 
 ## Lecture notes & courses
 
-- **[Computing on Encrypted Data (MIT 6.892)](https://people.csail.mit.edu/vinodv/6892-Fall2013/index.html)** — Vinod Vaikuntanathan. FHE, FE, and more, with a full reading list. *(course)*
+- **[Computing on Encrypted Data](https://people.csail.mit.edu/vinodv/6892-Fall2013/index.html)** — Vinod Vaikuntanathan. FHE, FE, and more, with a full reading list. *(course)*
