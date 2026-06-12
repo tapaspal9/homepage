@@ -218,3 +218,36 @@ ol.bibliography abbr * {
   max-width: 42rem;
   margin: 0.6rem auto 0;
 }
+
+
+/* Mobile navbar dropdown fix */
+@media (max-width: 768px) {
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    display: none;
+  }
+
+  .navbar-nav .dropdown.show .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-nav .dropdown-item {
+    padding-left: 2rem;
+    white-space: normal;
+  }
+
+}
