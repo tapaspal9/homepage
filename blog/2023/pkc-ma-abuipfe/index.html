@@ -1,0 +1,313 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Computing on Unbounded Data with Attributes spanning Multiple Authorities | Tapas Pal </title> <meta name="author" content="Tapas Pal"> <meta name="description" content="Evaluating linear functions on encrypted data when the attributes that gate access are issued by many independent authorities — with no preset bound on vectors, attributes, or authorities, in fast prime-order groups."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%8C%90&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://tapaspal9.github.io/blog/2023/pkc-ma-abuipfe/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Tapas</span> Pal </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/service/">service </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/books/">resource</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">Computing on Unbounded Data with Attributes spanning Multiple Authorities</h1> <p class="post-meta"> Created on September 19, 2023 </p> <p class="post-tags"> <a href="/blog/2023"> <i class="fa-solid fa-calendar fa-sm"></i> 2023 </a>   ·   <a href="/blog/tag/functional-encryption"> <i class="fa-solid fa-hashtag fa-sm"></i> functional-encryption</a>   <a href="/blog/tag/multi-authority"> <i class="fa-solid fa-hashtag fa-sm"></i> multi-authority</a>   <a href="/blog/tag/pairings"> <i class="fa-solid fa-hashtag fa-sm"></i> pairings</a>   <a href="/blog/tag/unbounded"> <i class="fa-solid fa-hashtag fa-sm"></i> unbounded</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <div style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true"> $$ \newcommand{\ip}[2]{\langle #1, #2\rangle} \newcommand{\bx}{\mathbf{x}} \newcommand{\by}{\mathbf{y}} \newcommand{\bu}{\mathbf{u}} \newcommand{\bv}{\mathbf{v}} \newcommand{\bz}{\mathbf{z}} \newcommand{\bM}{\mathbf{M}} \newcommand{\dbo}[1]{[\![#1]\!]_1} \newcommand{\dbtw}[1]{[\![#1]\!]_2} \newcommand{\dbt}[1]{[\![#1]\!]_T} \newcommand{\concat}{\,\|\,} \newcommand{\gid}{\mathsf{GID}} \newcommand{\PK}{\mathsf{PK}} \newcommand{\MSK}{\mathsf{MSK}} \newcommand{\CT}{\mathsf{CT}} \newcommand{\SK}{\mathsf{SK}} \newcommand{\hash}{\mathsf{H}} \newcommand{\dbdh}{\mathsf{DBDH}} \newcommand{\smx}{s_{\max}} $$ </div> <div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0"> <p>Based on joint work with <strong>Pratish Datta</strong> — <em>Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded</em>, PKC 2023 <a class="citation" href="#datta2023decentralized">(Datta &amp; Pal, 2023)</a>. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.</p> </div> <h2 id="one-computation-many-gatekeepers">One Computation, Many Gatekeepers</h2> <p>Suppose a company wants the <strong>average salary of employees who hold both a driving license and a PhD</strong> — computed over encrypted HR records. Or a ministry wants mental-health statistics across students of many departments and universities. Each of these is a <em>linear function on encrypted data</em> (an inner product), gated by an <em>access policy</em> over attributes. The twist: the attributes aren’t owned by one party. A university issues “PhD,” a transport agency issues “driving license,” each department vouches for its own students.</p> <p><strong>Attribute-based inner-product FE (AB-IPFE)</strong> gives the computation-plus-access-control part: a key for a vector $\by$ and some attributes decrypts a ciphertext (carrying data $\bx$ under a policy $P$) to reveal $\ip{\bx}{\by}$ — only if the attributes satisfy $P$. But classical AB-IPFE assumes a <strong>single authority</strong> minting all keys. Real attributes live across <strong>many independent authorities</strong> that should never have to coordinate.</p> <p>That decentralized setting is <strong>multi-authority AB-IPFE (MA-ABIPFE)</strong>: each authority runs its own setup and issues keys for <em>only</em> the attributes under its control, with no inter-authority communication. A user gathers keys from whichever authorities certify their attributes and, if those satisfy the policy, learns $\ip{\bx}{\by}$.</p> <div style="margin:1.6rem 0;text-align:center"> <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1.1rem 0"> <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">Authority 1<br><small style="font-weight:400;opacity:.72">"PhD"</small> </div> <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">Authority 2<br><small style="font-weight:400;opacity:.72">"driving license"</small> </div> <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">Authority 3<br><small style="font-weight:400;opacity:.72">"dept. X"</small> </div> <div style="font-size:.85rem;opacity:.6"> … </div> </div> <div style="font-size:.78rem;opacity:.72;font-style:italic">each issues keys for its own attributes — no coordination</div> <div style="display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;margin:1rem 0"> <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">User with identity $\gid$<br><small style="font-weight:400;opacity:.72">collects keys for vector $\by$</small> </div> <div style="font-size:1.2rem;opacity:.55">→</div> <div style="display:inline-block;border:1.5px dashed var(--global-theme-color,#0076df);border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\CT$: data $\bx$ under policy $P$</div> <div style="font-size:1.2rem;opacity:.55">→</div> <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">learns $\ip{\bx}{\by}$<br><small style="font-weight:400;opacity:.72">iff attributes satisfy $P$</small> </div> </div> </div> <p>The only prior MA-ABIPFE (Agrawal, Goyal, Tomida, TCC 2021) works — but at a steep price, and that price is the story of this paper.</p> <h2 id="the-trouble-with-the-state-of-the-art">The Trouble with the State of the Art</h2> <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.4rem 0"> <div style="flex:1 1 250px;max-width:360px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)"> <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Slow &amp; heavy</div> <p>It lives in <strong>composite-order</strong> bilinear groups under <strong>source-group</strong> (subgroup-decision) assumptions. At the 128-bit level a single decryption takes around <strong>five days</strong> — impractical by any measure.</p> </div> <div style="flex:1 1 250px;max-width:360px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)"> <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Rigidly bounded</div> <p>Vector lengths, the number of authorities, and the attributes per authority are all <strong>fixed at setup</strong>. New authorities or attributes can’t join later, and ciphertext cost scales with the worst-case length bound — plus a “one-use” limit on how often an attribute appears in a policy.</p> </div> </div> <p>That sets up a sharp open problem.</p> <div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0"> <p><strong>Open problem.</strong> Build an efficient MA-ABIPFE for expressive (LSSS) policies, free of the one-use restriction, in <strong>prime-order</strong> groups under a <strong>weaker</strong> assumption, where an <strong>unbounded</strong> number of authorities (each with unboundedly many attributes) can join <em>at any time</em> and <strong>unbounded-length</strong> data can be processed.</p> </div> <h2 id="our-answer-ma-abuipfe">Our Answer: MA-ABUIPFE</h2> <p>The paper resolves it by formulating and building <strong>multi-authority attribute-based <em>unbounded</em> IPFE (MA-ABUIPFE)</strong>, with three features the prior scheme lacked: (a) independent authorities control different attributes; (b) authorities join anytime, with no cap on how many can ever exist; (c) message and key vectors have no length fixed at setup — each authority generates its keys without committing to a vector length.</p> <p>It comes in two flavours, and crucially it runs in <strong>fast prime-order groups</strong> under <strong>target-group</strong> assumptions (qualitatively weaker than source-group ones), while lifting the one-use restriction entirely.</p> <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.4rem 0"> <div style="flex:1 1 250px;max-width:360px;border:1px solid rgba(46,158,91,.5);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)"> <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Small-universe</div> <p>Each authority controls a single (or bounded) attribute, but the number of authorities is <strong>arbitrary</strong>. Secure under the classic <strong>DBDH</strong> assumption — the same target-group assumption behind textbook ABE.</p> </div> <div style="flex:1 1 250px;max-width:360px;border:1px solid rgba(46,158,91,.5);border-radius:12px;padding:1rem 1.1rem;background:rgba(128,128,128,.05)"> <div style="font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;text-align:center;font-weight:700;margin-bottom:.5rem">Large-universe</div> <p>Each authority controls <strong>exponentially many</strong> attributes, never enumerated at setup. Secure under a parameterized variant, <strong>L-DBDH</strong>, justified in the generic bilinear group model.</p> </div> </div> <h2 id="the-starting-point-unbounded-ipfe-by-hash-and-pair">The Starting Point: Unbounded IPFE by Hash-and-Pair</h2> <p>How do you make vectors <em>unbounded</em>? The trick comes from the unbounded IPFE of Dufour-Sans and Pointcheval (DP), itself built on DBDH. Given a public key $\dbo{\alpha}$, encryption <strong>amplifies entropy</strong> by pairing it with a hash applied to each coordinate’s <em>index</em>:</p> \[\CT_{\bx}:\ C_0=\dbo{r},\quad \lbrace\, C_i=\dbt{x_i}\cdot e(\dbo{\alpha},\, r\,\dbtw{\hash(i)}) \,\rbrace_{i\in\mathcal{I}}; \qquad \SK_{\by}:\ -\alpha\textstyle\prod_{j}\hash(j)^{y_j}.\] <p>Because the hash $\hash$ stretches to <em>any</em> index on the fly, no length need be fixed in advance. When the index sets match, the key vector $\by$ pulls $\dbt{\ip{\bx}{\by}}$ out of $\prod_j C_j^{y_j}$ and a single pairing $e(C_0, \SK_{\by})$. The natural plan: graft this hash-and-pair idea onto a DBDH-based multi-authority ABE (Datta–Komargodski–Waters) to get an <em>unbounded</em> multi-authority scheme. It almost works — and where it breaks is the heart of the paper.</p> <h2 id="the-obstacle-encryption-doesnt-know-who-will-decrypt">The Obstacle: Encryption Doesn’t Know Who Will Decrypt</h2> <p>In the multi-authority world, the per-user keys from different authorities are tied together by a hash of the user’s global identity $\gid$ and key vector $\bu$ — something like $\hash(\gid\concat\bu\concat j\concat k\concat\mathcal{I})$. To extend an authority’s key component to an unbounded length, the encryptor would need to evaluate that very hash. But it <strong>can’t</strong>:</p> <div style="margin:1.3rem 0;text-align:center"> <div style="display:flex;align-items:stretch;justify-content:center;gap:1.4rem;flex-wrap:wrap"> <div style="flex:1 1 240px;max-width:320px;border:1.5px solid rgba(128,128,128,.45);border-radius:12px;padding:.8rem .9rem;background:rgba(128,128,128,.05)"> <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.4rem">at encryption, you know</div> <div>the data $\bx$ and the policy $P$<br><small style="opacity:.72">but <b>not</b> $\gid$ or $\bu$</small> </div> </div> <div style="flex:1 1 240px;max-width:320px;border:1.5px solid rgba(128,128,128,.45);border-radius:12px;padding:.8rem .9rem;background:rgba(128,128,128,.05)"> <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.4rem">only at key time, you know</div> <div>the identity $\gid$ and key vector $\bu$<br><small style="opacity:.72">chosen long after the ciphertext exists</small> </div> </div> </div> <div style="font-size:.78rem;opacity:.72;font-style:italic;margin-top:.5rem">the same ciphertext is decrypted by many users with different $\gid,\bu$ — so a hash on $\gid\concat\bu$ can't be precomputed at encryption</div> </div> <p>A plain hash-and-pair simply can’t let a data owner encrypt unbounded-length vectors here.</p> <h2 id="the-key-idea-hash-decomposition">The Key Idea: Hash-Decomposition</h2> <p>The fix is a <strong>hash-decomposition</strong> mechanism: split the one problematic hash into a product of two independent hashes, sorted by <em>who can compute what and when</em>.</p> \[\hash(\gid\concat\bu\concat j\concat k\concat\mathcal{I}) \;=\; \hash_2(j\concat k\concat\mathcal{I}) \;\cdot\; \hash_3(\gid\concat\bu\concat j\concat k)\] <p>with the first factor depending only on indices (so the <strong>encryptor</strong> can compute it) and the second depending on $\gid,\bu$ (so it waits for <strong>decryption</strong>):</p> <div style="margin:1.3rem 0;text-align:center"> <div style="display:flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap"> <div style="display:inline-block;border:1.5px solid var(--global-theme-color,#0076df);color:var(--global-theme-color,#0076df);border-radius:10px;padding:.55rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\hash_2(j\concat k\concat\mathcal{I})$<br><small style="font-weight:400">computed at <b>encryption</b></small> </div> <div style="font-size:1.1rem;opacity:.6">$\times$</div> <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:10px;padding:.55rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">$\hash_3(\gid\concat\bu\concat j\concat k)$<br><small style="font-weight:400;opacity:.72">computed at <b>decryption</b></small> </div> <div style="font-size:1.2rem;opacity:.55">→</div> <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.55rem .85rem;font-weight:600;background:rgba(128,128,128,.06)">full hash reassembled<br><small style="font-weight:400">at decryption time</small> </div> </div> </div> <p>The $\hash_2$ half carries no $\gid$ or $\bu$, so the <strong>encryptor</strong> can use it to expand an authority’s public-key component $\dbo{y_{t,j}}$ into a target-group vector, $\dbt{y_{t,j,k}^{(2)}} = e(\dbo{y_{t,j}},\, \hash_2(j\concat k\concat\mathcal{I}))$ — baking the unbounded stretch into the ciphertext without ever seeing the user. The $\hash_3$ half, which <em>does</em> depend on $\gid,\bu$, is supplied at decryption. To stitch the two halves back together correctly, the ciphertext carries an extra layer of secret-sharing of zero (components $C_{4,i,j}$), so the pairing operation that a single-authority scheme would do in one shot is now <strong>distributed between the encryption and decryption algorithms</strong>:</p> \[e\big(\hash(\gid\concat\bu\concat j),\, \ip{C_{3,i,j}}{\bu}\big) \;\longrightarrow\; \textstyle\prod_{k} C_{3,i,j,k}^{\,u_k}\cdot e\big(C_{4,i,j},\, \hash_3(\gid\concat\bu\concat j\concat k)^{u_k}\big).\] <p>The left side is what a bounded multi-authority scheme computes in one pairing; the right side is the unbounded version, with the $\hash_2$-dependent work pre-baked into $C_{3,i,j,k}$ at encryption and only the $\hash_3$-dependent piece finished at decryption. That redistribution is exactly what lets a data owner encrypt vectors of unbounded length without knowing the decryptor. The large-universe upgrade then layers on the Rouselakis–Waters technique so attributes need never be enumerated at setup.</p> <h2 id="how-much-better">How Much Better?</h2> <div style="overflow-x:auto;margin:1rem 0"> <table style="border-collapse:collapse;font-size:.74rem;line-height:1.35;margin:0 auto"> <thead> <tr> <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:left"></th> <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Prior MA-ABIPFE (AGT)</th> <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">This work (MA-ABUIPFE)</th> </tr> </thead> <tbody> <tr> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;font-weight:700">Group order</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center">composite</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center;color:#2e9e5b;font-weight:700">prime</td> </tr> <tr> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;font-weight:700">Assumption</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center">subgroup (source-group)</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center;color:#2e9e5b;font-weight:700">DBDH / L-DBDH (target-group)</td> </tr> <tr> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;font-weight:700">Vector length</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center">bounded</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center;color:#2e9e5b;font-weight:700">unbounded</td> </tr> <tr> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;font-weight:700">Authorities / attributes</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center">bounded at setup</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center;color:#2e9e5b;font-weight:700">unbounded, join anytime</td> </tr> <tr> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;font-weight:700">One-use restriction</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center">yes</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center;color:#2e9e5b;font-weight:700">removed</td> </tr> <tr> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;font-weight:700">Decryption (128-bit)</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center">~5 days</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center;color:#2e9e5b;font-weight:700">minutes</td> </tr> <tr> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;font-weight:700">Public-key size</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center">baseline</td> <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .55rem;white-space:nowrap;text-align:center;color:#2e9e5b;font-weight:700">~99% smaller</td> </tr> </tbody> </table> </div> <h2 id="why-it-matters">Why It Matters</h2> <p>By distributing one stubborn hash across encryption and decryption, hash-decomposition turns a five-day, rigidly bounded, composite-order scheme into a prime-order one that decrypts in minutes, shrinks public keys by around 99%, drops the one-use restriction, and lets authorities and attributes — and the data itself — grow without limit. And it does so under <strong>DBDH</strong>, a long-studied target-group assumption weaker than what the prior scheme required, demonstrating that a functionality well beyond “all-or-nothing” access control can rest on the same footing as textbook ABE.</p> <p>A useful by-product falls out along the way: a <strong>single-authority</strong> attribute-based unbounded IPFE from DBDH — the first AB-IPFE of any kind based on a target-group assumption, broadening the set of assumptions this primitive can stand on.</p> <div style="border-left:4px solid var(--global-theme-color,#0076df);background:rgba(128,128,128,.07);padding:.8rem 1.1rem;border-radius:0 8px 8px 0;margin:1.4rem 0"> <p>Want the full constructions, the large-universe upgrade, and the static-security proofs? They’re in the paper <a class="citation" href="#datta2023decentralized">(Datta &amp; Pal, 2023)</a>.</p> </div> </div> </article> <h2>References</h2> <div class="publications"> <ol class="bibliography"><li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#34507a"> <div>PKC</div> </abbr> </div> <div id="datta2023decentralized" class="col-sm-8"> <div class="title">Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded</div> <div class="author"> Pratish Datta and <em>Tapas Pal</em> </div> <div class="periodical"> <em>In IACR International Conference on Practice and Theory of Public-Key Cryptography (PKC)</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="https://eprint.iacr.org/2023/565" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">datta2023decentralized</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Decentralized Multi-Authority Attribute-Based Inner-Product FE: Large Universe and Unbounded}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Datta, Pratish and Pal, Tapas}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{IACR International Conference on Practice and Theory of Public-Key Cryptography (PKC)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> </div> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tapas Pal. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: June 12, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-service",
+          title: "service",
+          description: "Professional and academic service.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/service/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Past teaching activities.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Research projects and grants.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Cryptography researcher and group leader at KIT. My work spans functional encryption, anamorphic cryptography, verifiable computation, and privacy-enhancing technologies. Download the full CV using the link above.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "dropdown-resource",
+              title: "resource",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/books/";
+              },
+            },{id: "dropdown-blog",
+              title: "blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "post-the-art-of-covert-communications",
+        
+          title: "The Art of Covert Communications",
+        
+        description: "How a ciphertext can secretly carry a second message that even a key-holding &quot;dictator&quot; cannot detect — the intuition behind multi-message anamorphic encryption and signatures.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/anamorphic-cryptography/";
+          
+        },
+      },{id: "post-computing-on-encrypted-data-without-a-central-authority",
+        
+          title: "Computing on Encrypted Data Without a Central Authority",
+        
+        description: "How registered functional encryption lets users learn a function of encrypted data with no trusted key authority — and a general framework that builds it from pairings via &quot;user-specific pre-constraining.&quot;",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/rfe-asiacrypt/";
+          
+        },
+      },{id: "post-registration-model-for-functional-encryption-linear-functions-with-access-control",
+        
+          title: "Registration Model for Functional Encryption: Linear Functions with Access Control",
+        
+        description: "How to evaluate linear functions on encrypted data — with optional attribute-based access control — and no trusted key authority. A four-attempt build-up to registered (AB-)IPFE from pairings.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/rabipfe-asiacrypt/";
+          
+        },
+      },{id: "post-computing-on-unbounded-data-with-attributes-spanning-multiple-authorities",
+        
+          title: "Computing on Unbounded Data with Attributes spanning Multiple Authorities",
+        
+        description: "Evaluating linear functions on encrypted data when the attributes that gate access are issued by many independent authorities — with no preset bound on vectors, attributes, or authorities, in fast prime-order groups.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/pkc-ma-abuipfe/";
+          
+        },
+      },{id: "post-computing-on-unbounded-data-with-predicates",
+        
+          title: "Computing on Unbounded Data with Predicates",
+        
+        description: "Evaluating weighted statistics on encrypted medical records — gated by a hidden policy, with no preset bound on data or attribute size. The ideas behind unbounded, attribute-hiding predicate IPFE from pairings.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/predicate-ipfe-joc/";
+          
+        },
+      },{id: "books-computing-on-encrypted-data-fhe-and-fe",
+          title: 'Computing on Encrypted Data: FHE and FE',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/computing-on-encrypted-data/";
+            },},{id: "books-cryptography-foundations",
+          title: 'Cryptography Foundations',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/cryptography-basics/";
+            },},{id: "books-lattice-based-cryptography",
+          title: 'Lattice-based Cryptography',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/lattice-based-cryptography/";
+            },},{id: "books-mathematics-for-cryptography-amp-cyber-security",
+          title: 'Mathematics for Cryptography &amp;amp; Cyber Security',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/mathematics-for-cryptography/";
+            },},{id: "books-network-security",
+          title: 'Network Security',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/network-security-basics/";
+            },},{id: "news-research-visit-to-the-university-of-auckland",
+          title: 'Research visit to the University of Auckland',
+          description: "A doctoral research visit to Prof. Steven Galbraith&#39;s group, and a seminar on the road from functional encryption to indistinguishability obfuscation.",
+          section: "News",handler: () => {
+              window.location.href = "/news/2019-auckland-visit/";
+            },},{id: "news-a-paper-https-eprint-iacr-org-2023-565-on-multi-authority-attribute-based-inner-product-fe-is-accepted-by-pkc-2023-https-pkc-iacr-org-2023",
+          title: 'A [paper](https://eprint.iacr.org/2023/565) on multi-authority attribute-based inner-product FE is accepted by [PKC 2023](https://pkc.iacr.org/2023/).',
+          description: "",
+          section: "News",},{id: "news-the-full-version-of-our-asiscrypt-39-21-paper-https-eprint-iacr-org-2021-1305-is-published-at-designs-codes-and-cryptography-https-link-springer-com-article-10-1007-s10623-023-01219-3",
+          title: 'The full version of our Asiscrypt&amp;#39;21 [paper](https://eprint.iacr.org/2021/1305) is published at [Designs, Codes and...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2023-483-on-unbounded-predicate-inner-product-fe-is-accepted-for-publication-at-the-journal-of-cryptology-https-link-springer-com-article-10-1007-s00145-023-09458-2",
+          title: 'A [paper](https://eprint.iacr.org/2023/483) on unbounded predicate inner product FE is accepted for publication at...',
+          description: "",
+          section: "News",},{id: "news-research-visit-to-the-university-of-st-gallen-and-a-talk-at-swiss-crypto-day",
+          title: 'Research visit to the University of St. Gallen and a talk at Swiss...',
+          description: "A research stay in Prof. Katerina Mitrokotsa&#39;s Cyber Security Group, and a talk on bringing inner product functional encryption closer to the real world.",
+          section: "News",handler: () => {
+              window.location.href = "/news/2023-stgallen-swiss-crypto-day/";
+            },},{id: "news-a-paper-https-eprint-iacr-org-2024-1031-on-functional-encryption-with-unbounded-data-sacfe-is-accepted-by-ieee-eurpsp-39-24-https-eurosp2024-ieee-security-org",
+          title: 'A [paper](https://eprint.iacr.org/2024/1031) on functional encryption with unbounded data (SACfe) is accepted by [IEEE...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2023-236-on-certified-everlasting-secure-fe-is-accepted-by-eurocrypt-2024-https-eurocrypt-iacr-org-2024",
+          title: 'A [paper](https://eprint.iacr.org/2023/236) on certified everlasting secure FE is accepted by [Eurocrypt 2024](https://eurocrypt.iacr.org/2024/)!',
+          description: "",
+          section: "News",},{id: "news-a-paper-on-adaptively-secure-inner-product-encryption-is-accepted-for-publication-at-the-journal-of-theoretical-computer-science-https-www-sciencedirect-com-science-article-pii-s0304397524001178",
+          title: 'A paper on adaptively secure inner product encryption is accepted for publication at...',
+          description: "",
+          section: "News",},{id: "news-the-full-version-of-our-asiscrypt-39-22-paper-https-eprint-iacr-org-2022-1594-is-published-at-designs-codes-and-cryptography-https-link-springer-com-article-10-1007-s10623-024-01432-8",
+          title: 'The full version of our Asiscrypt&amp;#39;22 [paper](https://eprint.iacr.org/2022/1594) is published at [Designs, Codes and...',
+          description: "",
+          section: "News",},{id: "news-our-paper-https-eprint-iacr-org-2023-457-on-registration-based-linear-functional-encryption-with-access-control-is-accepted-to-asiacrypt-39-24-https-asiacrypt-iacr-org-2024",
+          title: 'Our [paper](https://eprint.iacr.org/2023/457) on registration-based linear functional encryption with access control is accepted to...',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-reviewer-panel-of-the-mathematical-reviews-of-the-american-mathematical-society-ams-https-www-ams-org-home-page",
+          title: 'I am invited to join the reviewer panel of the Mathematical Reviews of...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-423-on-multi-client-attribute-based-unbounded-ipfe-is-accepted-to-pkc-39-25-https-pkc-iacr-org-2025",
+          title: 'A [paper](https://eprint.iacr.org/2025/423) on multi-client attribute-based unbounded IPFE is accepted to [PKC&amp;#39;25](https://pkc.iacr.org/2025/)!',
+          description: "",
+          section: "News",},{id: "news-our-traceable-functional-encryption-paper-https-eprint-iacr-org-2022-1196-is-accepted-for-publication-at-the-iacr-cic-https-cic-iacr-org-p-2-1-28-journal",
+          title: 'Our traceable functional encryption [paper](https://eprint.iacr.org/2022/1196) is accepted for publication at the IACR [CiC](https://cic.iacr.org/p/2/1/28)...',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-indocrypt-39-25-https-www-indocrypt2025-in",
+          title: 'I am invited to join the PC of [Indocrypt&amp;#39;25](https://www.indocrypt2025.in).',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-acm-ccs-2026-https-www-sigsac-org-ccs-ccs2026-for-the-privacy-and-anonymity-track",
+          title: 'I am invited to join the PC of ACM [CCS 2026](https://www.sigsac.org/ccs/CCS2026/) for the...',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-2207-on-a-generic-framework-for-registered-fes-is-accepted-by-asiacrypt-39-25-https-asiacrypt-iacr-org-2025",
+          title: 'A [paper](https://eprint.iacr.org/2025/2207) on a generic framework for registered FEs is accepted by [Asiacrypt&amp;#39;25](https://asiacrypt.iacr.org/2025/)....',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-967-on-registered-pseudorandom-functional-encryption-for-tms-is-now-available-to-eprint",
+          title: 'A [paper](https://eprint.iacr.org/2025/967) on registered (pseudorandom) functional encryption for TMs is now available to...',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-acm-www-39-26-https-www2026-thewebconf-org",
+          title: 'I am invited to join the PC of ACM [WWW&amp;#39;26](https://www2026.thewebconf.org).',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-acm-apkc-2026-https-iseclab-ec-t-kanazawa-u-ac-jp-en-apkc2026-html",
+          title: 'I am invited to join the PC of ACM [APKC 2026](https://iseclab.ec.t.kanazawa-u.ac.jp/en/APKC2026.html).',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-pkc-2027-https-pkc-iacr-org-2027",
+          title: 'I am invited to join the PC of [PKC 2027](https://pkc.iacr.org/2027/).',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-836-on-registered-fe-for-attribute-weighted-sums-is-accepted-by-pkc-2026-https-pkc-iacr-org-2026",
+          title: 'A [paper](https://eprint.iacr.org/2025/836) on registered FE for attribute-weighted sums is accepted by [PKC 2026](https://pkc.iacr.org/2026/)....',
+          description: "",
+          section: "News",},{id: "news-a-paper-https-eprint-iacr-org-2025-370-on-anamorphic-cryptography-is-accepted-to-crypto-2026-https-crypto-iacr-org-2026",
+          title: 'A [paper](https://eprint.iacr.org/2025/370) on anamorphic cryptography is accepted to [Crypto 2026](https://crypto.iacr.org/2026/)!',
+          description: "",
+          section: "News",},{id: "news-i-am-invited-to-join-the-pc-of-space-39-26-https-space2026-isec-tugraz-at",
+          title: 'I am invited to join the PC of [SPACE&amp;#39;26](https://space2026.isec.tugraz.at).',
+          description: "",
+          section: "News",},{id: "projects-multi-client-unbounded-attribute-based-inner-product-functional-encryption",
+          title: 'Multi-Client Unbounded Attribute-Based Inner Product Functional Encryption',
+          description: "SNSF-funded project. Completed.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_mc_abipfe/";
+            },},{id: "projects-beyond-trusted-authorities-registered-functional-encryption-and-access-control",
+          title: 'Beyond Trusted Authorities: Registered Functional Encryption and Access Control',
+          description: "continuing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_reg-ab-fe/";
+            },},{id: "projects-public-key-anamorphic-extensions-for-practical-and-standard-primitives",
+          title: 'Public-Key Anamorphic Extensions for Practical and Standard Primitives',
+          description: "continuing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_anam/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%74%61%70%61%73.%70%61%6C@%6B%69%74.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-dblp',
+        title: 'DBLP',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://dblp.org/pid/222/6843.html", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/tapas-pal-7b5a88b7", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=7N8SUDMAAAAJ", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
