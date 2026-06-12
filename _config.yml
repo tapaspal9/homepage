@@ -122,7 +122,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Paper Insights # blog_name will be displayed in your blog page
-blog_description: Short write-ups on my works/papers I find interesting — the core idea, and how it's achieved.
+blog_description: IACR papers often run 50–100 pages, and the core message or idea can be hard to extract from all the details. So here I share short write-ups of my work and papers I find interesting — focusing on the key idea and how it's achieved. If you enjoy reading them, check back for more.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
