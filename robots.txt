@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://tapaspal9.github.io/sitemap.xml
+Sitemap: https://tapaspal9.github.io/homepage/sitemap.xml
