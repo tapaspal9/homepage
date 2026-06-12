@@ -57,7 +57,7 @@ Every security guarantee ultimately rests on these foundations — you can't rea
 
 - **[Abstract Algebra](https://drive.google.com/file/d/16dcUm4JO9hqos3x3itocrWnGv_Wj8XO3/view?usp=sharing)** - Dummit and Foote. Also, [here](https://rksmvv.ac.in/wp-content/uploads/2021/04/David_S_Dummit_Richard_M_Foote_Abstract_Algeb_230928_225848.pdf).
 
-- **[Abstract Algebra: Theory and Applications](https://www.math.colostate.edu/~pries/467/Judson12.pdf)** — Thomas Judson. Free, open-source; groups → rings → fields, with built-in coding-theory and cryptography applications.
+- **[Abstract Algebra: Theory and Applications](https://www.math.colostate.edu/~pries/467/Judson12.pdf)** — Thomas Judson. (groups → rings → fields, with built-in coding-theory and cryptography applications.)
 
 
 ## Information theory
