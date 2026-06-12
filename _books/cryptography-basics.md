@@ -20,7 +20,8 @@ Cryptography is the invisible substrate of modern life — every HTTPS connectio
 
 - **[A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/)** — Dan Boneh & Victor Shoup. Free, complete, definition-and-proof oriented. *(book)*
 - **[Introduction to Modern Cryptography](http://staff.ustc.edu.cn/~mfy/moderncrypto/reading%20materials/Introduction_to_Modern_Cryptography.pdf)** — Jonathan Katz & Yehuda Lindell. The standard first textbook. Also [here](https://drive.google.com/file/d/1TGsrggtGNRpdrJXLjNPgl2VkgfQHeoW-/view?usp=sharing).
-- **[HANDBOOK of APPLIED CRYPTOGRAPHY](https://galois.azc.uam.mx/mate/propaganda/Menezes.pdf)** - Menezes, Oorschot and Vanstone
+- **[HANDBOOK of APPLIED CRYPTOGRAPHY](https://galois.azc.uam.mx/mate/propaganda/Menezes.pdf)** - Menezes, Oorschot and Vanstone.
+- **[Cryptography Engineering - Design Principles and Practical Applications](https://drive.google.com/file/d/1zp889BgmcR5x7_V_TKQ5LvtR7P8ysX92/view?usp=sharing)** -  Ferguson, Schneier and Kohno.
 
 ## Lecture notes & courses
 
