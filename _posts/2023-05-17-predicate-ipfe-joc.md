@@ -181,8 +181,8 @@ Concretely, in the dual pairing vector space (DPVS), with $\dbi{\cdot}$ / $\dbii
 
 $$
 \SK_{\by,\bv}:\quad
-\dbii{\bk_i=(\rho_i(-i,1),\,y_i,\,\gamma_i)\bB^{*}}\ \ \text{and}\ \
-\dbii{\bk_j=(\widetilde{\rho}_j(-j,1),\,\omega v_j,\,\widetilde{\gamma}_j)\bB^{*}}
+\dbii{\bk_i=(\rho_i(-i,1),\,y_i,\,\gamma_i)\bB^{\ast}}\ \ \text{and}\ \
+\dbii{\bk_j=(\widetilde{\rho}_j(-j,1),\,\omega v_j,\,\widetilde{\gamma}_j)\bB^{\ast}}
 \quad\text{s.t. }\textstyle\sum_i\gamma_i+\sum_j\widetilde{\gamma}_j=0,
 $$
 
@@ -205,7 +205,7 @@ One subtlety remains: with overlapping index sets, an adversary could pair $\bk_
     </div>
     <div style="font-size:1.3rem;opacity:.55">&rArr;</div>
     <div>
-      <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .8rem;font-weight:600;background:rgba(46,158,91,.06)">$(\bB,\bB^*)$ for $(\bx,\by)$<br>$(\widetilde{\bB},\widetilde{\bB}^*)$ for $(\bw,\bv)$<br><small style="font-weight:400">cross-pairings land in incompatible spaces &rarr; vanish</small></div>
+      <div style="display:inline-block;border:1.5px solid #2e9e5b;color:#2e9e5b;border-radius:10px;padding:.5rem .8rem;font-weight:600;background:rgba(46,158,91,.06)">$(\bB,\bB^{\ast})$ for $(\bx,\by)$<br>$(\widetilde{\bB},\widetilde{\bB}^{\ast})$ for $(\bw,\bv)$<br><small style="font-weight:400">cross-pairings land in incompatible spaces &rarr; vanish</small></div>
     </div>
   </div>
 </div>
