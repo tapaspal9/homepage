@@ -152,7 +152,7 @@ Good intuition — but concatenation quietly **breaks permissiveness** (the merg
 
 Encrypt $\bw$ and $\bx$ with **two** TT18 calls, and let the key be two TT18 keys, for $(\bv,I_{\bv})$ and $(\by,I_{\by})$. Permissiveness now holds on each side — but independence is too much freedom:
 
-<div style="border-left:4px solid #cc3a2f;background:rgba(204,58,47,.08);padding:.7rem 1.05rem;border-radius:0 8px 8px 0;margin:1.2rem 0" markdown="1">
+<div style="border-left:4px solid #cc3a2f;background:rgba(204,58,47,.08);padding:.7rem 1.05rem;border-radius:0 8px 8px 0;margin:1.2rem 0">
 <b style="color:#cc3a2f">Mix-n-match attack.</b> From keys $\SK_{\bv,\by}=(\mathsf{sk}_{\bv},\mathsf{sk}_{\by})$ and $\SK_{\bv',\by'}=(\mathsf{sk}_{\bv'},\mathsf{sk}_{\by'})$, an adversary splices a brand-new legitimate-looking key $\SK_{\bv,\by'}=(\mathsf{sk}_{\bv},\mathsf{sk}_{\by'})$ — recombining a predicate from one key with a function from another, breaking security.
 </div>
 
@@ -243,10 +243,41 @@ This yields a simulation-secure UNP-IPFE with compact ciphertexts and constant-s
 
 ## The Two Schemes at a Glance
 
-| Scheme | Setting | Index relation | Predicate | Attribute-hiding | Assumption | Notable |
-|---|---|---|---|---|---|---|
-| **UZP-IPFE** | public key | permissive | zero ($\ip{\bw}{\bv}=0$) | full, IND, semi-adaptive | SXDH | standard model |
-| **UNP-IPFE** | secret key | strict | non-zero ($\ip{\bw}{\bv}\neq0$) | weak, SIM, semi-adaptive | bilateral $k$-Lin | constant-size keys |
+<div style="overflow-x:auto;margin:1rem 0">
+<table style="border-collapse:collapse;font-size:.74rem;line-height:1.35;margin:0 auto">
+  <thead>
+    <tr>
+      <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Scheme</th>
+      <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Setting</th>
+      <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Index relation</th>
+      <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Predicate</th>
+      <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Attribute-hiding</th>
+      <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Assumption</th>
+      <th style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;background:rgba(128,128,128,.12);white-space:nowrap;text-align:center">Notable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center;font-weight:700">UZP-IPFE</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">public key</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">permissive</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">zero ($\ip{\bw}{\bv}=0$)</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">full, IND, semi-adaptive</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">SXDH</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">standard model</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center;font-weight:700">UNP-IPFE</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">secret key</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">strict</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">non-zero ($\ip{\bw}{\bv}\neq0$)</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">weak, SIM, semi-adaptive</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">bilateral $k$-Lin</td>
+      <td style="border:1px solid rgba(128,128,128,.35);padding:.3rem .5rem;white-space:nowrap;text-align:center">constant-size keys</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ## Why It Matters
 
