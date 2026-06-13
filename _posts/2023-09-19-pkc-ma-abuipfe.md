@@ -119,10 +119,7 @@ Because the hash $\hash$ stretches to *any* index on the fly, no length need be 
 
 ## The Obstacle: Encryption Doesn't Know Who Will Decrypt
 
-In the multi-authority world, the per-user keys from different authorities are tied together by a hash of the user's global identity $\gid$ and key vector $\bu$ — something like 
-$$\hash(\gid\concat\bu\concat j\concat k\concat\mathcal{I})$$. 
-
-To extend an authority's key component to an unbounded length, the encryptor would need to evaluate that very hash. But it **can't**:
+In the multi-authority world, the per-user keys from different authorities are tied together by a hash of the user's global identity $\gid$ and key vector $\bu$ — something like $\hash(\gid\concat\bu\concat j\concat k\concat\mathcal{I})$. To extend an authority's key component to an unbounded length, the encryptor would need to evaluate that very hash. But it **can't**:
 
 <div style="margin:1.3rem 0;text-align:center">
   <div style="display:flex;align-items:stretch;justify-content:center;gap:1.4rem;flex-wrap:wrap">
