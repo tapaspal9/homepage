@@ -67,6 +67,18 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+      - name: Fetch latest CV from private repo 📄
+        env:
+          CV_TOKEN: ${{ secrets.CV_REPO_TOKEN }}
+        run: |
+          mkdir -p assets/pdf
+          curl -sSL -f \
+            -H "Authorization: Bearer ${CV_TOKEN}" \
+            -H "Accept: application/vnd.github.raw" \
+            -o assets/pdf/CV.pdf \
+            "https://api.github.com/repos/tapaspal9/Tapas-CV-Updated/contents/assets/pdf/CV.pdf"
+          file assets/pdf/CV.pdf
+          file assets/pdf/CV.pdf | grep -qi 'PDF document' || { echo "::error::CV download is not a valid PDF"; exit 1; }
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
