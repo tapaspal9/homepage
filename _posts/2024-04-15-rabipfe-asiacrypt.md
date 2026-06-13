@@ -67,7 +67,7 @@ $$
 </style>
 
 <div class="ripfe-callout" markdown="1">
-Based on joint work with **Pratish Datta** and **Shota Yamada** — *Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more* {% cite datta2024registered %}. The paper appeared at Asiacrypt {% cite datta2024registered %}. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.
+Based on joint work with **Pratish Datta** and **Shota Yamada** — *Registered FE beyond Predicates: (Attribute-Based) Linear Functions and more*. The paper appeared at Asiacrypt {% cite datta2024registered %}. This post is an intuitive tour of the ideas; the paper carries the full constructions and proofs.
 </div>
 
 ## Computing on Encrypted Data — Without the Authority
