@@ -414,11 +414,11 @@ The shift in goal is the whole story:
 
 We instantiate the multi-message recipe across a range of standard primitives. Here $\mu$ is the number of regular ciphertexts (or signatures) needed to carry one hidden message; the anamorphic message space is **restricted** (polynomial-sized) or **unrestricted** (exponential-sized).
 
-**Anamorphic encryption (AAE) and identity-based anamorphic encryption (IBAE)**
+**Asymmetric Anamorphic encryption (AAE) and Identity-Based Anamorphic Encryption (IBAE)**
 
 <table class="anam-table">
   <thead>
-    <tr><th>Setting</th><th>Base scheme</th><th>&mu; = #ct</th><th>Hidden msg space</th><th>Security</th></tr>
+    <tr><th>Setting</th><th>Base scheme</th><th> $\mu$ = #ct</th><th>Hidden msg space</th><th>Security</th></tr>
   </thead>
   <tbody>
     <tr><td>AAE</td><td>ElGamal</td><td>2</td><td>restricted</td><td>IND-CPA + sIND-CPA</td></tr>
@@ -430,11 +430,11 @@ We instantiate the multi-message recipe across a range of standard primitives. H
   </tbody>
 </table>
 
-**Anamorphic signatures (AAS)**
+**Asymmetric Anamorphic Signatures (AAS)**
 
 <table class="anam-table">
   <thead>
-    <tr><th>Encryption used</th><th>Signature</th><th>&mu; = #&sigma;</th><th>Hidden msg space</th><th>Security</th></tr>
+    <tr><th>Encryption used</th><th>Signature</th><th> $\mu$ = #&sigma;</th><th>Hidden msg space</th><th>Security</th></tr>
   </thead>
   <tbody>
     <tr><td>Linear encryption</td><td>Waters</td><td>3</td><td>unrestricted</td><td>IND-CPA</td></tr>
