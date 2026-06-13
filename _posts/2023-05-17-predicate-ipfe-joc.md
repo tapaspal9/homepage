@@ -162,7 +162,7 @@ The fix is a hybrid: still two parallel TT18 calls, but **no longer independent*
 
 <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.3rem 0">
   <div style="flex:1 1 260px;max-width:360px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:.9rem 1rem;background:rgba(128,128,128,.05);text-align:center">
-    <div style="font-size:.8rem;text-transform:none;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">Secret Key — bound by $\sum \gamma + \widetile{\gamma}=0$</div>
+    <div style="font-size:.8rem;text-transform:none;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">Secret Key — bound by $\sum \gamma + \widetilde{\gamma}=0$</div>
     <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{sk}_{\by}$ &nbsp;<small style="font-weight:400;opacity:.7">share $\gamma_i$</small></div>
     <div style="font-size:.95rem;color:var(--global-theme-color,#0076df);font-weight:700">&#8597; joint zero-share</div>
     <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{sk}_{\bv}$ &nbsp;<small style="font-weight:400;opacity:.7">share $\widetilde{\gamma}_j$</small></div>
