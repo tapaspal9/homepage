@@ -302,11 +302,11 @@ Instantiating the framework yields several firsts, all from the standard **(bila
     <tr><th>Work</th><th>Functionality</th><th>Security</th><th>Assumption</th></tr>
   </thead>
   <tbody>
-    <tr><td>FFMMRV23 / DPY24</td><td>general</td><td>Adp-IND</td><td>iO + SSB</td></tr>
-    <tr><td>DPY24</td><td>IP; AB-IP for LSSS</td><td>Adp-IND</td><td>GGM</td></tr>
-    <tr><td>ZLZGQ24</td><td>IP; QF</td><td>Adp-IND / Sel-SIM</td><td>(bi-)$k$-Lin</td></tr>
-    <tr><td>BLMMRW24</td><td>IP; weak QF</td><td>SelSta-IND / Adp-IND</td><td>$q$-type / GGM</td></tr>
-    <tr><td>Pal–Schädlich 2025</td><td>AB-(1)AWS for ABP</td><td>Adp-IND / Sel*-SIM</td><td>bi-$k$-Lin</td></tr>
+    <tr><td> <a href="https://ia.cr/2023/395" target="_blank" rel="noopener"> FFMMRV23</a> / <a href="https://ia.cr/2023/1191" target="_blank" rel="noopener"> DPY24</a> </td><td>general</td><td>Adp-IND</td><td>iO + SSB</td></tr>
+    <tr><td><a href="https://ia.cr/2023/1191" target="_blank" rel="noopener"> DPY24</a></td><td>IP; AB-IP for LSSS</td><td>Adp-IND</td><td>GGM</td></tr>
+    <tr><td> <a href="https://ia.cr/2024/327" target="_blank" rel="noopener"> ZLZGQ24</a></td><td>IP; QF</td><td>Adp-IND / Sel-SIM</td><td>(bi-)$k$-Lin</td></tr>
+    <tr><td><a href="https://ia.cr/2024/179" target="_blank" rel="noopener"> BLMRW24</a></td><td>IP; weak QF</td><td>SelSta-IND / Adp-IND</td><td>$q$-type / GGM</td></tr>
+    <tr><td> {% cite pal2026registered %} </td><td>AB-(1)AWS for ABP</td><td>Adp-IND / Sel*-SIM</td><td>bi-$k$-Lin</td></tr>
     <tr class="me"><td>This work</td><td>AB-AWS for ABP, L, NL</td><td>Sel*-SIM</td><td>bi-$k$-Lin</td></tr>
     <tr class="me"><td>This work</td><td>AB-QF for ABP, L, NL</td><td>Sel*-SIM</td><td>bi-$k$-Lin</td></tr>
   </tbody>
@@ -321,5 +321,5 @@ The throughline is a single, reusable design: a generic compiler that fuses a **
 The payoff is registered FE that is **expressive** (Turing-machine policies, quadratic functions), **access-controlled**, **compact**, and **simulation-secure** — all without a trusted key authority, and from standard pairing assumptions.
 
 <div class="rfe-callout" markdown="1">
-Want the full constructions, the compilers, and the security proofs? They're in the paper: [ia.cr/2025/2207](https://ia.cr/2025/2207).
+Want the full constructions, the compilers, and the security proofs? They're in the paper: [ia.cr/2025/2207](https://ia.cr/2025/2207). A concurrent work of ours at PKC {% cite pal2026registered %} achieves adaptive security for the one-slot variant of AWS with a more compact ciphertext. 
 </div>
