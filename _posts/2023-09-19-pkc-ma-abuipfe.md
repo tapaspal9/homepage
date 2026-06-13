@@ -63,7 +63,7 @@ That decentralized setting is **multi-authority AB-IPFE (MA-ABIPFE)**: each auth
   </div>
 </div>
 
-The only prior MA-ABIPFE (Agrawal, Goyal, Tomida, TCC 2021) works — but at a steep price, and that price is the story of this paper.
+The only prior MA-ABIPFE of [Agrawal, Goyal, Tomida, TCC 2021](https://ia.cr/2020/1266) (AGT) works — but at a steep price, and that price is the story of this paper.
 
 ## The Trouble with the State of the Art
 
@@ -115,11 +115,14 @@ $$
 \SK_{\by}:\ -\alpha\textstyle\prod_{j}\hash(j)^{y_j}.
 $$
 
-Because the hash $\hash$ stretches to *any* index on the fly, no length need be fixed in advance. When the index sets match, the key vector $\by$ pulls $\dbt{\ip{\bx}{\by}}$ out of $\prod_j C_j^{y_j}$ and a single pairing $e(C_0, \SK_{\by})$. The natural plan: graft this hash-and-pair idea onto a DBDH-based multi-authority ABE (Datta–Komargodski–Waters) to get an *unbounded* multi-authority scheme. It almost works — and where it breaks is the heart of the paper.
+Because the hash $\hash$ stretches to *any* index on the fly, no length need be fixed in advance. When the index sets match, the key vector $\by$ pulls $\dbt{\ip{\bx}{\by}}$ out of $\prod_j C_j^{y_j}$ and a single pairing $e(C_0, \SK_{\by})$. The natural plan: graft this hash-and-pair idea onto a DBDH-based multi-authority ABE ([Datta–Komargodski–Waters](https://ia.cr/2021/1325)) to get an *unbounded* multi-authority scheme. It almost works — and where it breaks is the heart of the paper.
 
 ## The Obstacle: Encryption Doesn't Know Who Will Decrypt
 
-In the multi-authority world, the per-user keys from different authorities are tied together by a hash of the user's global identity $\gid$ and key vector $\bu$ — something like $\hash(\gid\concat\bu\concat j\concat k\concat\mathcal{I})$. To extend an authority's key component to an unbounded length, the encryptor would need to evaluate that very hash. But it **can't**:
+In the multi-authority world, the per-user keys from different authorities are tied together by a hash of the user's global identity $\gid$ and key vector $\bu$ — something like 
+$$\hash(\gid\concat\bu\concat j\concat k\concat\mathcal{I})$$. 
+
+To extend an authority's key component to an unbounded length, the encryptor would need to evaluate that very hash. But it **can't**:
 
 <div style="margin:1.3rem 0;text-align:center">
   <div style="display:flex;align-items:stretch;justify-content:center;gap:1.4rem;flex-wrap:wrap">
@@ -157,7 +160,11 @@ with the first factor depending only on indices (so the **encryptor** can comput
   </div>
 </div>
 
-The $\hash_2$ half carries no $\gid$ or $\bu$, so the **encryptor** can use it to expand an authority's public-key component $\dbo{y_{t,j}}$ into a target-group vector, $\dbt{y_{t,j,k}^{(2)}} = e(\dbo{y_{t,j}},\, \hash_2(j\concat k\concat\mathcal{I}))$ — baking the unbounded stretch into the ciphertext without ever seeing the user. The $\hash_3$ half, which *does* depend on $\gid,\bu$, is supplied at decryption. To stitch the two halves back together correctly, the ciphertext carries an extra layer of secret-sharing of zero (components $C_{4,i,j}$), so the pairing operation that a single-authority scheme would do in one shot is now **distributed between the encryption and decryption algorithms**:
+The $\hash_2$ half carries no $\gid$ or $\bu$, so the **encryptor** can use it to expand an authority's public-key component $\dbo{y_{t,j}}$ into a target-group vector, 
+
+$$\dbt{y_{t,j,k}^{(2)}} = e(\dbo{y_{t,j}},\, \hash_2(j\concat k\concat\mathcal{I})),$$ 
+
+baking the unbounded stretch into the ciphertext without ever seeing the user. The $\hash_3$ half, which *does* depend on $\gid,\bu$, is supplied at decryption. To stitch the two halves back together correctly, the ciphertext carries an extra layer of secret-sharing of zero (components $C_{4,i,j}$), so the pairing operation that a single-authority scheme would do in one shot is now **distributed between the encryption and decryption algorithms**:
 
 $$
 e\big(\hash(\gid\concat\bu\concat j),\, \ip{C_{3,i,j}}{\bu}\big)
