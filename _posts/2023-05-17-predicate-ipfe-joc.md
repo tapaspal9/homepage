@@ -121,7 +121,7 @@ The security goal is **attribute-hiding**: an adversary holding many keys — bo
 
 ## Construction 1 — UZP-IPFE (the technical heart)
 
-The first scheme is a **public-key**, permissive, **zero-predicate** UP-IPFE with **full attribute-hiding** in the standard model under $\sxdh$. Its starting point is the unbounded IPFE of Tomida and Takashima (TT18), whose index-encoding trick supplies both the unboundedness and the entropy needed to block illegitimate keys. Getting from there to an attribute-hiding predicate scheme takes a careful, four-step climb.
+The first scheme is a **public-key**, permissive, **zero-predicate** UP-IPFE with **full attribute-hiding** in the standard model under $\sxdh$. Its starting point is the unbounded IPFE of [Tomida and Takashima (TT18)](https://ia.cr/2018/696), whose index-encoding trick supplies both the unboundedness and the entropy needed to block illegitimate keys. Getting from there to an attribute-hiding predicate scheme takes a careful, four-step climb.
 
 <div style="display:flex;flex-direction:column;gap:.5rem;max-width:620px;margin:1.4rem auto">
   <div style="display:flex;align-items:center;gap:.7rem;border:1px solid rgba(128,128,128,.35);border-radius:9px;padding:.5rem .8rem;background:rgba(128,128,128,.05)"><span style="flex:0 0 auto;width:1.6rem;height:1.6rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:.85rem;background:#cc7a00">1</span><span><b>Concatenate &amp; randomize</b> &mdash; <small style="opacity:.75">one TT18 call; randomize to mask $\ip{\bx}{\by}$ when $\ip{\bw}{\bv}\neq 0$.</small></span></div>
@@ -162,14 +162,14 @@ The fix is a hybrid: still two parallel TT18 calls, but **no longer independent*
 
 <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:1.3rem 0">
   <div style="flex:1 1 260px;max-width:360px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:.9rem 1rem;background:rgba(128,128,128,.05);text-align:center">
-    <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">secret key — bound by $\sum\gamma=0$</div>
+    <div style="font-size:.8rem;text-transform:none;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">Secret Key — bound by $\sum \gamma + \widetile{\gamma}=0$</div>
     <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{sk}_{\by}$ &nbsp;<small style="font-weight:400;opacity:.7">share $\gamma_i$</small></div>
     <div style="font-size:.95rem;color:var(--global-theme-color,#0076df);font-weight:700">&#8597; joint zero-share</div>
     <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{sk}_{\bv}$ &nbsp;<small style="font-weight:400;opacity:.7">share $\widetilde{\gamma}_j$</small></div>
     <div style="font-size:.76rem;opacity:.72;font-style:italic;margin-top:.4rem">splicing a foreign half breaks the zero-sum &rarr; mix-n-match blocked</div>
   </div>
   <div style="flex:1 1 260px;max-width:360px;border:1px solid rgba(128,128,128,.35);border-radius:12px;padding:.9rem 1rem;background:rgba(128,128,128,.05);text-align:center">
-    <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">ciphertext — shared $z$</div>
+    <div style="font-size:.8rem;text-transform:none;letter-spacing:.04em;opacity:.8;font-weight:700;margin-bottom:.5rem">Ciphertext — shared $z$</div>
     <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{ct}_{\bx}$ &nbsp;<small style="font-weight:400;opacity:.7">randomness $z$</small></div>
     <div style="font-size:.95rem;color:var(--global-theme-color,#0076df);font-weight:700">&#8597; common $z$</div>
     <div style="display:inline-block;border:1.5px solid rgba(128,128,128,.45);border-radius:9px;padding:.4rem .7rem;font-weight:600;margin:.2rem">$\mathsf{ct}_{\bw}$ &nbsp;<small style="font-weight:400;opacity:.7">randomness $z$</small></div>
@@ -236,7 +236,9 @@ $$
 \qquad\qquad
 \CT_{\bx,\bw}:\ \mathsf{qct}_{\bx,\bw},\ \mathsf{ict}_{\bw}
 $$
+<p>  
 A UQFE handles the quadratic $\bx\otimes\bw$ part with compact ciphertexts; a plain unbounded IPFE recovers $\ip{\bw}{\bv}$.
+</p>  
 </div>
 
 This yields a simulation-secure UNP-IPFE with compact ciphertexts and constant-size keys — and motivates a question the paper also takes up: building a **simulation-secure UQFE** with constant keys and compact ciphertexts, since the only prior UQFE is indistinguishability-based with linear-size keys.
