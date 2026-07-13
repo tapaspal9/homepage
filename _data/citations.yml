@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-13'
 papers:
   7N8SUDMAAAAJ:-f6ydRqryjwC:
     citations: 0
     title: Product Functional Encryption from LWE
     year: '2021'
   7N8SUDMAAAAJ:0EnyYjriUFMC:
-    citations: 14
+    citations: 15
     title: 'Decentralized multi-authority attribute-based inner-product FE: large universe and unbounded'
     year: '2023'
   7N8SUDMAAAAJ:4DMP91E08xMC:
@@ -34,7 +34,7 @@ papers:
     title: Chosen-ciphertext secure multi-identity and multi-attribute pure FHE
     year: '2020'
   7N8SUDMAAAAJ:KlAtU1dfN6UC:
-    citations: 33
+    citations: 34
     title: Registered FE beyond predicates:(attribute-based) linear functions and more
     year: '2024'
   7N8SUDMAAAAJ:M3ejUd6NZC8C:
@@ -90,7 +90,7 @@ papers:
     title: 'SACfe: Secure access control in functional encryption with unbounded data'
     year: '2024'
   7N8SUDMAAAAJ:aqlVkmm33-oC:
-    citations: 1
+    citations: 2
     title: Multi-Client Attribute-Based Unbounded Inner Product Functional Encryption, and More
     year: '2025'
   7N8SUDMAAAAJ:d1gkVwhDpl0C:
@@ -110,7 +110,7 @@ papers:
     title: "Direct ink writing of Nickel\u2013Manganese\u2013Gallium-based Heusler alloys for porous magnetic regenerator"
     year: '2026'
   7N8SUDMAAAAJ:hqOjcs7Dif8C:
-    citations: 16
+    citations: 18
     title: Unbounded predicate inner product functional encryption from pairings
     year: '2023'
   7N8SUDMAAAAJ:kNdYIx-mwKoC:
