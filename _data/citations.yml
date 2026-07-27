@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-07-13'
+  last_updated: '2026-07-27'
 papers:
   7N8SUDMAAAAJ:-f6ydRqryjwC:
     citations: 0
     title: Product Functional Encryption from LWE
     year: '2021'
   7N8SUDMAAAAJ:0EnyYjriUFMC:
-    citations: 15
+    citations: 16
     title: 'Decentralized multi-authority attribute-based inner-product FE: large universe and unbounded'
     year: '2023'
   7N8SUDMAAAAJ:4DMP91E08xMC:
@@ -34,7 +34,7 @@ papers:
     title: Chosen-ciphertext secure multi-identity and multi-attribute pure FHE
     year: '2020'
   7N8SUDMAAAAJ:KlAtU1dfN6UC:
-    citations: 34
+    citations: 36
     title: Registered FE beyond predicates:(attribute-based) linear functions and more
     year: '2024'
   7N8SUDMAAAAJ:M3ejUd6NZC8C:
@@ -62,7 +62,7 @@ papers:
     title: Registered Functional Encryption for Attribute-Weighted Sums with Access Control.
     year: '2025'
   7N8SUDMAAAAJ:Y0pCki6q_DkC:
-    citations: 0
+    citations: 1
     title: Chosen Ciphertext Secure Functional Encryption from Constrained Witness PRF
     year: '2021'
   7N8SUDMAAAAJ:YOwf2qJgpHMC:
@@ -86,7 +86,7 @@ papers:
     title: Compact FE for unbounded attribute-weighted sums for logspace from SXDH
     year: '2022'
   7N8SUDMAAAAJ:_kc_bZDykSQC:
-    citations: 10
+    citations: 11
     title: 'SACfe: Secure access control in functional encryption with unbounded data'
     year: '2024'
   7N8SUDMAAAAJ:aqlVkmm33-oC:
@@ -98,7 +98,7 @@ papers:
     title: 'Non-zero inner product encryptions: Strong security under standard assumptions'
     year: '2019'
   7N8SUDMAAAAJ:eQOLeE2rZwMC:
-    citations: 4
+    citations: 5
     title: CCA Secure Attribute-Hiding Inner Product Encryption from Minimal Assumption
     year: '2021'
   7N8SUDMAAAAJ:hC7cP41nSMkC:
@@ -110,7 +110,7 @@ papers:
     title: "Direct ink writing of Nickel\u2013Manganese\u2013Gallium-based Heusler alloys for porous magnetic regenerator"
     year: '2026'
   7N8SUDMAAAAJ:hqOjcs7Dif8C:
-    citations: 18
+    citations: 19
     title: Unbounded predicate inner product functional encryption from pairings
     year: '2023'
   7N8SUDMAAAAJ:kNdYIx-mwKoC:
@@ -130,7 +130,7 @@ papers:
     title: Puncturable Witness Pseudorandom Functions and its Applications on Witness Encryption.
     year: '2020'
   7N8SUDMAAAAJ:qxL8FJ1GzNcC:
-    citations: 10
+    citations: 11
     title: Simple Public Key Anamorphic Encryption and Signature using Multi-Message Extensions.
     year: '2025'
   7N8SUDMAAAAJ:roLk4NBRz8UC:
